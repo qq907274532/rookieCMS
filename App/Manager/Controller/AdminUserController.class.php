@@ -35,7 +35,7 @@
                 }
                 $data['list'][$k]['statusName'] = AdminUserModel::$STATUS_MAP[$v['status']];
             }
-            $this->data = $data;
+            $this->assign('data',$data);
             $this->display();
         }
 
@@ -66,7 +66,7 @@
 
             } else {
                 $authGroupModel = new AuthRuleModel();
-                $this->roleList = $authGroupModel->getAuthRuleList(['id' => 'desc'], ['status' => AuthGroupModel::STATUS_ENABLE]);
+                $this->assign('roleList',$authGroupModel->getAuthRuleList(['id' => 'desc'], ['status' => AuthGroupModel::STATUS_ENABLE]));
                 $this->display();
             }
         }
@@ -102,7 +102,7 @@
                 $info = $this->model->getAdminUserInfoById($id);
                 $authGroupInfo = $authGroupAccessModel->getInfoByUid($id);
                 $info['role_id'] = $authGroupInfo['group_id'];
-                $this->roleList = $authGroupModel->getAuthGroupList(['id' => 'desc'], ['status' => AuthGroupModel::STATUS_ENABLE]);
+                $this->assign('roleList',$authGroupModel->getAuthGroupList(['id' => 'desc'], ['status' => AuthGroupModel::STATUS_ENABLE]));
                 $this->assign('info', $info);
                 $this->display();
             }
@@ -130,7 +130,7 @@
                 }
                 $this->ajaxReturn(array('error' => self::SUCCESS_NUMBER, 'message' => '操作成功'));
             } else {
-                $this->id = $id;
+                $this->assign('id',$id);
                 $this->display();
             }
         }

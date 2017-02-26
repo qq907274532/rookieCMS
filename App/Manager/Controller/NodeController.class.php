@@ -40,13 +40,13 @@
                     if (!$this->model->add()) {
                         $this->ajaxReturn(array('error' => self::ERROR_NUMBER, 'msg' => '添加失败'));
                     }
+                    $this->ajaxReturn(array('error' => self::SUCCESS_NUMBER, 'msg' => '添加成功'));
                 }
-                $this->ajaxReturn(array('error' => self::SUCCESS_NUMBER, 'msg' => '添加成功'));
 
             } else {
-                $this->menu = AuthRuleModel::$MENU_MAP;
                 $list = $this->model->where(array('status' => AuthRuleModel::STATUS_ENABLE))->order(array('sort', 'id' => 'desc'))->select();
                 $this->assign('list', node_merges($list));
+                $this->assign('menu', AuthRuleModel::$MENU_MAP);
                 $this->display();
             }
         }
@@ -80,8 +80,9 @@
                 if ($id <= 0) {
                     $this->error("不合法请求", U('Node/index'));
                 }
-                $this->menu = AuthRuleModel::$MENU_MAP;
-                $this->info = $this->model->where(array('id' => $id))->find();
+
+                $this->assign('menu',AuthRuleModel::$MENU_MAP);
+                $this->assign('info',$this->model->where(array('id' => $id))->find());
                 $list = $this->model->where(array('status' => AuthRuleModel::STATUS_ENABLE))->order(array('sort', 'id' => 'desc'))->select();
                 $this->assign('list', node_merges($list));
                 $this->display();
