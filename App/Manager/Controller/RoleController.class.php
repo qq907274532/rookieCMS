@@ -22,7 +22,7 @@
             foreach ($data['list'] as $k => $v) {
                 $data['list'][$k]['statusName'] = AuthGroupModel::$STATUS_MAP[$v['status']];
             }
-            $this->data = $data;
+            $this->assign('data',$data);
             $this->display();
         }
 
@@ -61,7 +61,7 @@
                 if ($id <= 0) {
                     $this->error("不合法请求", U('Role/index'));
                 }
-                $this->info = $this->model->getAuthGroupInfoById($id);;
+                $this->assign('info',$this->model->getAuthGroupInfoById($id));
                 $this->display();
             }
         }
@@ -81,12 +81,12 @@
                 }
                 $this->ajaxReturn(array('error' => 200, 'message' => "授权成功"));
             } else {
-                $authRulemodel = new AuthRuleModel();
+                $authRuleModel = new AuthRuleModel();
                 /*查询权限组id*/
                 $infoRule = $this->model->getAuthGroupInfoById($id);
-                $node = $authRulemodel->getAuthRuleList(['sort', 'id' => 'desc']);
-                $this->list = node_merges($node, explode(',', $infoRule['rules']));
-                $this->id = $id;
+                $node = $authRuleModel->getAuthRuleList(['sort', 'id' => 'desc']);
+                $this->assign('list',node_merges($node, explode(',', $infoRule['rules'])));
+                $this->assign('id',$id);
                 $this->display();
             }
         }
