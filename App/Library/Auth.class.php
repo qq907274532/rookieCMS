@@ -176,14 +176,14 @@
          * @param $rules
          * @return mixed
          */
-        public function getRules($rules){
+        public function getRules($rules,$order=[]){
             static $groups = array();
             if (isset($groups[$rules]))
                 return $groups[$rules];
             $map['status']=array('eq',1);
             $map['menu']=array('eq',1);
             $map['id']=array('in',$rules);
-            $user_groups = M('auth_rule')->where($map)->select();
+            $user_groups = M('auth_rule')->where($map)->order($order)->select();
             foreach ($user_groups as $key => $value) {
                 $user_groups[$key]['urls']=U($value['url']);
             }
@@ -283,11 +283,12 @@
         /**
          * 获取用户组的权限
          * @param $id
+         * @param $order
          * @return array
          */
-        public function  getRuleListById($id){
+        public function  getRuleListById($id,$order){
             $rules = $this->getGroups($id);
-            $rbac = $this->getRules($rules[0]['rules']);
+            $rbac = $this->getRules($rules[0]['rules'],$order);
             return node_merges($rbac);
         }
 

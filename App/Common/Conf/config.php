@@ -13,6 +13,6 @@
         'VAR_CONTROLLER' => 'm',    // 默认控制器获取变量
         'VAR_ACTION' => 'c',    // 默认操作获取变量
         'MODULE_ALLOW_LIST' => ['Home', 'Manager', 'User'],
-        'DEFAULT_MODULE' => 'Manager',
+        'DEFAULT_MODULE' => 'Home',
     ];
     return array_merge($config, $db);
