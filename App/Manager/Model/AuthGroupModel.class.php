@@ -32,6 +32,7 @@
         }
 
         /**
+         * 获取权限组
          * @param array $order
          * @param array $where
          * @return mixed

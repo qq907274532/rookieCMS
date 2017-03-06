@@ -8,8 +8,7 @@ use Think\Model;
  *****/
 class AdminUserModel extends Model {
 	
-	const TBL_ADMIN="admin_user";
-	const TBL_RULE="auth_rule";
+
 	const STATUS_ENABLE="1";
 	const STATUS_DISABLE="2";
 	protected $_validate = array(
@@ -24,32 +23,36 @@ class AdminUserModel extends Model {
 		self::STATUS_DISABLE=>'禁用',
 		);
 
-	/**
-	 * [userInfo 查询用户是否存在]
-	 * @return [type] [description]
-	 */
+    /**
+     * 查询用户是否存在
+     * @param $where
+     * @return mixed
+     */
 	public function userInfo($where){
 		$userInfo=$this->where($where)->find();
 		return $userInfo;
 	}
-	public function infoUpdate($id,$data){
-		M(self::TBL_ADMIN)->where(array('id'=>$id))->save($data);
-	}
 
-	/**
-	 * [check_verify 验证验证码是否正确]
-	 * @param  [type] $code [验证码]
-	 * @param  string $id   [description]
-	 * @return [type]       [description]
-	 */
+    /**
+     * 获取管理员列表
+     * @return mixed
+     */
+	public function getListByStatus(){
+        $result=$this->where(['status'=>self::STATUS_ENABLE])->select();
+        return $result;
+    }
+
+    /**
+     * 验证验证码是否正确
+     * @param $code
+     * @param string $id
+     * @return bool
+     */
 	public function check_verify($code, $id = ''){
       $verify = new \Think\Verify();
       return $verify->check($code, $id);
     }
-	public function cate($id){
-		$cate=M(self::TBL_CATE)->where(array('id'=>$id))->getField('cate');
-		return $cate;
-	}
+	
     /**
      * @param $id
      * @return mixed
