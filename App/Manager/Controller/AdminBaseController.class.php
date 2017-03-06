@@ -1,6 +1,7 @@
 <?php
     namespace Manager\Controller;
 
+    use Common\Model\LogModel;
     use Think\Controller;
 
     class AdminBaseController extends Controller
@@ -13,15 +14,14 @@
         public function __construct()
         {
 
-            logs('aaaa');
             parent::__construct();
             if (!isset($_SESSION['id'])) {
                 $this->redirect('Login/index');
             }
             $this->Auth = new \Library\Auth();
             $this->name = MODULE_NAME . '/' . CONTROLLER_NAME . '/' . ACTION_NAME;
-
-            //            $this->checkAuth($this->name, $_SESSION['id']);
+            $this->checkAuth($this->name, $_SESSION['id']);
+            self::addLog($_SESSION['id'],MODULE_NAME,CONTROLLER_NAME,ACTION_NAME,I('post.'),I('get.'));
             /*第三级菜单pid*/
             $openId = $this->Auth->getId($this->name);
             $this->assign('openFirstId', $this->Auth->getFirstId($openId));
@@ -30,6 +30,26 @@
 
         }
 
+        /**
+         * @param $uid  //用户id
+         * @param $module   //模块
+         * @param $controller   //控制器
+         * @param $action        //方法
+         * @param $postValue      //post提交
+         * @param $getValue       //get提交
+         */
+        static public function addLog($uid,$module,$controller,$action,$postValue,$getValue){
+            $data=[
+                'uid'=>$uid,
+                'module'=>$module,
+                'controller'=>$controller,
+                'action'=>$action,
+                'post_value'=>$postValue,
+                'get_value'=>$getValue,
+            ];
+            $logModel= new LogModel();
+            $logModel->addLog($data);
+        }
         /**
          * @param $auth
          * @param $id

@@ -21,12 +21,12 @@
         public function index()
         {
             $authGroupAccessModel = new AuthGroupAccessModel();
-            $authGroupModel = new AuthRuleModel();
+            $authGroupModel = new AuthGroupModel();
             $this->order = array('create_time', 'id' => 'desc');
             $data = $this->page_com($this->model, $this->order);
             $roleAccess = $authGroupAccessModel->getList();
             $newRoleAccess = array_combine(array_column($roleAccess, 'uid'), array_column($roleAccess, 'group_id'));
-            $roleList = $authGroupModel->getAuthRuleList(); //getAuthRuleList
+            $roleList = $authGroupModel->getAuthGroupList(); //获取权限组
             $newRoleList = array_combine(array_column($roleList, 'id'), array_column($roleList, 'title'));
             foreach ($data['list'] as $k => $v) {
                 $data['list'][$k]['name']='';

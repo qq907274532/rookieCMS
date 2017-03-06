@@ -10,10 +10,63 @@ Target Server Type    : MYSQL
 Target Server Version : 50540
 File Encoding         : 65001
 
-Date: 2017-02-16 22:15:06
+Date: 2017-03-06 14:03:23
 */
 
 SET FOREIGN_KEY_CHECKS=0;
+
+-- ----------------------------
+-- Table structure for ceshi
+-- ----------------------------
+DROP TABLE IF EXISTS `ceshi`;
+CREATE TABLE `ceshi` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `is_dir` tinyint(1) DEFAULT '0',
+  `name` varchar(255) DEFAULT NULL,
+  `create_time` datetime DEFAULT NULL,
+  `pid` int(11) DEFAULT '0',
+  `uid` int(11) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=36 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of ceshi
+-- ----------------------------
+INSERT INTO `ceshi` VALUES ('1', '1', '111', '2017-02-27 15:00:04', '0', '2');
+INSERT INTO `ceshi` VALUES ('2', '1', '111', '2017-02-28 15:00:04', '1', '2');
+INSERT INTO `ceshi` VALUES ('3', '0', '111', '2017-02-28 15:00:04', '1', '2');
+INSERT INTO `ceshi` VALUES ('4', '0', '111', '2017-02-26 15:00:04', '1', '2');
+INSERT INTO `ceshi` VALUES ('5', '0', '111', '2017-02-28 15:00:04', '1', '2');
+INSERT INTO `ceshi` VALUES ('6', '0', '111', '2017-02-26 15:00:04', '2', '3');
+INSERT INTO `ceshi` VALUES ('7', '0', '111', '2017-02-26 15:00:04', '2', '3');
+INSERT INTO `ceshi` VALUES ('8', '0', '111', '2017-02-26 15:00:04', '2', '3');
+INSERT INTO `ceshi` VALUES ('9', '1', '111', '2017-02-26 15:00:04', '2', '3');
+INSERT INTO `ceshi` VALUES ('10', '0', '111', '2017-02-27 15:00:04', '2', '3');
+INSERT INTO `ceshi` VALUES ('11', '0', '111', '2017-02-27 15:00:04', '2', '3');
+INSERT INTO `ceshi` VALUES ('12', '0', '111', '2017-02-27 15:00:04', '0', '3');
+INSERT INTO `ceshi` VALUES ('13', '1', '111', '2017-02-27 15:00:04', '9', '3');
+INSERT INTO `ceshi` VALUES ('14', '0', '111', '2017-02-27 15:00:04', '9', '4');
+INSERT INTO `ceshi` VALUES ('15', '0', '111', '2017-02-27 15:00:04', '9', '4');
+INSERT INTO `ceshi` VALUES ('16', '0', '111', '2017-02-27 15:00:04', '9', '4');
+INSERT INTO `ceshi` VALUES ('17', '0', '111', '2017-02-28 15:00:04', '9', '4');
+INSERT INTO `ceshi` VALUES ('18', '0', '111', '2017-02-28 15:00:04', '9', '4');
+INSERT INTO `ceshi` VALUES ('19', '0', '111', '2017-02-28 15:00:04', '9', '4');
+INSERT INTO `ceshi` VALUES ('20', '0', '111', '2017-02-28 15:00:04', '13', '5');
+INSERT INTO `ceshi` VALUES ('21', '0', '111', '2017-02-28 15:00:04', '13', '5');
+INSERT INTO `ceshi` VALUES ('22', '0', '111', '2017-02-28 15:00:04', '13', '5');
+INSERT INTO `ceshi` VALUES ('23', '0', '111', '2017-02-26 15:00:04', '13', '5');
+INSERT INTO `ceshi` VALUES ('24', '0', '111', '2017-02-26 15:00:04', '13', '5');
+INSERT INTO `ceshi` VALUES ('25', '0', '111', '2017-02-26 15:00:04', '13', '6');
+INSERT INTO `ceshi` VALUES ('26', '0', '111', '2017-02-26 15:00:04', '13', '6');
+INSERT INTO `ceshi` VALUES ('27', '0', '111', '2017-02-26 15:00:04', '13', '6');
+INSERT INTO `ceshi` VALUES ('28', '0', '111', '2017-02-26 15:00:04', '0', '6');
+INSERT INTO `ceshi` VALUES ('29', '0', '111', '2017-02-26 15:00:04', '0', '7');
+INSERT INTO `ceshi` VALUES ('30', '0', '111', '2017-02-28 15:00:04', '0', '7');
+INSERT INTO `ceshi` VALUES ('31', '0', '111', '2017-02-28 15:00:04', '0', '7');
+INSERT INTO `ceshi` VALUES ('32', '0', '111', '2017-02-28 15:00:04', '0', '7');
+INSERT INTO `ceshi` VALUES ('33', '0', '111', '2017-02-28 15:00:04', '0', '8');
+INSERT INTO `ceshi` VALUES ('34', '0', '111', '2017-02-28 15:00:04', '0', '8');
+INSERT INTO `ceshi` VALUES ('35', '0', '111', '2017-02-28 15:00:04', '0', '8');
 
 -- ----------------------------
 -- Table structure for hx_admin_user
@@ -37,7 +90,7 @@ CREATE TABLE `hx_admin_user` (
 -- ----------------------------
 -- Records of hx_admin_user
 -- ----------------------------
-INSERT INTO `hx_admin_user` VALUES ('1', 'admin', 'pbkdf2_sha256$12000$HVqHjtCOhoKo$TZOQbvzgln4Ni4WfJtWw3Dz0it9ugCGIxXeAK9sen/4=', '907274532@qq.com', '1', '2017-02-12 14:24:30', '127.0.0.1', '2016-11-27 15:11:13', '2017-02-12 14:24:30');
+INSERT INTO `hx_admin_user` VALUES ('1', 'admin', 'pbkdf2_sha256$12000$HVqHjtCOhoKo$TZOQbvzgln4Ni4WfJtWw3Dz0it9ugCGIxXeAK9sen/4=', '907274532@qq.com', '1', '2017-03-06 13:04:00', '127.0.0.1', '2016-11-27 15:11:13', '2017-03-06 13:04:00');
 
 -- ----------------------------
 -- Table structure for hx_auth_group
@@ -57,7 +110,7 @@ CREATE TABLE `hx_auth_group` (
 -- ----------------------------
 -- Records of hx_auth_group
 -- ----------------------------
-INSERT INTO `hx_auth_group` VALUES ('1', '超级管理员', null, '1', '76,75,74,73,72,71,70,69,68,67,66,65,64,63,62,61,60,59,58,57,56,55,52,51,50,49,48,47,46,45,44,43,42,41,40,39,38,37,36,35,34,33,22,20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4,3,2,1', '2016-11-27 16:28:50', '2016-12-12 20:42:01');
+INSERT INTO `hx_auth_group` VALUES ('1', '超级管理员', null, '1', '23,22,21,20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4,3,2,1', '2016-11-27 16:28:50', '2017-03-06 13:31:04');
 
 -- ----------------------------
 -- Table structure for hx_auth_group_access
@@ -94,12 +147,12 @@ CREATE TABLE `hx_auth_rule` (
   `icon` varchar(150) DEFAULT NULL COMMENT '图标',
   PRIMARY KEY (`id`),
   UNIQUE KEY `name` (`name`) USING BTREE
-) ENGINE=MyISAM AUTO_INCREMENT=17 DEFAULT CHARSET=utf8 COMMENT='节点表';
+) ENGINE=MyISAM AUTO_INCREMENT=24 DEFAULT CHARSET=utf8 COMMENT='节点表';
 
 -- ----------------------------
 -- Records of hx_auth_rule
 -- ----------------------------
-INSERT INTO `hx_auth_rule` VALUES ('1', 'Manageer/Rbac/index', '权限管理', '1', '1', '', '0', 'Rbac/index', '0', '1', 'fa-gear');
+INSERT INTO `hx_auth_rule` VALUES ('1', 'Manageer/Rbac/index', '权限管理', '1', '1', '', '0', 'Rbac/index', '0', '1', 'fa-briefcase');
 INSERT INTO `hx_auth_rule` VALUES ('2', 'Manageer/AdminUser/list', '管理员管理', '1', '1', '', '1', 'AdminUser/index', '1', '1', '');
 INSERT INTO `hx_auth_rule` VALUES ('3', 'Manager/AdminUser/index', '列表', '1', '1', '', '2', 'AdminUser/index', '0', '0', '');
 INSERT INTO `hx_auth_rule` VALUES ('4', 'Manager/AdminUser/add', '添加', '1', '1', '', '2', 'AdminUser/add', '1', '0', '');
@@ -115,6 +168,13 @@ INSERT INTO `hx_auth_rule` VALUES ('13', 'Manager/Role/index', '列表', '1', '1
 INSERT INTO `hx_auth_rule` VALUES ('14', 'Manager/Role/add', '添加', '1', '1', '', '12', 'Role/add', '2', '0', '');
 INSERT INTO `hx_auth_rule` VALUES ('15', 'Manager/Role/edit', '修改', '1', '1', '', '12', 'Role/edit', '3', '0', '');
 INSERT INTO `hx_auth_rule` VALUES ('16', 'Manager/Role/del', '启用/禁用', '1', '1', '', '12', 'Role/del', '4', '0', '');
+INSERT INTO `hx_auth_rule` VALUES ('17', 'Common/common/list', '系统设置', '1', '1', '', '0', 'common/list', '50', '1', 'fa-cog');
+INSERT INTO `hx_auth_rule` VALUES ('18', 'Manager/BasicSettings/list', '基本设置', '1', '1', '', '17', 'BasicSettings/index', '1', '1', '');
+INSERT INTO `hx_auth_rule` VALUES ('19', 'Manager/BasicSettings/index', '设置', '1', '1', '', '18', 'BasicSettings/index', '2', '2', '');
+INSERT INTO `hx_auth_rule` VALUES ('20', 'Manager/Log/common', '日志管理', '1', '1', '', '0', 'Log/common', '12', '1', 'fa-envelope-o');
+INSERT INTO `hx_auth_rule` VALUES ('21', 'Manager/OperationLog/list', '操作日志', '1', '1', '', '20', 'OperationLog/index', '1', '1', '');
+INSERT INTO `hx_auth_rule` VALUES ('22', 'Manager/OperationLog/index', '列表', '1', '1', '', '21', 'OperationLog/index', '1', '2', '');
+INSERT INTO `hx_auth_rule` VALUES ('23', 'Manager/Role/Rbac', '权限分配', '1', '1', '', '7', 'Role/Rbac', '5', '2', '');
 
 -- ----------------------------
 -- Table structure for hx_log
@@ -122,13 +182,20 @@ INSERT INTO `hx_auth_rule` VALUES ('16', 'Manager/Role/del', '启用/禁用', '1
 DROP TABLE IF EXISTS `hx_log`;
 CREATE TABLE `hx_log` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `uid` int(11) DEFAULT NULL COMMENT '管理员远',
-  `time` int(11) DEFAULT NULL,
-  `name` varchar(255) DEFAULT NULL,
-  `ip` varchar(20) DEFAULT NULL COMMENT '登录ip',
+  `uid` int(11) NOT NULL COMMENT '管理员',
+  `module` varchar(50) NOT NULL DEFAULT '' COMMENT '模块',
+  `controller` varchar(50) NOT NULL DEFAULT '' COMMENT '控制器',
+  `action` varchar(50) NOT NULL DEFAULT '' COMMENT '方法',
+  `post_value` varchar(255) DEFAULT NULL COMMENT 'post提交内容',
+  `get_value` varchar(255) DEFAULT '' COMMENT 'get 提交内容',
+  `create_time` datetime NOT NULL COMMENT '创建时间',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of hx_log
 -- ----------------------------
+INSERT INTO `hx_log` VALUES ('1', '1', 'Manager', 'Node', 'edit', '{\"pid\":\"0\",\"title\":\"\\u7cfb\\u7edf\\u8bbe\\u7f6e\",\"name\":\"Common\\/common\\/list\",\"url\":\"common\\/list\",\"icon\":\"fa-cog\",\"sort\":\"50\",\"menu\":\"1\",\"id\":\"17\"}', '[]', '2017-03-06 13:20:17');
+INSERT INTO `hx_log` VALUES ('2', '1', 'Manager', 'Node', 'edit', '[]', '{\"id\":\"1\"}', '2017-03-06 13:21:59');
+INSERT INTO `hx_log` VALUES ('3', '1', 'Manager', 'BasicSettings', 'index', '[]', '[]', '2017-03-06 13:22:14');
+INSERT INTO `hx_log` VALUES ('4', '1', 'Manager', 'OperationLog', 'index', '[]', '[]', '2017-03-06 13:56:58');
