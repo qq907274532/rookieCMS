@@ -18,6 +18,30 @@
             self::STATUS_DISABLE => '禁用',
         );
 
+        /**
+         * @param $username
+         * @return mixed
+         */
+        public function getUserInfoByUserName($username)
+        {
+            $info = $this->where(['username' => $username])->find();
+            return $info;
+        }
+
+        /**
+         * @param $uid
+         * @return mixed
+         */
+        public function getUserInfoByUserId($uid)
+        {
+            $info = $this->where(['user_id' => $uid])->getField('username');
+            return $info;
+        }
+
+        public function getUserListByWhere($where = [], $order = ['user_id' => 'desc'])
+        {
+            return $this->where($where)->order($order)->select();
+        }
 
     }
 

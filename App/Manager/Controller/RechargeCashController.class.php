@@ -45,13 +45,8 @@
                 $where['payment_id'] = array('eq', $payMentType);
             }
             $data = $this->page_com($this->model, $this->order, $where);
-            $userList = $userModel->getUserListByWhere();
-            $newUserList = array_combine(array_column($userList, 'id'), array_column($userList, 'username'));
             foreach ($data['list'] as $k => $v) {
-                $data['list'][$k]['user_name'] = '暂无此用户';
-                if (in_array($v['user_id'], array_keys($newUserList))) {
-                    $data['list'][$k]['user_name'] = $newUserList[$v['user_id']];
-                }
+                
                 $data['list'][$k]['amount'] = "¥" . sprintf('%0.2f', abs($v['amount'])) . "元";
                 $data['list'][$k]['payment'] = $newPayMent[$v['payment_id']];
                 $data['list'][$k]['process_type_name'] = UserAccountModel::$PAY_TYPE_MAP[$v['process_type']];

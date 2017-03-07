@@ -7,8 +7,8 @@ use Think\Model;
  *		date		2015-5-6 13:34:57
  *****/
 class UserAccountModel extends Model {
-	const STATUS_ENABLE="1";
-	const STATUS_DISABLE="2";
+	const STATUS_ENABLE=1;
+	const STATUS_DISABLE=2;
     const PAY_TYPE_RECHARGE=1;    //充值
     const PAY_TYPE_WITHDRAWALS=2; //提现
     const PAY_STATUS_SUCCESS=1;//已完成

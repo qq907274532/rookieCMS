@@ -7,8 +7,8 @@ use Think\Model;
  *		date		2015-5-6 13:34:57
  *****/
 class UserRankModel extends Model {
-	const STATUS_ENABLE="1";
-	const STATUS_DISABLE="2";
+	const STATUS_ENABLE=1;
+	const STATUS_DISABLE=2;
 	const IS_SPECIAL_RANK=1; //是特殊会员
 	const IS_NOT_SPECIAL_RANK=2;  //不是特殊会员
     const IS_SHOW_PRICE=1;//显示折扣价
