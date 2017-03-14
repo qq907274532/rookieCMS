@@ -10,7 +10,7 @@
     {
         private $model;
         private $order;
-        
+
 
         public function __construct()
         {
@@ -29,13 +29,13 @@
             $roleList = $authGroupModel->getAuthGroupList(); //获取权限组
             $newRoleList = array_combine(array_column($roleList, 'id'), array_column($roleList, 'title'));
             foreach ($data['list'] as $k => $v) {
-                $data['list'][$k]['name']='';
-                if(in_array($v['id'],array_keys($newRoleList))){
+                $data['list'][$k]['name'] = '';
+                if (in_array($v['id'], array_keys($newRoleList))) {
                     $data['list'][$k]['name'] = $newRoleList[$newRoleAccess[$v['id']]];
                 }
                 $data['list'][$k]['statusName'] = AdminUserModel::$STATUS_MAP[$v['status']];
             }
-            $this->assign('data',$data);
+            $this->assign('data', $data);
             $this->display();
         }
 
@@ -61,12 +61,12 @@
                     }
                 } catch (\Exception $e) {
                     $this->model->rollback();
-                    $this->ajaxReturn(array('error' =>self::ERROR_NUMBER, 'message' => $e->getMessage()));
+                    $this->ajaxReturn(array('error' => self::ERROR_NUMBER, 'message' => $e->getMessage()));
                 }
 
             } else {
                 $authGroupModel = new AuthRuleModel();
-                $this->assign('roleList',$authGroupModel->getAuthRuleList(['id' => 'desc'], ['status' => AuthGroupModel::STATUS_ENABLE]));
+                $this->assign('roleList', $authGroupModel->getAuthRuleList(['id' => 'desc'], ['status' => AuthGroupModel::STATUS_ENABLE]));
                 $this->display();
             }
         }
@@ -102,7 +102,7 @@
                 $info = $this->model->getAdminUserInfoById($id);
                 $authGroupInfo = $authGroupAccessModel->getInfoByUid($id);
                 $info['role_id'] = $authGroupInfo['group_id'];
-                $this->assign('roleList',$authGroupModel->getAuthGroupList(['id' => 'desc'], ['status' => AuthGroupModel::STATUS_ENABLE]));
+                $this->assign('roleList', $authGroupModel->getAuthGroupList(['id' => 'desc'], ['status' => AuthGroupModel::STATUS_ENABLE]));
                 $this->assign('info', $info);
                 $this->display();
             }
@@ -130,7 +130,7 @@
                 }
                 $this->ajaxReturn(array('error' => self::SUCCESS_NUMBER, 'message' => '操作成功'));
             } else {
-                $this->assign('id',$id);
+                $this->assign('id', $id);
                 $this->display();
             }
         }
