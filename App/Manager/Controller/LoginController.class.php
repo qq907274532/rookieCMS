@@ -18,6 +18,7 @@
         public function index()
         {
             if (IS_POST) {
+
                 $this->model = new AdminUserModel();
                 if (empty($verify = trim(I('verify')))) {
                     $this->ajaxReturn(array('error' => self::ERROR_NUMBER, 'message' => '验证码不能为空'));

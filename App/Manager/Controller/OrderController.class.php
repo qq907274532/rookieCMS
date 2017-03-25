@@ -29,7 +29,7 @@
             ];
 
             if (!empty($username)) {
-                $where['username'] = array('like', '%' . $username . '%');
+                $where['username'] = array('like', $username . '%');
             }
             if (!empty($orderStatus)) {
                 $where['order_status'] = array('eq', $orderStatus);

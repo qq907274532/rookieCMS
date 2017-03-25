@@ -20,7 +20,7 @@
             $where = ['msg_status' => FeedbackModel::STATUS_ENABLE, 'parent_id' => 0];
             $title = empty(I('title')) ? '' : I('title');
             if (!empty($title)) {
-                $where['msg_title'] = array('like', '%' . $title . '%');
+                $where['msg_title'] = array('like',  $title . '%');
             }
 
             $data = $this->page_com($this->model, $this->order, $where);
