@@ -1,0 +1,146 @@
+<include file="Public/header"/><!--/HEADER -->
+<!--/HEADER -->
+
+<!-- PAGE -->
+
+<!-- SIDEBAR -->
+<include file="Public/menu"/><!--/HEADER -->
+<!-- /SIDEBAR -->
+<div id="main-content">
+    <!-- SAMPLE BOX CONFIGURATION MODAL FORM-->
+
+    <!-- /SAMPLE BOX CONFIGURATION MODAL FORM-->
+    <div class="container">
+        <div class="row">
+            <div id="content" class="col-lg-12">
+                <!-- PAGE HEADER-->
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="page-header">
+                            <!-- STYLER -->
+
+                            <!-- /STYLER -->
+                            <!-- BREADCRUMBS -->
+                            <ul class="breadcrumb">
+                                <li>
+                                    <i class="fa fa-home"></i>
+                                    <a href="{:U('Index/index')}">首页</a>
+                                </li>
+                                <li>
+                                    <a href="{:U('Cate/index')}">分类管理</a>
+                                </li>
+                                <li>修改分类</li>
+                                <a href="{:U('Cate/index')}" class="btn btn-primary pull-right "><i class="fa fa-arrow-left"></i>返回 </a>
+                            </ul>
+                            <div class="clearfix">
+
+                            </div>
+                            <!-- /BREADCRUMBS -->
+
+                        </div>
+                    </div>
+                </div>
+                <!-- /PAGE HEADER -->
+                <!-- SIMPLE STRIPED -->
+                <div class="row">
+
+                    <div class="col-md-12">
+                        <!-- BOX -->
+                        <div class="box border primary">
+                            <div class="box-title">
+                                <h4><i class="fa fa-table"></i>修改分类</h4>
+                                <div class="tools">
+
+                                    <a href="javascript:;" class="collapse">
+                                        <i class="fa fa-chevron-up"></i>
+                                    </a>
+
+                                </div>
+                            </div>
+                            <div class="box-body big">
+                                <form class="form-horizontal" role="form" id="myForm">
+                                    <div class="form-group">
+                                        <label class="col-sm-3 control-label">请选择父级：</label>
+
+                                        <div class="col-sm-4">
+                                            <select class="form-control" name="pid" id="pid">
+                                                <option value="0"  <if condition="0 eq $info['pid']"> selected="selected"</if> >请选择父级</option>
+                                                <volist name="list" id="v">
+                                                    <option value="{$v.id}"  <if condition="$v['id'] eq $info['pid']"> selected="selected"</if> >{$v.name}</option>
+                                                    <volist name="v.child" id="vo" >
+                                                        <option value="{$vo.id}" <if condition="$v['id'] eq $info['pid']">selected="selected"</if>>&nbsp;└-{$vo.name}</option>
+                                                    </volist>
+                                                </volist>
+                                            </select>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="col-sm-3 control-label">分类名称：</label>
+
+                                        <div class="col-sm-4">
+                                            <input type="text" class="form-control" name="name" id="name" placeholder="分类名称"
+                                                    value="{$info.name}">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="col-sm-3 control-label">排序：</label>
+
+                                        <div class="col-sm-4">
+                                            <input type="text" class="form-control" name="sort" id="sort"
+                                                    placeholder="排序" value="{$info.sort}">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="col-sm-offset-4 col-sm-6">
+                                            <input type="hidden" name="id" class="cateId" value="{$info.id}">
+                                            <div type="text" class="btn btn-primary" id="submit">提交</div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+                        <!-- /BOX -->
+                    </div>
+                </div>
+
+                <!-- /BORDERED HOVER -->
+            </div>
+            <!--/HEADER -->
+            <include file="Public/footer"/>
+            <script type="text/javascript">
+                $(function(){
+                    $("#submit").click(function(){
+                        var name=$("input[name='name']").val();
+                        var sort=$("input[name='sort']").val();
+                        var pid=$("#pid").val();
+                        var cateId=$(".cateId").val();
+                        if($.trim(name)=='') {
+                            throwExc("分类名称必须填写");
+                            return false;
+                        }
+                        if($.trim(sort)=='') {
+                            throwExc("排序必须填写");
+                            return false;
+                        }
+
+
+                        $.post("{:U('Cate/edit')}",{'name':name,'sort':sort,'pid':pid,'id':cateId},function( response ){
+                            if(response.error==100) {
+                                throwExc(response.msg);
+                                return false;
+                            }else if(response.error==200) {
+                                showSucc(response.msg);
+                                setTimeout("load()",1000);
+                            }
+                        },"json");
+                    });
+                });
+                function load(){
+                    window.location.href="{:U('Cate/index')}";
+                }
+            </script>

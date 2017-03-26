@@ -2,15 +2,15 @@
 Navicat MySQL Data Transfer
 
 Source Server         : web
-Source Server Version : 50540
+Source Server Version : 50553
 Source Host           : localhost:3306
 Source Database       : rookie
 
 Target Server Type    : MYSQL
-Target Server Version : 50540
+Target Server Version : 50553
 File Encoding         : 65001
 
-Date: 2017-03-06 22:57:37
+Date: 2017-03-26 15:25:53
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -101,7 +101,7 @@ CREATE TABLE `hx_admin_user` (
 -- ----------------------------
 -- Records of hx_admin_user
 -- ----------------------------
-INSERT INTO `hx_admin_user` VALUES ('1', 'admin', 'pbkdf2_sha256$12000$HVqHjtCOhoKo$TZOQbvzgln4Ni4WfJtWw3Dz0it9ugCGIxXeAK9sen/4=', '907274532@qq.com', '1', '2017-03-06 13:04:00', '127.0.0.1', '2016-11-27 15:11:13', '2017-03-06 13:04:00');
+INSERT INTO `hx_admin_user` VALUES ('1', 'admin', 'pbkdf2_sha256$12000$HVqHjtCOhoKo$TZOQbvzgln4Ni4WfJtWw3Dz0it9ugCGIxXeAK9sen/4=', '907274532@qq.com', '1', '2017-03-26 11:49:56', '127.0.0.1', '2016-11-27 15:11:13', '2017-03-26 11:49:56');
 
 -- ----------------------------
 -- Table structure for hx_article
@@ -215,7 +215,7 @@ CREATE TABLE `hx_auth_group` (
 -- ----------------------------
 -- Records of hx_auth_group
 -- ----------------------------
-INSERT INTO `hx_auth_group` VALUES ('1', '超级管理员', null, '1', '64,63,62,61,60,59,58,57,56,55,54,53,52,51,50,49,48,47,46,45,44,43,42,41,40,39,38,37,34,33,32,31,27,26,25,24,23,22,21,20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4,3,2,1', '2016-11-27 16:28:50', '2017-03-06 22:55:49');
+INSERT INTO `hx_auth_group` VALUES ('1', '超级管理员', null, '1', '69,68,67,66,65,64,63,62,61,60,59,58,57,56,55,54,53,52,51,50,49,48,47,46,45,44,43,42,41,40,39,38,37,36,35,34,33,32,31,27,26,25,24,23,22,21,20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4,3,2,1', '2016-11-27 16:28:50', '2017-03-26 13:34:43');
 
 -- ----------------------------
 -- Table structure for hx_auth_group_access
@@ -252,7 +252,7 @@ CREATE TABLE `hx_auth_rule` (
   `icon` varchar(150) DEFAULT NULL COMMENT '图标',
   PRIMARY KEY (`id`),
   UNIQUE KEY `name` (`name`) USING BTREE
-) ENGINE=MyISAM AUTO_INCREMENT=65 DEFAULT CHARSET=utf8 COMMENT='节点表';
+) ENGINE=MyISAM AUTO_INCREMENT=70 DEFAULT CHARSET=utf8 COMMENT='节点表';
 
 -- ----------------------------
 -- Records of hx_auth_rule
@@ -321,6 +321,11 @@ INSERT INTO `hx_auth_rule` VALUES ('61', 'Manager/Article/index', '列表', '1',
 INSERT INTO `hx_auth_rule` VALUES ('62', 'Manager/Article/add', '添加', '1', '1', '', '60', 'Article/add', '2', '0', '');
 INSERT INTO `hx_auth_rule` VALUES ('63', 'Manager/Article/edit', '修改', '1', '1', '', '60', 'Article/edit', '3', '0', '');
 INSERT INTO `hx_auth_rule` VALUES ('64', 'Manager/Article/del', '删除', '1', '1', '', '60', 'Article/del', '4', '0', '');
+INSERT INTO `hx_auth_rule` VALUES ('65', 'Manager/Cate/list', '分类管理', '1', '1', '', '59', 'Cate/index', '3', '1', '');
+INSERT INTO `hx_auth_rule` VALUES ('66', 'Manager/Cate/index', '列表', '1', '1', '', '65', 'Cate/index', '1', '1', '');
+INSERT INTO `hx_auth_rule` VALUES ('67', 'Manager/Cate/add', '增加分类', '1', '1', '', '65', 'Cate/add', '2', '2', '');
+INSERT INTO `hx_auth_rule` VALUES ('68', 'Manager/Cate/edit', '修改分类', '1', '1', '', '65', 'Cate/edit', '3', '2', '');
+INSERT INTO `hx_auth_rule` VALUES ('69', 'Manager/Cate/del', '删除分类', '1', '1', '', '65', 'Cate/del', '4', '2', '');
 
 -- ----------------------------
 -- Table structure for hx_back_goods
@@ -452,6 +457,32 @@ INSERT INTO `hx_brand` VALUES ('8', 'LG', '1240803526904622792.gif', '官方咨�
 INSERT INTO `hx_brand` VALUES ('9', '联想', '1240803578417877983.gif', '官方咨询电话：4008188818\n售后网点：http://www.lenovomobile.com/service/kf-wanglou.asp', 'http://www.lenovomobile.com/', '50', '1');
 INSERT INTO `hx_brand` VALUES ('10', '金立', '', '官方咨询电话：4007796666\n售后网点：http://www.gionee.net/service.asp ', 'http://www.gionee.net', '50', '1');
 INSERT INTO `hx_brand` VALUES ('11', '  恒基伟业', '1240803736391383580.gif', '官方咨询电话：4008899126\n售后网点：http://www.htwchina.com/htwt/wexiu.shtml ', 'http://www.htwchina.com', '50', '1');
+
+-- ----------------------------
+-- Table structure for hx_cate
+-- ----------------------------
+DROP TABLE IF EXISTS `hx_cate`;
+CREATE TABLE `hx_cate` (
+  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'id',
+  `pid` int(11) NOT NULL,
+  `name` varchar(100) NOT NULL COMMENT '分类名称',
+  `sort` int(11) NOT NULL DEFAULT '50',
+  `status` tinyint(1) NOT NULL DEFAULT '1' COMMENT '状态：1：开启 0：关闭',
+  `create_time` datetime NOT NULL COMMENT '创建时间',
+  `update_time` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00' ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of hx_cate
+-- ----------------------------
+INSERT INTO `hx_cate` VALUES ('3', '0', 'PHP', '50', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
+INSERT INTO `hx_cate` VALUES ('4', '0', 'js', '50', '1', '0000-00-00 00:00:00', '2017-03-26 14:40:54');
+INSERT INTO `hx_cate` VALUES ('5', '0', 'Mysql', '50', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
+INSERT INTO `hx_cate` VALUES ('6', '3', 'js', '50', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
+INSERT INTO `hx_cate` VALUES ('7', '3', 'mysql', '50', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
+INSERT INTO `hx_cate` VALUES ('8', '5', 'mysql', '1', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
+INSERT INTO `hx_cate` VALUES ('9', '5', '测试', '1', '1', '0000-00-00 00:00:00', '2017-03-26 15:25:06');
 
 -- ----------------------------
 -- Table structure for hx_category
@@ -4929,5 +4960,5 @@ CREATE TABLE `hx_user_rank` (
 -- Records of hx_user_rank
 -- ----------------------------
 INSERT INTO `hx_user_rank` VALUES ('1', '注册用户', '0', '10000', '100', '1', '0', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_user_rank` VALUES ('2', 'vip', '10000', '10000000', '95', '1', '0', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
+INSERT INTO `hx_user_rank` VALUES ('2', 'vip', '10000', '10000000', '95', '1', '0', '0000-00-00 00:00:00', '2017-03-26 11:51:35');
 INSERT INTO `hx_user_rank` VALUES ('3', '代销用户', '0', '0', '90', '0', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
