@@ -1,14 +1,11 @@
 <?php
     /**
-     * Created by PhpStorm.
-     * User: John
-     * Date: 2016/11/24
-     * Time: 9:20
+     * @param $node
+     * @param string $access
+     * @param int $pid
+     * @return array
      */
-    /**
-     * 递归重组节点信息
-     */
-    function node_merges($node,$access=null,$pid=0){
+    function node_merges($node,$access='',$pid=0){
         $arr=array();
         foreach ($node as $v) {
             if(is_array($node)){
@@ -26,6 +23,11 @@
         }
         return $arr;
     }
+
+    /**
+     * @param $arg
+     * @param string $logName
+     */
     function logs($arg, $logName = 'debug')
     {
 
@@ -70,25 +72,24 @@
      *
      * @return string
      */
-    function generate_orderid()
+    function generateOrderId()
     {
         $tmp = str_replace('.', '', microtime(true)); //毫秒
 
         return str_pad($tmp, 15, '0') . mt_rand(1000, 9999);
     }
+
     /**
      * 检验django密码
-     *
-     * @param $storepassword 已加密的密码
-     * @param $password 明文密码
-     *
+     * @param $storePassword
+     * @param $password
      * @return bool
      */
-    function checkPassword($storepassword, $password)
+    function checkPassword($storePassword, $password)
     {
-        list($algorithm, $iterations, $salt, $hash) = explode('$', $storepassword, 4);
-        $newhash = base64_encode(hash_pbkdf2("sha256", $password, $salt, $iterations, 0, true));
-        if (strcmp($newhash, $hash) !== 0) {
+        list($algorithm, $iterations, $salt, $hash) = explode('$', $storePassword, 4);
+        $newHash = base64_encode(hash_pbkdf2("sha256", $password, $salt, $iterations, 0, true));
+        if (strcmp($newHash, $hash) !== 0) {
             return false;
         } else {
             return true;
