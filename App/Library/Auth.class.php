@@ -196,7 +196,7 @@
          * @return mixed
          */
         public function getId($name){
-            $authRuleId = M(C('AUTH_RULE'))->where(array('name'=>$name))->getField('pid');
+            $authRuleId = M(C('AUTH_RULE'))->where(array('name'=>$name))->getField('parent_id');
             return $authRuleId;
 
         }
@@ -207,7 +207,7 @@
          * @return mixed
          */
         public function getFirstId($id){
-            $authRuleFirstId = M(C('AUTH_RULE'))->where(array('id'=>$id))->getField('pid');
+            $authRuleFirstId = M(C('AUTH_RULE'))->where(array('id'=>$id))->getField('parent_id');
             return $authRuleFirstId;
         }
 

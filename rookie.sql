@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50553
 File Encoding         : 65001
 
-Date: 2017-03-26 15:25:53
+Date: 2017-03-28 23:30:05
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -36,48 +36,48 @@ CREATE TABLE `hx_account_log` (
 -- ----------------------------
 -- Records of hx_account_log
 -- ----------------------------
-INSERT INTO `hx_account_log` VALUES ('1', '5', '1100000.00', '0.00', '0', '0', '2', '11', '0000-00-00 00:00:00');
-INSERT INTO `hx_account_log` VALUES ('2', '3', '400000.00', '0.00', '0', '0', '2', '21312', '0000-00-00 00:00:00');
-INSERT INTO `hx_account_log` VALUES ('3', '2', '300000.00', '0.00', '0', '0', '2', '300000', '0000-00-00 00:00:00');
-INSERT INTO `hx_account_log` VALUES ('4', '1', '50000.00', '0.00', '0', '0', '2', '50', '0000-00-00 00:00:00');
-INSERT INTO `hx_account_log` VALUES ('5', '5', '0.00', '10000.00', '0', '0', '2', '32', '0000-00-00 00:00:00');
-INSERT INTO `hx_account_log` VALUES ('6', '1', '-400.00', '0.00', '0', '0', '99', '支付订单 2009051298180', '0000-00-00 00:00:00');
-INSERT INTO `hx_account_log` VALUES ('7', '1', '-975.00', '0.00', '0', '0', '99', '支付订单 2009051255518', '0000-00-00 00:00:00');
-INSERT INTO `hx_account_log` VALUES ('8', '1', '0.00', '0.00', '960', '960', '99', '订单 2009051255518 赠送的积分', '0000-00-00 00:00:00');
-INSERT INTO `hx_account_log` VALUES ('9', '1', '0.00', '0.00', '385', '385', '99', '订单 2009051298180 赠送的积分', '0000-00-00 00:00:00');
-INSERT INTO `hx_account_log` VALUES ('10', '1', '-2310.00', '0.00', '0', '0', '99', '支付订单 2009051267570', '0000-00-00 00:00:00');
-INSERT INTO `hx_account_log` VALUES ('11', '1', '0.00', '0.00', '2300', '2300', '99', '订单 2009051267570 赠送的积分', '0000-00-00 00:00:00');
-INSERT INTO `hx_account_log` VALUES ('12', '1', '-5989.00', '0.00', '0', '0', '99', '支付订单 2009051230249', '0000-00-00 00:00:00');
-INSERT INTO `hx_account_log` VALUES ('13', '1', '-8610.00', '0.00', '0', '0', '99', '支付订单 2009051276258', '0000-00-00 00:00:00');
-INSERT INTO `hx_account_log` VALUES ('14', '1', '0.00', '0.00', '0', '-1', '99', '参加夺宝奇兵夺宝奇兵之夏新N7 ', '0000-00-00 00:00:00');
-INSERT INTO `hx_account_log` VALUES ('15', '1', '0.00', '0.00', '0', '-1', '99', '参加夺宝奇兵夺宝奇兵之诺基亚N96 ', '0000-00-00 00:00:00');
-INSERT INTO `hx_account_log` VALUES ('16', '1', '0.00', '0.00', '0', '100000', '2', '奖励', '0000-00-00 00:00:00');
-INSERT INTO `hx_account_log` VALUES ('17', '1', '-10.00', '0.00', '0', '0', '99', '支付订单 2009051268194', '0000-00-00 00:00:00');
-INSERT INTO `hx_account_log` VALUES ('18', '1', '0.00', '0.00', '0', '-17000', '99', '支付订单 2009051268194', '0000-00-00 00:00:00');
-INSERT INTO `hx_account_log` VALUES ('19', '1', '0.00', '0.00', '-960', '-960', '99', '由于退货或未发货操作，退回订单 2009051255518 赠送的积分', '0000-00-00 00:00:00');
-INSERT INTO `hx_account_log` VALUES ('20', '1', '975.00', '0.00', '0', '0', '99', '由于取消、无效或退货操作，退回支付订单 2009051255518 时使用的预付款', '0000-00-00 00:00:00');
-INSERT INTO `hx_account_log` VALUES ('21', '1', '0.00', '0.00', '960', '960', '99', '订单 2009051719232 赠送的积分', '0000-00-00 00:00:00');
-INSERT INTO `hx_account_log` VALUES ('22', '3', '-1000.00', '0.00', '0', '0', '99', '追加使用余额支付订单：2009051227085', '0000-00-00 00:00:00');
-INSERT INTO `hx_account_log` VALUES ('23', '1', '-13806.60', '0.00', '0', '0', '99', '支付订单 2009052224892', '0000-00-00 00:00:00');
-INSERT INTO `hx_account_log` VALUES ('24', '1', '0.00', '0.00', '14045', '14045', '99', '订单 2009052224892 赠送的积分', '0000-00-00 00:00:00');
-INSERT INTO `hx_account_log` VALUES ('25', '1', '0.00', '0.00', '-2300', '-2300', '99', '由于退货或未发货操作，退回订单 2009051267570 赠送的积分', '0000-00-00 00:00:00');
-INSERT INTO `hx_account_log` VALUES ('26', '1', '2310.00', '0.00', '0', '0', '99', '由于取消、无效或退货操作，退回支付订单 2009051267570 时使用的预付款', '0000-00-00 00:00:00');
-INSERT INTO `hx_account_log` VALUES ('27', '1', '0.00', '0.00', '17044', '17044', '99', '订单 2009061585887 赠送的积分', '0000-00-00 00:00:00');
-INSERT INTO `hx_account_log` VALUES ('28', '1', '17054.00', '0.00', '0', '0', '99', '1', '0000-00-00 00:00:00');
-INSERT INTO `hx_account_log` VALUES ('29', '1', '0.00', '0.00', '-17044', '-17044', '99', '由于退货或未发货操作，退回订单 2009061585887 赠送的积分', '0000-00-00 00:00:00');
-INSERT INTO `hx_account_log` VALUES ('30', '1', '-3196.30', '0.00', '0', '0', '99', '支付订单 2009061525429', '0000-00-00 00:00:00');
-INSERT INTO `hx_account_log` VALUES ('31', '1', '-1910.00', '0.00', '0', '0', '99', '支付订单 2009061503335', '0000-00-00 00:00:00');
-INSERT INTO `hx_account_log` VALUES ('32', '1', '0.00', '0.00', '1900', '1900', '99', '订单 2009061503335 赠送的积分', '0000-00-00 00:00:00');
-INSERT INTO `hx_account_log` VALUES ('33', '1', '0.00', '0.00', '-1900', '-1900', '99', '由于退货或未发货操作，退回订单 2009061503335 赠送的积分', '0000-00-00 00:00:00');
-INSERT INTO `hx_account_log` VALUES ('34', '1', '1910.00', '0.00', '0', '0', '99', '由于取消、无效或退货操作，退回支付订单 2009061503335 时使用的预付款', '0000-00-00 00:00:00');
-INSERT INTO `hx_account_log` VALUES ('35', '1', '-500.00', '0.00', '0', '0', '99', '支付订单 2009061510313', '0000-00-00 00:00:00');
-INSERT INTO `hx_account_log` VALUES ('36', '1', '1111.00', '0.00', '0', '0', '0', '充值', '0000-00-00 00:00:00');
-INSERT INTO `hx_account_log` VALUES ('37', '1', '-1111.00', '0.00', '0', '0', '1', '提现', '0000-00-00 00:00:00');
-INSERT INTO `hx_account_log` VALUES ('38', '1', '1111.00', '0.00', '0', '0', '0', '充值', '0000-00-00 00:00:00');
-INSERT INTO `hx_account_log` VALUES ('39', '1', '0.00', '0.00', '-5567', '-5567', '99', '由于退货或未发货操作，退回订单 2009061909851 赠送的积分', '0000-00-00 00:00:00');
-INSERT INTO `hx_account_log` VALUES ('40', '1', '5577.70', '0.00', '0', '0', '99', '由于取消、无效或退货操作，退回支付订单 2009061909851 时使用的预付款', '0000-00-00 00:00:00');
-INSERT INTO `hx_account_log` VALUES ('41', '1', '0.00', '0.00', '5567', '5567', '99', '订单 2009061909851 赠送的积分', '0000-00-00 00:00:00');
-INSERT INTO `hx_account_log` VALUES ('42', '6', '0.00', '0.00', '2298', '2298', '99', '订单 2016121299293 赠送的积分', '0000-00-00 00:00:00');
+INSERT INTO `hx_account_log` VALUES ('1', '5', '1100000.00', '0.00', '0', '0', '2', '11', '2017-03-28 22:23:46');
+INSERT INTO `hx_account_log` VALUES ('2', '3', '400000.00', '0.00', '0', '0', '2', '21312', '2017-03-28 22:23:46');
+INSERT INTO `hx_account_log` VALUES ('3', '2', '300000.00', '0.00', '0', '0', '2', '300000', '2017-03-28 22:23:46');
+INSERT INTO `hx_account_log` VALUES ('4', '1', '50000.00', '0.00', '0', '0', '2', '50', '2017-03-28 22:23:46');
+INSERT INTO `hx_account_log` VALUES ('5', '5', '0.00', '10000.00', '0', '0', '2', '32', '2017-03-28 22:23:46');
+INSERT INTO `hx_account_log` VALUES ('6', '1', '-400.00', '0.00', '0', '0', '99', '支付订单 2009051298180', '2017-03-28 22:23:46');
+INSERT INTO `hx_account_log` VALUES ('7', '1', '-975.00', '0.00', '0', '0', '99', '支付订单 2009051255518', '2017-03-28 22:23:46');
+INSERT INTO `hx_account_log` VALUES ('8', '1', '0.00', '0.00', '960', '960', '99', '订单 2009051255518 赠送的积分', '2017-03-28 22:23:46');
+INSERT INTO `hx_account_log` VALUES ('9', '1', '0.00', '0.00', '385', '385', '99', '订单 2009051298180 赠送的积分', '2017-03-28 22:23:46');
+INSERT INTO `hx_account_log` VALUES ('10', '1', '-2310.00', '0.00', '0', '0', '99', '支付订单 2009051267570', '2017-03-28 22:23:46');
+INSERT INTO `hx_account_log` VALUES ('11', '1', '0.00', '0.00', '2300', '2300', '99', '订单 2009051267570 赠送的积分', '2017-03-28 22:23:46');
+INSERT INTO `hx_account_log` VALUES ('12', '1', '-5989.00', '0.00', '0', '0', '99', '支付订单 2009051230249', '2017-03-28 22:23:46');
+INSERT INTO `hx_account_log` VALUES ('13', '1', '-8610.00', '0.00', '0', '0', '99', '支付订单 2009051276258', '2017-03-28 22:23:46');
+INSERT INTO `hx_account_log` VALUES ('14', '1', '0.00', '0.00', '0', '-1', '99', '参加夺宝奇兵夺宝奇兵之夏新N7 ', '2017-03-28 22:23:46');
+INSERT INTO `hx_account_log` VALUES ('15', '1', '0.00', '0.00', '0', '-1', '99', '参加夺宝奇兵夺宝奇兵之诺基亚N96 ', '2017-03-28 22:23:46');
+INSERT INTO `hx_account_log` VALUES ('16', '1', '0.00', '0.00', '0', '100000', '2', '奖励', '2017-03-28 22:23:46');
+INSERT INTO `hx_account_log` VALUES ('17', '1', '-10.00', '0.00', '0', '0', '99', '支付订单 2009051268194', '2017-03-28 22:23:46');
+INSERT INTO `hx_account_log` VALUES ('18', '1', '0.00', '0.00', '0', '-17000', '99', '支付订单 2009051268194', '2017-03-28 22:23:46');
+INSERT INTO `hx_account_log` VALUES ('19', '1', '0.00', '0.00', '-960', '-960', '99', '由于退货或未发货操作，退回订单 2009051255518 赠送的积分', '2017-03-28 22:23:46');
+INSERT INTO `hx_account_log` VALUES ('20', '1', '975.00', '0.00', '0', '0', '99', '由于取消、无效或退货操作，退回支付订单 2009051255518 时使用的预付款', '2017-03-28 22:23:46');
+INSERT INTO `hx_account_log` VALUES ('21', '1', '0.00', '0.00', '960', '960', '99', '订单 2009051719232 赠送的积分', '2017-03-28 22:23:46');
+INSERT INTO `hx_account_log` VALUES ('22', '3', '-1000.00', '0.00', '0', '0', '99', '追加使用余额支付订单：2009051227085', '2017-03-28 22:23:46');
+INSERT INTO `hx_account_log` VALUES ('23', '1', '-13806.60', '0.00', '0', '0', '99', '支付订单 2009052224892', '2017-03-28 22:23:46');
+INSERT INTO `hx_account_log` VALUES ('24', '1', '0.00', '0.00', '14045', '14045', '99', '订单 2009052224892 赠送的积分', '2017-03-28 22:23:46');
+INSERT INTO `hx_account_log` VALUES ('25', '1', '0.00', '0.00', '-2300', '-2300', '99', '由于退货或未发货操作，退回订单 2009051267570 赠送的积分', '2017-03-28 22:23:46');
+INSERT INTO `hx_account_log` VALUES ('26', '1', '2310.00', '0.00', '0', '0', '99', '由于取消、无效或退货操作，退回支付订单 2009051267570 时使用的预付款', '2017-03-28 22:23:46');
+INSERT INTO `hx_account_log` VALUES ('27', '1', '0.00', '0.00', '17044', '17044', '99', '订单 2009061585887 赠送的积分', '2017-03-28 22:23:46');
+INSERT INTO `hx_account_log` VALUES ('28', '1', '17054.00', '0.00', '0', '0', '99', '1', '2017-03-28 22:23:46');
+INSERT INTO `hx_account_log` VALUES ('29', '1', '0.00', '0.00', '-17044', '-17044', '99', '由于退货或未发货操作，退回订单 2009061585887 赠送的积分', '2017-03-28 22:23:46');
+INSERT INTO `hx_account_log` VALUES ('30', '1', '-3196.30', '0.00', '0', '0', '99', '支付订单 2009061525429', '2017-03-28 22:23:46');
+INSERT INTO `hx_account_log` VALUES ('31', '1', '-1910.00', '0.00', '0', '0', '99', '支付订单 2009061503335', '2017-03-28 22:23:46');
+INSERT INTO `hx_account_log` VALUES ('32', '1', '0.00', '0.00', '1900', '1900', '99', '订单 2009061503335 赠送的积分', '2017-03-28 22:23:46');
+INSERT INTO `hx_account_log` VALUES ('33', '1', '0.00', '0.00', '-1900', '-1900', '99', '由于退货或未发货操作，退回订单 2009061503335 赠送的积分', '2017-03-28 22:23:46');
+INSERT INTO `hx_account_log` VALUES ('34', '1', '1910.00', '0.00', '0', '0', '99', '由于取消、无效或退货操作，退回支付订单 2009061503335 时使用的预付款', '2017-03-28 22:23:46');
+INSERT INTO `hx_account_log` VALUES ('35', '1', '-500.00', '0.00', '0', '0', '99', '支付订单 2009061510313', '2017-03-28 22:23:46');
+INSERT INTO `hx_account_log` VALUES ('36', '1', '1111.00', '0.00', '0', '0', '0', '充值', '2017-03-28 22:23:46');
+INSERT INTO `hx_account_log` VALUES ('37', '1', '-1111.00', '0.00', '0', '0', '1', '提现', '2017-03-28 22:23:46');
+INSERT INTO `hx_account_log` VALUES ('38', '1', '1111.00', '0.00', '0', '0', '0', '充值', '2017-03-28 22:23:46');
+INSERT INTO `hx_account_log` VALUES ('39', '1', '0.00', '0.00', '-5567', '-5567', '99', '由于退货或未发货操作，退回订单 2009061909851 赠送的积分', '2017-03-28 22:23:46');
+INSERT INTO `hx_account_log` VALUES ('40', '1', '5577.70', '0.00', '0', '0', '99', '由于取消、无效或退货操作，退回支付订单 2009061909851 时使用的预付款', '2017-03-28 22:23:46');
+INSERT INTO `hx_account_log` VALUES ('41', '1', '0.00', '0.00', '5567', '5567', '99', '订单 2009061909851 赠送的积分', '2017-03-28 22:23:46');
+INSERT INTO `hx_account_log` VALUES ('42', '6', '0.00', '0.00', '2298', '2298', '99', '订单 2016121299293 赠送的积分', '2017-03-28 22:23:46');
 
 -- ----------------------------
 -- Table structure for hx_admin_user
@@ -101,7 +101,7 @@ CREATE TABLE `hx_admin_user` (
 -- ----------------------------
 -- Records of hx_admin_user
 -- ----------------------------
-INSERT INTO `hx_admin_user` VALUES ('1', 'admin', 'pbkdf2_sha256$12000$HVqHjtCOhoKo$TZOQbvzgln4Ni4WfJtWw3Dz0it9ugCGIxXeAK9sen/4=', '907274532@qq.com', '1', '2017-03-26 11:49:56', '127.0.0.1', '2016-11-27 15:11:13', '2017-03-26 11:49:56');
+INSERT INTO `hx_admin_user` VALUES ('1', 'admin', 'pbkdf2_sha256$12000$HVqHjtCOhoKo$TZOQbvzgln4Ni4WfJtWw3Dz0it9ugCGIxXeAK9sen/4=', '907274532@qq.com', '1', '2017-03-28 20:52:59', '127.0.0.1', '2016-11-27 15:11:13', '2017-03-28 20:52:59');
 
 -- ----------------------------
 -- Table structure for hx_article
@@ -112,90 +112,91 @@ CREATE TABLE `hx_article` (
   `cat_id` smallint(5) NOT NULL DEFAULT '0' COMMENT '分类id',
   `title` varchar(150) NOT NULL DEFAULT '' COMMENT '文章题目',
   `content` longtext NOT NULL COMMENT '文章内容',
-  `author` varchar(30) NOT NULL DEFAULT '' COMMENT '文章作者',
-  `keywords` varchar(255) NOT NULL DEFAULT '' COMMENT '文章的关键字',
-  `article_type` tinyint(1) unsigned NOT NULL DEFAULT '2' COMMENT '文章类型',
-  `is_open` tinyint(1) unsigned NOT NULL DEFAULT '1' COMMENT '是否显示;1显示;0不显示 ',
+  `user_id` int(30) NOT NULL DEFAULT '0' COMMENT '文章作者',
   `description` varchar(255) DEFAULT NULL COMMENT '描述',
+  `sort` int(11) NOT NULL DEFAULT '50' COMMENT '排序',
+  `status` tinyint(1) unsigned NOT NULL DEFAULT '1' COMMENT '是否删除;1正常;2删除 ',
   `create_time` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
   `update_time` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00' ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`article_id`),
   KEY `cat_id` (`cat_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=36 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=38 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of hx_article
 -- ----------------------------
-INSERT INTO `hx_article` VALUES ('1', '2', '免责条款', '', '', '', '0', '1', null, '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_article` VALUES ('2', '2', '隐私保护', '', '', '', '0', '1', null, '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_article` VALUES ('3', '2', '咨询热点', '', '', '', '0', '1', null, '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_article` VALUES ('4', '2', '联系我们', '', '', '', '0', '1', null, '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_article` VALUES ('5', '2', '公司简介', '', '', '', '0', '1', null, '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_article` VALUES ('6', '-1', '用户协议', '', '', '', '0', '1', null, '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_article` VALUES ('7', '4', '三星电子宣布将在中国发布15款3G手机', '<p>全球领先的电子产品及第二大移动通信终端制造商三星电子今天在北京宣布，为全面支持中国开展3G移动通信业务，将在3G服务正式商用之际，向中国市场推出 15款3G手机。这些产品分别支持中国三大无线运营商的各种3G服务，并已经得到运营商的合作认可。凭借在电子和通信领域的整体技术实力和对消费者的准确 把握，三星电子已经开始全面发力中国的3G移动通信市场。<br />\n<br />\n&nbsp;&nbsp;&nbsp;&nbsp;2009年1月，中国政府宣布正式启动3G移动通信服务。并根据中国的实际情况，决定由三大运营商分别采用全部三种3G网络制式，&nbsp;即以中国自主知识产权为核心的TD-SCDMA，以欧洲为主要市场的WCDMA和源自北美的CDMA2000技术。<br />\n<br />\n&nbsp;&nbsp;&nbsp;&nbsp;多 年来，三星电子秉承&ldquo;做中国人民喜爱的企业，贡献于中国社会的企业&rdquo;的企业理念，准确地把握了中国社会的发展和市场的需求，推出了一系列深受中国消费者喜 爱的电子产品。为了配合中国推进具有自主知识产权的3G移动通信标准TD-SCDMA，&nbsp;三星电子从2000年开始在中国设立了通信技术研究院，&nbsp;开始进 行TD-SCDMA技术的研究。作为最早承诺支持中国3G标准的手机制造企业，三星电子已经先后投入了上亿元的研究费用，&nbsp;组建了几百人的研发团队。推出 的TD-SCDMA制式的产品，不仅通过了各级权威部门的试验和检测，也经历了2008年北京奥运会的现场考验。此次为中国移动定制的TD-SCDMA手 机，包括了满足高端商务需求的双待产品B7702C，以及数字电视手机、多媒体手机和时尚手机。<br />\n<br />\n&nbsp;&nbsp;&nbsp;&nbsp;作为世界第二大手机制造企业，三 星电子已经在全球3G市场积累了多年的技术和市场经验。最新的统计表明，在完全采用WCDMA标准的欧洲，三星电子的市场份额已经排名第二。在为中国联通 准备的产品中，不仅包括能够支持HSDPA的高端多媒体手机S7520U，也涵盖了能够支持高速上网、在线电影、在线音乐等适合不同消费需求的各种产品。<br />\n<br />\n&nbsp;&nbsp;&nbsp;&nbsp;而 在主要采用CDMA2000技术的北美市场，三星电子也取得了市场份额的第一名。即将陆续上市的支持中国电信3G服务的EVDO产品，有高端商务手机 W709。该机能够支持EVDO/GSM的双网双待功能，含800万像素拍摄系统。其他产品还包括音乐手机M609，双模手机W239，以及时尚设计的 F539等。<br />\n<br />\n&nbsp;&nbsp;&nbsp;&nbsp;作为世界上少数能够提供支持三种3G标准的终端厂商，三星电子正利用其在通信、半导体、显示器以及数字多媒体等方面 的优势，加快产品数字融合的进程。除上述3G手机产品外，三星电子也于近期推出了用于3G网络的上网卡和网络笔记本电脑。三星电子专务、无线事业部大中华 区高级副总裁卢基学先生说，&ldquo;上述15款新品，&nbsp;只是我们二季度新产品的一部分。随着中国3G移动通信市场的不断扩大，三星还将推出更多适合中国市场的终 端产品，以满足消费者对于通信和数字产品的不同需求。三星也将积极配合运营商业务的发展计划，加快技术和应用的研发。中国3G的移动通信市场前景将是非常 明亮的。&rdquo;</p>', '', '', '0', '1', null, '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_article` VALUES ('8', '4', '诺基亚牵手移动 5款热门TD手机机型推荐', '<table width=\"100%\" cellspacing=\"0\" cellpadding=\"4\" align=\"center\" class=\"tableborder\">\r\n<tbody>\r\n<tr>\r\n<td width=\"180\" valign=\"top\" class=\"altbg4\">&nbsp;</td>\r\n<td height=\"100%\" valign=\"top\" class=\"altbg3\">\r\n<table cellspacing=\"0\" cellpadding=\"0\" border=\"0\" style=\"padding: 5px; table-layout: fixed; width: 973px; height: 2195px;\">\r\n<tbody>\r\n<tr>\r\n<td valign=\"top\">\r\n<div class=\"bbs_content clearfix\">随着5月17日电信日的来临，自从09年初网民对于3G方面关注越来越多，目前国内3G网络主要有中国移动TD-SCDMA，中国联通WCDMA以及 中国电信的CDMA2000这三种制式。到底是哪一种网络制式能让消费者满意，相信好多消费者都难以判断。<br />\r\n<br />\r\n而作为3G网络最主要的组 成部分-手持终端（手机） ，相信也是好多消费者关注的焦点。目前，中国移动TD-SCDMA手机机型频频爆出，其中不乏亮点产品，像联想联想 Ophone、诺基亚、多普达 Magic等，下面就让笔者与大家一起来了解TD-SCDMA网络制式下的几款强势机型吧。<br />\r\n<br />\r\n诺基亚TD-SCDMA手机　型号：待定　参考报价：尚未上市<br />\r\n<br />\r\n随着国内3G网络发展速度加快及众多手机厂商纷纷跟进，诺基亚终于推出TD-SCDMA手机，这款诺基亚的首台TD-SCDMA测试手机型号目前仍无法 得知，但从键盘及菜单设计来看，我们可以是知道其并没有采用S60操作系统，只是配备了S40系统，机身直板造型与早期热卖的6300有几分相像。<br />\r\n<br />\r\n<p><img width=\"450\" alt=\"\" src=\"http://dstatic.esqimg.com/4812278/1.jpg\" style=\"display: block;\" /></p>\r\n<br />\r\n<br />\r\n图为：诺基亚TD-SCDMA手机<br />\r\n<br />\r\n虽然没有更多的参数资料，但是从曝光的图片我们可以知道这款诺基亚TD-SCDMA手机必定配备了QVGA分辨率的屏幕以及320万像素的摄像头，而标准的MP3以及蓝牙等功能自然不会缺少，在功能方面不会比以往的S40手机逊色。<br />\r\n<br />\r\n<p><img width=\"450\" alt=\"\" src=\"http://dstatic.esqimg.com/4812279/2.jpg\" style=\"display: block;\" /></p>\r\n<br />\r\n<br />\r\n图为：诺基亚TD-SCDMA手机<br />\r\n<br />\r\n这款诺基亚的TD手机最大的卖点便是提供了对TD-HSDPA技术的支持，最大的功能特色便是该技术被看为是TD网络下一步的演进技术，能够同时适用于 WCDMA和TD-SCDMA两种不同的网络支持，能够很好的支持非对称的数据业务，也就是说这款诺基亚手机的用户即便在全球漫游都能够使用到3G网络。 而其机身前置的摄像头也更是证实了其3G手机的身份。<br />\r\n<br />\r\n<p><img width=\"450\" alt=\"\" src=\"http://dstatic.esqimg.com/4812280/3.jpg\" style=\"display: block;\" /></p>\r\n<p><br />\r\n<br />\r\n图为：诺基亚TD-SCDMA手机<br />\r\n<br />\r\n从目前曝光的测试情况来看，通过这款诺基亚TD手机连接网络，其下载速度能够稳定在1.3Mbps左右，不过根据国内有些媒体的报道，诺基亚官方已经证实将于今天下半年配合运营商中国移动对出自己的第一款TD-SCDMA制式的S60手机，大家要拭目以待了。</p>\r\n<p>&nbsp;</p>\r\n图为：诺基亚TD-SCDMA手机<br />\r\n<br />\r\n最后较为耐人寻味的便是目前有业内人士指出目前曝光的的诺基亚TD手机其实是去年夏季就出现过的 TD测试手机，但是随着诺基亚拥有部分股份的TD芯片厂商&ldquo;凯明&rdquo;的倒闭，这款机型也就被取消了。尽管对于目前这款诺基亚的TD测试手机的身份尚无官方的 消息，但是诺基亚将推出TD手机遗失毫无悬念的事情了，相信大家也希望在TD制式下能够有更多的手机可以选择。</div>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p>&nbsp;</p>', '', '', '0', '1', null, '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_article` VALUES ('9', '5', '售后流程', '', '', '', '0', '1', null, '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_article` VALUES ('10', '5', '购物流程', '', '', '', '0', '1', null, '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_article` VALUES ('11', '5', '订购方式', '', '', '', '0', '1', null, '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_article` VALUES ('12', '6', '如何分辨原装电池', '<p><font size=\"2\">一般在购买时主要是依靠观察外观特征的方法来鉴别电池，而原装电池一般应具有以下一些特征：&nbsp;<br />\n<br />\n1、 电池外观整齐，外表面有一定的粗糙度且手感舒适，内表面手感光滑，灯光下能看见细密的纵向划痕&nbsp;<br />\n<br />\n2、 生产厂家字样应该轮廓清晰，且防伪标志亮度高，看上去有立体感，电池标贴 字迹清晰，有与电池类型相一致的电池件号<br />\n3、 电池标贴采用二次印刷技术，在一定光线下从斜面看，条形码部分的颜色比其他部分要黑，且用手触摸有凹凸感<br />\n<br />\n4、 原装电池电极与手机电池片宽度相等，电池电极下方标有&ldquo; + &rdquo;、&ldquo; - &rdquo;标志，电池电极片之间的隔离材料与外壳材料一致，但不是一体<br />\n<br />\n5、 原装电池装入手机时手感舒适，安装自如，电池按压部分卡位适当而且牢固<br />\n<br />\n6、 原装电池的金属触点采用优质的铜片，只有在正面看时才会有反光，而从其它角度看的话，都是比较暗淡的</font></p>', '', '', '1', '1', null, '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_article` VALUES ('15', '7', '货到付款区域', '', '', '', '0', '1', null, '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_article` VALUES ('16', '7', '配送支付智能查询 ', '', '', '', '0', '1', null, '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_article` VALUES ('17', '7', '支付方式说明', '', '', '', '0', '1', null, '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_article` VALUES ('18', '10', '资金管理', '', '', '', '0', '1', null, '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_article` VALUES ('19', '10', '我的收藏', '', '', '', '0', '1', null, '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_article` VALUES ('20', '10', '我的订单', '', '', '', '0', '1', null, '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_article` VALUES ('21', '8', '退换货原则', '', '', '服务', '0', '1', null, '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_article` VALUES ('22', '8', '售后服务保证 ', '', '', '售后', '0', '1', null, '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_article` VALUES ('23', '8', '产品质量保证 ', '', '', '质量', '1', '1', null, '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_article` VALUES ('24', '9', '网站故障报告', '', '', '', '0', '1', null, '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_article` VALUES ('25', '9', '选机咨询 ', '', '', '', '0', '1', null, '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_article` VALUES ('26', '9', '投诉与建议 ', '', '', '', '0', '1', null, '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_article` VALUES ('27', '4', '800万像素超强拍照机 LG Viewty Smart再曝光', '', '', '', '0', '1', null, '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_article` VALUES ('28', '11', '飞利浦9@9促销', '<p>&nbsp;</p>\r\n<div class=\"boxCenterList RelaArticle\" id=\"com_v\">\r\n<p align=\"left\">作为一款性价比极高的入门级<font size=\"3\" color=\"#ff0000\"><strong>商务手机</strong></font>，飞利浦<a href=\"mailto:9@9v\">Xenium&nbsp; 9@9v</a>三围大小为105&times;44&times;15.8mm，机身重量仅为<strong><font size=\"3\" color=\"#ff0000\">75g</font></strong>，装配了一块低规格1.75英寸128&times;160像素65000色CSTN显示屏。身正面采用月银色功能键区与屏幕数字键区相分隔，键盘设计较为<font size=\"3\"><strong><font color=\"#ff0000\">别</font><font color=\"#ff0000\">致</font></strong></font>，中部导航键区采用钛金色的&ldquo;腰带&rdquo;彰显出浓郁的商务气息。</p>\r\n<p align=\"left\">&nbsp;</p>\r\n<p align=\"left\">此款手机采用<strong><font size=\"3\" color=\"#ff0000\">触摸屏</font></strong>设计，搭配精致的手写笔，可支持手写中文和英文两个版本。增强的内置系统还能识别潦草字迹，确保在移动中和匆忙时输入文字的识别率。手写指令功能还支持特定图案的瞬间调用，独特的手写记事本功能，可以在触摸屏上随意绘制个性化的图案并进行<strong><font size=\"3\" color=\"#ff0000\">记事提醒</font></strong>，让商务应用更加随意。</p>\r\n<p align=\"left\">&nbsp;</p>\r\n<p align=\"left\">&nbsp;作为入门级为数不多支持<strong><font size=\"3\" color=\"#ff0000\">双卡功能</font></strong>的手机，可以同时插入两张SIM卡，通过菜单随意切换，只需开启漫游自动切换模式，<a href=\"mailto:9@9V\">9@9V</a>在该模式下能够判断网络情况，自动切换适合的手机号。</p>\r\n<p align=\"left\">&nbsp;</p>\r\n<p align=\"left\">&nbsp;</p>\r\n</div>\r\n<p>&nbsp;</p>', '', '', '0', '1', null, '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_article` VALUES ('29', '11', '诺基亚5320 促销', '<p>&nbsp;</p>\r\n<div id=\"com_v\" class=\"boxCenterList RelaArticle\">\r\n<p>诺基亚5320XpressMusic音乐手机采用XpressMusic系列常见的黑红、黑蓝配色方案，而材质方便则选用的是经过<strong><font size=\"3\" color=\"#ff0000\">抛光处理</font></strong>的工程塑料；三围/体重为，为108&times;46&times;15mm/<strong><font size=\"3\" color=\"#ff0000\">90g</font></strong>，手感舒适。</p>\r\n<p>&nbsp;</p>\r\n<p>诺基亚5320采用的是一块可视面积为2.0英寸的<font size=\"3\" color=\"#ff0000\"><strong>1600万色</strong></font>屏幕，分辨率是常见的240&times;320像素（QVGA）。虽然屏幕不是特别大，但效果非常精细，色彩还原不错。</p>\r\n<p>&nbsp;</p>\r\n<p>手机背面，诺基亚为5320XM配备一颗<strong><font size=\"3\" color=\"#ff0000\">200W像素</font></strong>的摄像头，并且带有<strong><font size=\"3\" color=\"#ff0000\">两个LED的补光灯</font></strong>，可以实现拍照、摄像功能，并能通过彩信、邮件方式发送给朋友。</p>\r\n<p>&nbsp;</p>\r\n</div>\r\n<p>&nbsp;</p>', '', '', '1', '1', null, '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_article` VALUES ('30', '11', '促销诺基亚N96', '<p>&nbsp;</p>\r\n<div class=\"boxCenterList RelaArticle\" id=\"com_v\">\r\n<p>诺基亚N96采用了<strong><font size=\"3\" color=\"#ff0000\">双向滑盖</font></strong>设计，机身整体呈灰黑色，沉稳、大气，机身材质采用了高强度的塑料材质，手机背面采用了抛光面板的设计风格。N96三维体积103*55*20mm，重量为125g。屏幕方面，诺基亚N96配备一块<strong><font size=\"3\" color=\"#ff0000\">2.8英寸</font></strong>的屏幕，支持<strong><font size=\"3\" color=\"#ff0000\">1670万色</font></strong>显示，分辨率达到QVGA（320&times;240）水准。</p>\r\n<p>&nbsp;<img src=\"http://img2.zol.com.cn/product/21/896/ceN6LBMCid3X6.jpg\" alt=\"\" /></p>\r\n<p>&nbsp;</p>\r\n<p>诺基亚N96设置有专门的<strong><font size=\"3\" color=\"#ff0000\">音乐播放键</font></strong>和标准的3.5毫米音频插口，支持多格式音乐播放。内置了<strong><font size=\"3\" color=\"#ff0000\">多媒体播放器</font></strong>，支持FM调频收音机等娱乐功能。N96手机支持<strong><font size=\"3\" color=\"#ff0000\">N-Gage游戏平台</font></strong>，内置包括<font size=\"3\" color=\"#ff0000\"><strong>《PinBall》完整版</strong></font>在内的四款N-Gage游戏，除了手机本身内置的游戏，还可以从N-Gage的网站下载或者购买最新的游戏，而且可以在论坛里和其他玩家一起讨论。</p>\r\n<p>&nbsp;</p>\r\n</div>\r\n<p>&nbsp;<img src=\"http://img2.zol.com.cn/product/21/898/cekkw57qJjSI.jpg\" alt=\"\" /></p>', '', '', '1', '1', null, '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_article` VALUES ('13', '6', '如何分辨水货手机 ', '<p>\n<div class=\"artibody\">\n<p><font size=\"2\"><strong>1、&nbsp;什么是水货？</strong><br />\n提及水货手机，按照行业内的说法，可以将水货手机分成三类：A类、B类和C类。 </font></p>\n<p><font size=\"2\">A类水货手机是指由国外、港澳台等地区在没有经过正常海关渠道的情况下进入国内市场的产品，就是我们常说的走私货， 与行货的主要差异是在输入法上，这类手机都是英文输入法或者是港澳台地区的繁体中文输入法。这类手机其最主要的目的是为了逃避国家关税或者因为该种产品曾 经过不正当改装而不能够通过正常渠道入关，质量一般没有大的问题。但由于逃避关税本身就是违法的，所以购买这类手机的用户根本得不到任何售后保障服务； </font></p>\n<p><font size=\"2\">B类水货手机就是走私者将手机的系统软件由英文版升级至中文版后，偷运到内地，然后贴上非法渠道购买的入网标志，作为行货手机充数。 </font></p>\n<p><font size=\"2\">C类水货手机则是那些由其他型号机改装、更换芯片等等方法做假&ldquo;生产&rdquo;出来的，或者就是从各地购买手机的部件，自己组装然后再贴上非法购买的入网标志。 </font></p>\n<p><font size=\"2\">水货手机虽然不排除它是原厂正货的可能，但通过市场调研发现，绝大多数水货手机都是改版的次货，而且产品基本没有受国内厂商的保修许可。</font></p>\n<p><font size=\"2\"><strong>2、水货有哪些？</strong>水货有两种，一种俗称港行，也称作水行，这种产品原本是在香港 及周边地区销售的，但是经过非法途径进入大陆地区销售。另一种是欧版水改机，也称作欧版，水改等，此种产品以英文改版机为主，通过刷改机内软件达到英文改 中文的目的，原来这类产品是销往欧美地区的，由于和大陆地区有相当大的价格差，所以通过走私进入中国市场。</font></p>\n<p><font size=\"2\"><strong>3、水货手机的危害</strong><br />\n1、售后服务无保障 <br />\n手机作为精密类电子产品，软件、硬件方面都有可能产生不同的问题。购买正规渠道的手机，一旦出现问题，只要将问题反映给厂商客户服务中心并静候佳音就 可以了。大多数走私手机的贩卖点规模较小，根本没有资金和技术能力建立起自己的维修网点，因此他们往往制定非常苛刻的保修条件，将国家明令的一年保修期缩 短为三个月，并加入完全对走私手机经销商有利的诸如&ldquo;认为摔打&rdquo;等概念难以界定的排除条件(众所周知，手机很有可能发生摔撞事件)，是确确实实的霸王条 款。规定时间内手机出了故障，走私手机经销商会通过曲解条款尽可能地开脱保修责任。即使他们愿意承担保修服务，也需将手机发往广州、深圳等地，委托他人维 修。一来路途漫长，二来经手人繁多，小问题&ldquo;修&rdquo;成了大问题。最终走私手机经销商会以无法维修为由劝客户自行去当地正规客服维修。至于维修费用，他们自然 也不愿意出了。<br />\n<br />\n2、产品本身质量不过关<br />\n&nbsp;&nbsp;&nbsp; 现在很多奸商为了谋取暴利，经常使用C类的翻修或者组装手机冒充A类水货手机进行销售。作为消费者来说面对和正规行货之间巨大的价格差异，他们无法分辨想要购买的手机是否象销售商说的那样质量过硬，在销售商的巧舌如簧下只能眼看自己的钱包&ldquo;减肥&rdquo;。 </font></p>\n<p><font size=\"2\">但是这类翻修或者组装的水货手机往往为了降低成本，其采用的配件往往也是不合格产品，甚至也是伪劣产品，可以想象由这样产品组装起来的手机的质量究竟可以好到那里去。目前在经常看到手机电池爆炸伤人的事件的报道，究其原因也是消费者购买了这些组装的水货手机。</font></p>\n<p><font size=\"2\">而且不光这类手机硬件存在问题，包括手机使用的软件。由于组装的水货硬件规格根本无法保证和原场产品一致，手机使用的软件也会造成和手机硬件的冲突。频繁死机就是家常便饭，更有甚者会造成经常性的电话本丢失，无法联系到好友。</font></p>\n<p><br />\n<font size=\"2\"><strong>4、如何分辨行、水货手机？</strong><br />\n1、看手机上是否贴有信息产业部&ldquo;进网许可&rdquo;标志。水货与正品的入网标志稍微有一点不同：真的入网标志一般都是针式打印机打印的，数字清晰，颜色较浅，仔细看有针打的凹痕；假的入网标志一般是普通喷墨打印机打印的，数字不很清晰，颜色较深，没有凹痕。 </font></p>\n<p><font size=\"2\">2、检查手机的配置，包括中文说明书、电池、充电器等，如果是厂家原配，一般均贴有厂家的激光防伪标志。原厂配置的 中文说明书通常印刷精美，并与其他语言的说明书及相关产品资料的印刷质量、格式、风格等保持一致。不是原厂家配置的中文说明书通常印刷质量低劣，常出现错 别字，甚至字迹模糊。正品手机的包装盒中均附带有原厂合格证、原厂条码卡、原厂保修卡，而水货则没有。 </font></p>\n<p><font size=\"2\">3、确认经销商的保修条例是否与厂家一致，在购买手机时应索要发票和保修卡。 </font></p>\n<p><font size=\"2\">4、电子串号是否一致也是验证是否水货手机的重要途径。首先在手机上按&ldquo;*#06#&rdquo;，一般会在手机上显示15个数 字，这就是本手机的IMEI码。然后打开手机的电池盖，在手机里有一张贴纸，上面也有一个IMEI码，这个码应该同手机上显示的IMEI码完全一致。然后 再检查手机的外包装盒上的贴纸，上面也应该有一个IMEI码，这个码也应该同手机上显示的IMEI码完全一致。如果此三个码有不一致的地方，这个手机就有 问题。</font></p>\n</div>\n<p>&nbsp;</p>\n</p>', '', '', '0', '1', null, '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_article` VALUES ('14', '6', '如何享受全国联保', '', '', '', '0', '1', null, '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_article` VALUES ('31', '12', '诺基亚6681手机广告欣赏', '<object>\n<param value=\"always\" name=\"allowScriptAccess\" />\n<param value=\"transparent\" name=\"wmode\" />\n<param value=\"http://6.cn/player.swf?flag=0&amp;vid=nZNyu3nGNWWYjmtPQDY9nQ\" name=\"movie\" /><embed width=\"480\" height=\"385\" src=\"http://6.cn/player.swf?flag=0&amp;vid=nZNyu3nGNWWYjmtPQDY9nQ\" allowscriptaccess=\"always\" wmode=\"transparent\" type=\"application/x-shockwave-flash\"></embed></object>', '', '', '0', '1', null, '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_article` VALUES ('32', '12', '手机游戏下载', '<p>三星SGHU308说明书下载，点击相关链接下载</p>', '', '', '1', '1', null, '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_article` VALUES ('33', '12', '三星SGHU308说明书下载', '<p>三星SGHU308说明书下载</p>', '', '', '1', '1', null, '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_article` VALUES ('34', '12', '3G知识普及', '<p>\n<h2>3G知识普及</h2>\n<div class=\"t_msgfont\" id=\"postmessage_8792145\"><font color=\"black\">3G，全称为3rd Generation，中文含义就是指第三代数字通信。<br />\n</font><br />\n<font color=\"black\">　　1995年问世的第一代<span class=\"t_tag\" onclick=\"tagshow(event)\" href=\"http://mbbs.enet.com.cn/tag.php?name=%C4%A3%C4%E2\">模拟</span>制式<span class=\"t_tag\" onclick=\"tagshow(event)\" href=\"http://mbbs.enet.com.cn/tag.php?name=%CA%D6%BB%FA\">手机</span>（1G）只能进行<span class=\"t_tag\" onclick=\"tagshow(event)\" href=\"http://mbbs.enet.com.cn/tag.php?name=%D3%EF%D2%F4\">语音</span>通话；<br />\n</font><br />\n<font color=\"black\">　　1996到1997年出现的第二代GSM、TDMA等数字制式手机（2G）便增加了接收数据的功能，如接收电子邮件或网页；<br />\n</font><br />\n<font color=\"black\">　　3G不是2009年诞生的，它是上个世纪的产物，而早在2007年国外就已经产生4G了，而<span class=\"t_tag\" onclick=\"tagshow(event)\" href=\"http://mbbs.enet.com.cn/tag.php?name=%D6%D0%B9%FA\">中国</span>也于2008年成功开发出<span class=\"t_tag\" onclick=\"tagshow(event)\" href=\"http://mbbs.enet.com.cn/tag.php?name=%D6%D0%B9%FA\">中国</span>4G，其网络传输的速度可达到每秒钟2G，也就相当于下一部电影只要一秒钟。在上世纪90年末的日韩电影如《我的野蛮女友》中，女主角使用的可以让对方看见自己的视频<span class=\"t_tag\" onclick=\"tagshow(event)\" href=\"http://mbbs.enet.com.cn/tag.php?name=%B5%E7%BB%B0\">电话</span>，就是属于3G技术的重要运用之一。日韩等国3G的运用是上世纪末期的事。而目前国外有些地区已经试运行3.5G甚至4G网络。<br />\n</font><br />\n<font color=\"black\">　 </font><font color=\"black\">（以下为误导）2009年问世的第三代（3G）与 前两代的主要区别是在传输声音和数据的速度上的提升，它能够在全球范围内更好地实现无缝漫游，并处理图像、音乐、视频流等多种媒体形式，提供包括网页浏 览、电话会议、电子商务等多种信息服务，同时也要考虑与已有第二代系统的良好兼容性。为了提供这种服务，无线网络必须能够支持不同的数据传输速度，也就是 说在室内、室外和行车的环境中能够分别支持至少2Mbps（兆比特／每秒）、384kbps（千比特／每秒）以及144kbps的传输速度。（此数值根据 网络环境会发生变化)。<br />\n</font><br />\n<font color=\"black\">　　3G标准，国际电信联盟(ITU)目前一共确定了全球四大3G标准，它们分别是WCDMA、CDMA2000和TD-SCDMA和WiMAX。</font><br />\n<br />\n<font color=\"black\">3G标准　　国际电信联盟（ITU）在2000年5月确定W-CDMA、CDMA2000、TD-SCDMA以 及WiMAX四大主流无线接口标准，写入3G技术指导性文件《2000年国际移动通讯计划》（简称IMT&mdash;2000）。 CDMA是Code Division Multiple Access (码分多址)的缩写，是第三代移动通信系统的技术基础。第一代移动通信系统采用频分多址(FDMA)的模拟调制方式，这种系统的主要缺点是频谱利用率低， 信令干扰话音业务。第二代移动通信系统主要采用时分多址(TDMA)的数字调制方式，提高了系统容量，并采用独立信道传送信令，使系统性能大大改善，但 TDMA的系统容量仍然有限，越区切换性能仍不完善。CDMA系统以其频率规划简单、系统容量大、频率复用系数高、抗多径能力强、通信质量好、软容量、软 切换等特点显示出巨大的发展潜力。下面分别介绍一下3G的几种标准：<br />\n</font><br />\n<br />\n<font color=\"black\">　　 </font><br />\n<font color=\"black\">(1) W-CDMA</font><font color=\"black\"><br />\n</font><br />\n<br />\n<font color=\"black\">　　也称为WCDMA，全称为Wideband CDMA，也称为CDMA Direct Spread，意为宽频分码多重存取，这是基于GSM网发展出来的3G技术规范，是欧洲提出的宽带CDMA技术，它与日本提出的宽带CDMA技术基本相 同，目前正在进一步融合。W-CDMA的支持者主要是以GSM系统为主的欧洲厂商，日本公司也或多或少参与其中，包括欧美的爱立信、阿尔卡特、<span class=\"t_tag\" onclick=\"tagshow(event)\" href=\"http://mbbs.enet.com.cn/tag.php?name=%C5%B5%BB%F9%D1%C7\">诺基亚</span>、 朗讯、北电，以及日本的NTT、富士通、夏普等厂商。 该标准提出了GSM(2G)-GPRS-EDGE-WCDMA(3G)的演进策略。这套系统能够架设在现有的GSM网络上，对于系统提供商而言可以较轻易 地过渡，但是GSM系统相当普及的亚洲对这套新技术的接受度预料会相当高。因此W-CDMA具有先天的市场优势。<br />\n</font><br />\n<br />\n<font color=\"black\">　　 </font><br />\n<font color=\"black\">(2)CDMA2000</font><font color=\"black\"><br />\n</font><br />\n<br />\n<font color=\"black\">　　CDMA2000是由窄带CDMA(CDMA IS95)技术发展而来的宽带CDMA技术，也称为CDMA Multi-Carrier，它是由美国高通北美公司为主导提出，<span class=\"t_tag\" onclick=\"tagshow(event)\" href=\"http://mbbs.enet.com.cn/tag.php?name=%C4%A6%CD%D0%C2%DE%C0%AD\">摩托罗拉</span>、Lucent 和后来加入的韩国三星都有参与，韩国现在成为该标准的主导者。这套系统是从窄频CDMAOne数字标准衍生出来的，可以从原有的CDMAOne结构直接升 级到3G，建设成本低廉。但目前使用CDMA的地区只有日、韩和北美，所以CDMA2000的支持者不如W-CDMA多。不过CDMA2000的研发技术 却是目前各标准中进度最快的，许多3G手机已经率先面世。该标准提出了从CDMA IS95(2G)-CDMA20001x-CDMA20003x(3G)的演进策略。CDMA20001x被称为2.5代移动通信技术。 CDMA20003x与CDMA20001x的主要区别在于应用了多路载波技术，通过采用三载波使带宽提高。目前<span class=\"t_tag\" onclick=\"tagshow(event)\" href=\"http://mbbs.enet.com.cn/tag.php?name=%D6%D0%B9%FA%B5%E7%D0%C5\">中国电信</span>正在采用这一方案向3G过渡，并已建成了CDMA IS95网络。<br />\n</font><br />\n<br />\n<font color=\"black\">　　 </font><br />\n<font color=\"black\">(3)TD-SCDMA</font><font color=\"black\"><br />\n</font><br />\n<br />\n<font color=\"black\">　　全称为Time Division - Synchronous CDMA(时分<span class=\"t_tag\" onclick=\"tagshow(event)\" href=\"http://mbbs.enet.com.cn/tag.php?name=%CD%AC%B2%BD\">同步</span>CDMA)，该标准是由中国大陆独自制定的3G标准，1999年6月29日，中国原邮电部电信科学技术研究院（大唐电信）向ITU提出。该标准将智能无线、<span class=\"t_tag\" onclick=\"tagshow(event)\" href=\"http://mbbs.enet.com.cn/tag.php?name=%CD%AC%B2%BD\">同步</span>CDMA和<span class=\"t_tag\" onclick=\"tagshow(event)\" href=\"http://mbbs.enet.com.cn/tag.php?name=%C8%ED%BC%FE\">软件</span>无 线电等当今国际领先技术融于其中，在频谱利用率、对业务支持具有灵活性、频率灵活性及成本等方面的独特优势。另外，由于中国内的庞大的市场，该标准受到各 大主要电信设备厂商的重视，全球一半以上的设备厂商都宣布可以支持TD&mdash;SCDMA标准。 该标准提出不经过2.5代的中间环节，直接向3G过渡，非常适用于GSM系统向3G升级。<br />\n</font><br />\n<br />\n<font color=\"black\">　　 </font><br />\n<font color=\"black\">(4)WiMAX</font><font color=\"black\"><br />\n</font><br />\n<br />\n<font color=\"black\">　　WiMAX 的全名是微波存取全球互通(Worldwide Interoperability for Microwave Access)，又称为802&middot;16无线城域网，是又一种为企业和家庭用户提供&ldquo;最后一英里&rdquo;的宽带无线连接方案。将此技术与需要授权或免授权的微波设备 相结合之后，由于成本较低，将扩大宽带无线市场，改善企业与服务供应商的认知度。2007年10月19日，国际电信联盟在日内瓦举行的无线通信全体会议 上，经过多数国家投票通过，WiMAX正式被批准成为继WCDMA、CDMA2000和TD-SCDMA之后的第四个全球3G标准。</font></div>\n</p>', '', '', '0', '1', null, '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_article` VALUES ('35', '4', '“沃”的世界我做主', '<p><strong>导语：<br />\n<br />\n</strong>&nbsp;&nbsp;&nbsp;&nbsp;今年5月17日，是每年一度的世界电信日。同时，也是值得中国人民高兴的日子。昨天，中国联通企业品牌下的全品牌业务&ldquo;沃&rdquo;开始试商用，这也就意味着继中国移动、中国电信之后，国内第三种3G网络将要走入我们的生活，为我们带来更加快速便捷的通信服务。<br />\n<br />\n&nbsp;&nbsp;&nbsp;&nbsp;沃，意味着此品牌将为用户提供一个丰盈的平台，为个人客户、家庭客户、集团客户和企业服务提供全面的支撑，它代表着中国联通全新的服务理念和创新的品牌精神，在3G时代，为客户提供精彩的信息化服务。<br />\n<br />\n&nbsp;&nbsp;&nbsp;&nbsp;下面小编为各位介绍几款各大手机品牌专为&ldquo;沃&rdquo;打造的定制机型，为您迎接&ldquo;沃&rdquo;的到来做好充分准备。</p>\n<p><strong>诺基亚6210si<br />\n<br />\n</strong>&nbsp;&nbsp;&nbsp;&nbsp;诺基亚6210s大家肯定不陌生，经典的滑盖导航手机。其实6210si 与6210s外观、参数、硬件配置几乎完全一样，只不过在6210s的基础上，增加了对WCDMA网络的支持，成为中国联通定制手机。6210si采用诺 基亚经典的滑盖机身设计，机身面板为钢琴烤漆材质，高贵优雅。机身背板则为磨砂外观工程塑料材质，美观的同时增加了手机与手掌间的摩擦系数，防止使用中手 机滑落。</p>\n<p><strong>摩托罗拉A3100<br />\n</strong><br />\n&nbsp;&nbsp;&nbsp;&nbsp;作为摩托罗拉旗下为中国联通定制的A3100，它有着经典的鹅卵石造型， 大气稳重。从最初的U6，到U9再到A3100，鹅卵石的辉煌依旧。A3100有着高贵的血统，钢琴烤漆黑色面板，金属拉丝机身以及 Windows&nbsp;Mobile&nbsp;6.1&nbsp;Professional操作系统，都告诉我们它绝对是一部不可多得的好手机。</p>\n<p><br />\n<strong>三星S7520U<br />\n</strong><br />\n&nbsp;&nbsp;&nbsp;&nbsp;三星S7520U外观造型时尚，镜面设计以及超薄的 98.4&times;55&times;11.6mm金属机身，更适合女性朋友使用。通观机身，最显眼的就要数这3.0英寸的超大触摸屏幕了，400x240的WQGVA级别分 辨率，能够比QVGA级别屏幕显示更为细腻，细节表现力更强。500万像素摄像头说明了该机还是一名拍照能手，捕捉精彩瞬间不在话下。</p>', '', '', '0', '0', null, '0000-00-00 00:00:00', '0000-00-00 00:00:00');
+INSERT INTO `hx_article` VALUES ('1', '2', '免责条款', '', '1', null, '50', '2', '2017-03-29 22:23:57', '2017-03-28 22:41:13');
+INSERT INTO `hx_article` VALUES ('2', '2', '隐私保护', '', '1', null, '50', '2', '2017-03-29 22:23:57', '2017-03-28 23:20:27');
+INSERT INTO `hx_article` VALUES ('3', '2', '咨询热点', '', '1', null, '50', '2', '2017-03-29 22:23:57', '2017-03-28 23:20:27');
+INSERT INTO `hx_article` VALUES ('4', '2', '联系我们', '', '1', null, '50', '2', '2017-03-29 22:23:57', '2017-03-28 23:20:27');
+INSERT INTO `hx_article` VALUES ('5', '2', '公司简介', '', '1', null, '50', '2', '2017-03-29 22:23:57', '2017-03-28 23:20:27');
+INSERT INTO `hx_article` VALUES ('6', '-1', '用户协议', '', '1', null, '50', '2', '2017-03-29 22:23:57', '2017-03-28 23:20:27');
+INSERT INTO `hx_article` VALUES ('7', '4', '三星电子宣布将在中国发布15款3G手机', '<p>全球领先的电子产品及第二大移动通信终端制造商三星电子今天在北京宣布，为全面支持中国开展3G移动通信业务，将在3G服务正式商用之际，向中国市场推出 15款3G手机。这些产品分别支持中国三大无线运营商的各种3G服务，并已经得到运营商的合作认可。凭借在电子和通信领域的整体技术实力和对消费者的准确 把握，三星电子已经开始全面发力中国的3G移动通信市场。<br />\n<br />\n&nbsp;&nbsp;&nbsp;&nbsp;2009年1月，中国政府宣布正式启动3G移动通信服务。并根据中国的实际情况，决定由三大运营商分别采用全部三种3G网络制式，&nbsp;即以中国自主知识产权为核心的TD-SCDMA，以欧洲为主要市场的WCDMA和源自北美的CDMA2000技术。<br />\n<br />\n&nbsp;&nbsp;&nbsp;&nbsp;多 年来，三星电子秉承&ldquo;做中国人民喜爱的企业，贡献于中国社会的企业&rdquo;的企业理念，准确地把握了中国社会的发展和市场的需求，推出了一系列深受中国消费者喜 爱的电子产品。为了配合中国推进具有自主知识产权的3G移动通信标准TD-SCDMA，&nbsp;三星电子从2000年开始在中国设立了通信技术研究院，&nbsp;开始进 行TD-SCDMA技术的研究。作为最早承诺支持中国3G标准的手机制造企业，三星电子已经先后投入了上亿元的研究费用，&nbsp;组建了几百人的研发团队。推出 的TD-SCDMA制式的产品，不仅通过了各级权威部门的试验和检测，也经历了2008年北京奥运会的现场考验。此次为中国移动定制的TD-SCDMA手 机，包括了满足高端商务需求的双待产品B7702C，以及数字电视手机、多媒体手机和时尚手机。<br />\n<br />\n&nbsp;&nbsp;&nbsp;&nbsp;作为世界第二大手机制造企业，三 星电子已经在全球3G市场积累了多年的技术和市场经验。最新的统计表明，在完全采用WCDMA标准的欧洲，三星电子的市场份额已经排名第二。在为中国联通 准备的产品中，不仅包括能够支持HSDPA的高端多媒体手机S7520U，也涵盖了能够支持高速上网、在线电影、在线音乐等适合不同消费需求的各种产品。<br />\n<br />\n&nbsp;&nbsp;&nbsp;&nbsp;而 在主要采用CDMA2000技术的北美市场，三星电子也取得了市场份额的第一名。即将陆续上市的支持中国电信3G服务的EVDO产品，有高端商务手机 W709。该机能够支持EVDO/GSM的双网双待功能，含800万像素拍摄系统。其他产品还包括音乐手机M609，双模手机W239，以及时尚设计的 F539等。<br />\n<br />\n&nbsp;&nbsp;&nbsp;&nbsp;作为世界上少数能够提供支持三种3G标准的终端厂商，三星电子正利用其在通信、半导体、显示器以及数字多媒体等方面 的优势，加快产品数字融合的进程。除上述3G手机产品外，三星电子也于近期推出了用于3G网络的上网卡和网络笔记本电脑。三星电子专务、无线事业部大中华 区高级副总裁卢基学先生说，&ldquo;上述15款新品，&nbsp;只是我们二季度新产品的一部分。随着中国3G移动通信市场的不断扩大，三星还将推出更多适合中国市场的终 端产品，以满足消费者对于通信和数字产品的不同需求。三星也将积极配合运营商业务的发展计划，加快技术和应用的研发。中国3G的移动通信市场前景将是非常 明亮的。&rdquo;</p>', '1', null, '50', '2', '2017-03-29 22:23:57', '2017-03-28 23:20:27');
+INSERT INTO `hx_article` VALUES ('8', '4', '诺基亚牵手移动 5款热门TD手机机型推荐', '<table width=\"100%\" cellspacing=\"0\" cellpadding=\"4\" align=\"center\" class=\"tableborder\">\r\n<tbody>\r\n<tr>\r\n<td width=\"180\" valign=\"top\" class=\"altbg4\">&nbsp;</td>\r\n<td height=\"100%\" valign=\"top\" class=\"altbg3\">\r\n<table cellspacing=\"0\" cellpadding=\"0\" border=\"0\" style=\"padding: 5px; table-layout: fixed; width: 973px; height: 2195px;\">\r\n<tbody>\r\n<tr>\r\n<td valign=\"top\">\r\n<div class=\"bbs_content clearfix\">随着5月17日电信日的来临，自从09年初网民对于3G方面关注越来越多，目前国内3G网络主要有中国移动TD-SCDMA，中国联通WCDMA以及 中国电信的CDMA2000这三种制式。到底是哪一种网络制式能让消费者满意，相信好多消费者都难以判断。<br />\r\n<br />\r\n而作为3G网络最主要的组 成部分-手持终端（手机） ，相信也是好多消费者关注的焦点。目前，中国移动TD-SCDMA手机机型频频爆出，其中不乏亮点产品，像联想联想 Ophone、诺基亚、多普达 Magic等，下面就让笔者与大家一起来了解TD-SCDMA网络制式下的几款强势机型吧。<br />\r\n<br />\r\n诺基亚TD-SCDMA手机　型号：待定　参考报价：尚未上市<br />\r\n<br />\r\n随着国内3G网络发展速度加快及众多手机厂商纷纷跟进，诺基亚终于推出TD-SCDMA手机，这款诺基亚的首台TD-SCDMA测试手机型号目前仍无法 得知，但从键盘及菜单设计来看，我们可以是知道其并没有采用S60操作系统，只是配备了S40系统，机身直板造型与早期热卖的6300有几分相像。<br />\r\n<br />\r\n<p><img width=\"450\" alt=\"\" src=\"http://dstatic.esqimg.com/4812278/1.jpg\" style=\"display: block;\" /></p>\r\n<br />\r\n<br />\r\n图为：诺基亚TD-SCDMA手机<br />\r\n<br />\r\n虽然没有更多的参数资料，但是从曝光的图片我们可以知道这款诺基亚TD-SCDMA手机必定配备了QVGA分辨率的屏幕以及320万像素的摄像头，而标准的MP3以及蓝牙等功能自然不会缺少，在功能方面不会比以往的S40手机逊色。<br />\r\n<br />\r\n<p><img width=\"450\" alt=\"\" src=\"http://dstatic.esqimg.com/4812279/2.jpg\" style=\"display: block;\" /></p>\r\n<br />\r\n<br />\r\n图为：诺基亚TD-SCDMA手机<br />\r\n<br />\r\n这款诺基亚的TD手机最大的卖点便是提供了对TD-HSDPA技术的支持，最大的功能特色便是该技术被看为是TD网络下一步的演进技术，能够同时适用于 WCDMA和TD-SCDMA两种不同的网络支持，能够很好的支持非对称的数据业务，也就是说这款诺基亚手机的用户即便在全球漫游都能够使用到3G网络。 而其机身前置的摄像头也更是证实了其3G手机的身份。<br />\r\n<br />\r\n<p><img width=\"450\" alt=\"\" src=\"http://dstatic.esqimg.com/4812280/3.jpg\" style=\"display: block;\" /></p>\r\n<p><br />\r\n<br />\r\n图为：诺基亚TD-SCDMA手机<br />\r\n<br />\r\n从目前曝光的测试情况来看，通过这款诺基亚TD手机连接网络，其下载速度能够稳定在1.3Mbps左右，不过根据国内有些媒体的报道，诺基亚官方已经证实将于今天下半年配合运营商中国移动对出自己的第一款TD-SCDMA制式的S60手机，大家要拭目以待了。</p>\r\n<p>&nbsp;</p>\r\n图为：诺基亚TD-SCDMA手机<br />\r\n<br />\r\n最后较为耐人寻味的便是目前有业内人士指出目前曝光的的诺基亚TD手机其实是去年夏季就出现过的 TD测试手机，但是随着诺基亚拥有部分股份的TD芯片厂商&ldquo;凯明&rdquo;的倒闭，这款机型也就被取消了。尽管对于目前这款诺基亚的TD测试手机的身份尚无官方的 消息，但是诺基亚将推出TD手机遗失毫无悬念的事情了，相信大家也希望在TD制式下能够有更多的手机可以选择。</div>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p>&nbsp;</p>', '1', null, '50', '2', '2017-03-29 22:23:57', '2017-03-28 23:20:27');
+INSERT INTO `hx_article` VALUES ('9', '5', '售后流程', '', '1', null, '50', '2', '2017-03-29 22:23:57', '2017-03-28 23:20:27');
+INSERT INTO `hx_article` VALUES ('10', '5', '购物流程', '', '1', null, '50', '2', '2017-03-29 22:23:57', '2017-03-28 23:20:27');
+INSERT INTO `hx_article` VALUES ('11', '5', '订购方式', '', '1', null, '50', '2', '2017-03-29 22:23:57', '2017-03-28 23:20:27');
+INSERT INTO `hx_article` VALUES ('12', '6', '如何分辨原装电池', '<p><font size=\"2\">一般在购买时主要是依靠观察外观特征的方法来鉴别电池，而原装电池一般应具有以下一些特征：&nbsp;<br />\n<br />\n1、 电池外观整齐，外表面有一定的粗糙度且手感舒适，内表面手感光滑，灯光下能看见细密的纵向划痕&nbsp;<br />\n<br />\n2、 生产厂家字样应该轮廓清晰，且防伪标志亮度高，看上去有立体感，电池标贴 字迹清晰，有与电池类型相一致的电池件号<br />\n3、 电池标贴采用二次印刷技术，在一定光线下从斜面看，条形码部分的颜色比其他部分要黑，且用手触摸有凹凸感<br />\n<br />\n4、 原装电池电极与手机电池片宽度相等，电池电极下方标有&ldquo; + &rdquo;、&ldquo; - &rdquo;标志，电池电极片之间的隔离材料与外壳材料一致，但不是一体<br />\n<br />\n5、 原装电池装入手机时手感舒适，安装自如，电池按压部分卡位适当而且牢固<br />\n<br />\n6、 原装电池的金属触点采用优质的铜片，只有在正面看时才会有反光，而从其它角度看的话，都是比较暗淡的</font></p>', '1', null, '50', '2', '2017-03-29 22:23:57', '2017-03-28 23:20:27');
+INSERT INTO `hx_article` VALUES ('15', '7', '货到付款区域', '', '1', null, '50', '2', '2017-03-29 22:23:57', '2017-03-28 23:20:27');
+INSERT INTO `hx_article` VALUES ('16', '7', '配送支付智能查询 ', '', '1', null, '50', '2', '2017-03-29 22:23:57', '2017-03-28 23:20:27');
+INSERT INTO `hx_article` VALUES ('17', '7', '支付方式说明', '', '1', null, '50', '2', '2017-03-29 22:23:57', '2017-03-28 23:20:27');
+INSERT INTO `hx_article` VALUES ('18', '10', '资金管理', '', '1', null, '50', '2', '2017-03-29 22:23:57', '2017-03-28 23:20:27');
+INSERT INTO `hx_article` VALUES ('19', '10', '我的收藏', '', '1', null, '50', '2', '2017-03-29 22:23:57', '2017-03-28 23:20:27');
+INSERT INTO `hx_article` VALUES ('20', '10', '我的订单', '', '1', null, '50', '2', '2017-03-29 22:23:57', '2017-03-28 23:20:27');
+INSERT INTO `hx_article` VALUES ('21', '8', '退换货原则', '', '1', null, '50', '2', '2017-03-29 22:23:57', '2017-03-28 23:20:27');
+INSERT INTO `hx_article` VALUES ('22', '8', '售后服务保证 ', '', '1', null, '50', '2', '2017-03-29 22:23:57', '2017-03-28 23:20:27');
+INSERT INTO `hx_article` VALUES ('23', '8', '产品质量保证 ', '', '1', null, '50', '2', '2017-03-29 22:23:57', '2017-03-28 23:20:27');
+INSERT INTO `hx_article` VALUES ('24', '9', '网站故障报告', '', '1', null, '50', '2', '2017-03-29 22:23:57', '2017-03-28 23:20:27');
+INSERT INTO `hx_article` VALUES ('25', '9', '选机咨询 ', '', '1', null, '50', '2', '2017-03-29 22:23:57', '2017-03-28 23:20:27');
+INSERT INTO `hx_article` VALUES ('26', '9', '投诉与建议 ', '', '1', null, '50', '2', '2017-03-29 22:23:57', '2017-03-28 23:20:27');
+INSERT INTO `hx_article` VALUES ('27', '4', '800万像素超强拍照机 LG Viewty Smart再曝光', '800万像素超强拍照机 LG Viewty Smart再曝光800万像素超强拍照机 LG Viewty Smart再曝光800万像素超强拍照机 LG Viewty Smart再曝光800万像素超强拍照机 LG Viewty Smart再曝光800万像素超强拍照机 LG Viewty Smart再曝光800万像素超强拍照机 LG Viewty Smart再曝光800万像素超强拍照机 LG Viewty Smart再曝光800万像素超强拍照机 LG Viewty Smart再曝光800万像素超强拍照机 LG Viewty Smart再曝光800万像素超强拍照机 LG Viewty Smart再曝光800万像素超强拍照机 LG Viewty Smart再曝光800万像素超强拍照机 LG Viewty Smart再曝光800万像素超强拍照机 LG Viewty Smart再曝光800万像素超强拍照机 LG Viewty Smart再曝光800万像素超强拍照机 LG Viewty Smart再曝光800万像素超强拍照机 LG Viewty Smart再曝光800万像素超强拍照机 LG Viewty Smart再曝光800万像素超强拍照机 LG Viewty Smart再曝光800万像素超强拍照机 LG Viewty Smart再曝光800万像素超强拍照机 LG Viewty Smart再曝光800万像素超强拍照机 LG Viewty Smart再曝光800万像素超强拍照机 LG Viewty Smart再曝光800万像素超强拍照机 LG Viewty Smart再曝光800万像素超强拍照机 LG Viewty Smart再曝光800万像素超强拍照机 LG Viewty Smart再曝光800万像素超强拍照机 LG Viewty Smart再曝光800万像素超强拍照机 LG Viewty Smart再曝光800万像素超强拍照机 LG Viewty Smart再曝光800万像素超强拍照机 LG Viewty Smart再曝光800万像素超强拍照机 LG Viewty Smart再曝光800万像素超强拍照机 LG Viewty Smart再曝光800万像素超强拍照机 LG Viewty Smart再曝光800万像素超强拍照机 LG Viewty Smart再曝光800万像素超强拍照机 LG Viewty Smart再曝光800万像素超强拍照机 LG Viewty Smart再曝光800万像素超强拍照机 LG Viewty Smart再曝光800万像素超强拍照机 LG Viewty Smart再曝光800万像素超强拍照机 LG Viewty Smart再曝光800万像素超强拍照机 LG Viewty Smart再曝光800万像素超强拍照机 LG Viewty Smart再曝光800万像素超强拍照机 LG Viewty Smart再曝光800万像素超强拍照机 LG Viewty Smart再曝光', '1', '800万像素超强拍照机 LG Viewty Smart再曝光800万像素超强拍照机 LG Viewty Smart再曝光800万像素超强拍照机 LG Viewty Smart再曝光800万像素超强拍照机 LG Viewty Smart再曝光800万像素超强拍照机 LG Viewty Smart再曝光800万像素超强拍照机 LG Viewty Smart再曝光800万像素超强拍照机 LG Viewty Smart再曝光', '1', '2', '2017-03-29 22:23:57', '2017-03-28 23:20:27');
+INSERT INTO `hx_article` VALUES ('28', '11', '飞利浦9@9促销', '<p>&nbsp;</p>\r\n<div class=\"boxCenterList RelaArticle\" id=\"com_v\">\r\n<p align=\"left\">作为一款性价比极高的入门级<font size=\"3\" color=\"#ff0000\"><strong>商务手机</strong></font>，飞利浦<a href=\"mailto:9@9v\">Xenium&nbsp; 9@9v</a>三围大小为105&times;44&times;15.8mm，机身重量仅为<strong><font size=\"3\" color=\"#ff0000\">75g</font></strong>，装配了一块低规格1.75英寸128&times;160像素65000色CSTN显示屏。身正面采用月银色功能键区与屏幕数字键区相分隔，键盘设计较为<font size=\"3\"><strong><font color=\"#ff0000\">别</font><font color=\"#ff0000\">致</font></strong></font>，中部导航键区采用钛金色的&ldquo;腰带&rdquo;彰显出浓郁的商务气息。</p>\r\n<p align=\"left\">&nbsp;</p>\r\n<p align=\"left\">此款手机采用<strong><font size=\"3\" color=\"#ff0000\">触摸屏</font></strong>设计，搭配精致的手写笔，可支持手写中文和英文两个版本。增强的内置系统还能识别潦草字迹，确保在移动中和匆忙时输入文字的识别率。手写指令功能还支持特定图案的瞬间调用，独特的手写记事本功能，可以在触摸屏上随意绘制个性化的图案并进行<strong><font size=\"3\" color=\"#ff0000\">记事提醒</font></strong>，让商务应用更加随意。</p>\r\n<p align=\"left\">&nbsp;</p>\r\n<p align=\"left\">&nbsp;作为入门级为数不多支持<strong><font size=\"3\" color=\"#ff0000\">双卡功能</font></strong>的手机，可以同时插入两张SIM卡，通过菜单随意切换，只需开启漫游自动切换模式，<a href=\"mailto:9@9V\">9@9V</a>在该模式下能够判断网络情况，自动切换适合的手机号。</p>\r\n<p align=\"left\">&nbsp;</p>\r\n<p align=\"left\">&nbsp;</p>\r\n</div>\r\n<p>&nbsp;</p>', '1', null, '50', '2', '2017-03-29 22:23:57', '2017-03-28 23:20:27');
+INSERT INTO `hx_article` VALUES ('29', '11', '诺基亚5320 促销', '<p>&nbsp;</p>\r\n<div id=\"com_v\" class=\"boxCenterList RelaArticle\">\r\n<p>诺基亚5320XpressMusic音乐手机采用XpressMusic系列常见的黑红、黑蓝配色方案，而材质方便则选用的是经过<strong><font size=\"3\" color=\"#ff0000\">抛光处理</font></strong>的工程塑料；三围/体重为，为108&times;46&times;15mm/<strong><font size=\"3\" color=\"#ff0000\">90g</font></strong>，手感舒适。</p>\r\n<p>&nbsp;</p>\r\n<p>诺基亚5320采用的是一块可视面积为2.0英寸的<font size=\"3\" color=\"#ff0000\"><strong>1600万色</strong></font>屏幕，分辨率是常见的240&times;320像素（QVGA）。虽然屏幕不是特别大，但效果非常精细，色彩还原不错。</p>\r\n<p>&nbsp;</p>\r\n<p>手机背面，诺基亚为5320XM配备一颗<strong><font size=\"3\" color=\"#ff0000\">200W像素</font></strong>的摄像头，并且带有<strong><font size=\"3\" color=\"#ff0000\">两个LED的补光灯</font></strong>，可以实现拍照、摄像功能，并能通过彩信、邮件方式发送给朋友。</p>\r\n<p>&nbsp;</p>\r\n</div>\r\n<p>&nbsp;</p>', '1', null, '50', '2', '2017-03-29 22:23:57', '2017-03-28 23:20:27');
+INSERT INTO `hx_article` VALUES ('30', '11', '促销诺基亚N96', '<p>&nbsp;</p>\r\n<div class=\"boxCenterList RelaArticle\" id=\"com_v\">\r\n<p>诺基亚N96采用了<strong><font size=\"3\" color=\"#ff0000\">双向滑盖</font></strong>设计，机身整体呈灰黑色，沉稳、大气，机身材质采用了高强度的塑料材质，手机背面采用了抛光面板的设计风格。N96三维体积103*55*20mm，重量为125g。屏幕方面，诺基亚N96配备一块<strong><font size=\"3\" color=\"#ff0000\">2.8英寸</font></strong>的屏幕，支持<strong><font size=\"3\" color=\"#ff0000\">1670万色</font></strong>显示，分辨率达到QVGA（320&times;240）水准。</p>\r\n<p>&nbsp;<img src=\"http://img2.zol.com.cn/product/21/896/ceN6LBMCid3X6.jpg\" alt=\"\" /></p>\r\n<p>&nbsp;</p>\r\n<p>诺基亚N96设置有专门的<strong><font size=\"3\" color=\"#ff0000\">音乐播放键</font></strong>和标准的3.5毫米音频插口，支持多格式音乐播放。内置了<strong><font size=\"3\" color=\"#ff0000\">多媒体播放器</font></strong>，支持FM调频收音机等娱乐功能。N96手机支持<strong><font size=\"3\" color=\"#ff0000\">N-Gage游戏平台</font></strong>，内置包括<font size=\"3\" color=\"#ff0000\"><strong>《PinBall》完整版</strong></font>在内的四款N-Gage游戏，除了手机本身内置的游戏，还可以从N-Gage的网站下载或者购买最新的游戏，而且可以在论坛里和其他玩家一起讨论。</p>\r\n<p>&nbsp;</p>\r\n</div>\r\n<p>&nbsp;<img src=\"http://img2.zol.com.cn/product/21/898/cekkw57qJjSI.jpg\" alt=\"\" /></p>', '1', null, '50', '2', '2017-03-29 22:23:57', '2017-03-28 23:20:27');
+INSERT INTO `hx_article` VALUES ('13', '6', '如何分辨水货手机 ', '<p>\n<div class=\"artibody\">\n<p><font size=\"2\"><strong>1、&nbsp;什么是水货？</strong><br />\n提及水货手机，按照行业内的说法，可以将水货手机分成三类：A类、B类和C类。 </font></p>\n<p><font size=\"2\">A类水货手机是指由国外、港澳台等地区在没有经过正常海关渠道的情况下进入国内市场的产品，就是我们常说的走私货， 与行货的主要差异是在输入法上，这类手机都是英文输入法或者是港澳台地区的繁体中文输入法。这类手机其最主要的目的是为了逃避国家关税或者因为该种产品曾 经过不正当改装而不能够通过正常渠道入关，质量一般没有大的问题。但由于逃避关税本身就是违法的，所以购买这类手机的用户根本得不到任何售后保障服务； </font></p>\n<p><font size=\"2\">B类水货手机就是走私者将手机的系统软件由英文版升级至中文版后，偷运到内地，然后贴上非法渠道购买的入网标志，作为行货手机充数。 </font></p>\n<p><font size=\"2\">C类水货手机则是那些由其他型号机改装、更换芯片等等方法做假&ldquo;生产&rdquo;出来的，或者就是从各地购买手机的部件，自己组装然后再贴上非法购买的入网标志。 </font></p>\n<p><font size=\"2\">水货手机虽然不排除它是原厂正货的可能，但通过市场调研发现，绝大多数水货手机都是改版的次货，而且产品基本没有受国内厂商的保修许可。</font></p>\n<p><font size=\"2\"><strong>2、水货有哪些？</strong>水货有两种，一种俗称港行，也称作水行，这种产品原本是在香港 及周边地区销售的，但是经过非法途径进入大陆地区销售。另一种是欧版水改机，也称作欧版，水改等，此种产品以英文改版机为主，通过刷改机内软件达到英文改 中文的目的，原来这类产品是销往欧美地区的，由于和大陆地区有相当大的价格差，所以通过走私进入中国市场。</font></p>\n<p><font size=\"2\"><strong>3、水货手机的危害</strong><br />\n1、售后服务无保障 <br />\n手机作为精密类电子产品，软件、硬件方面都有可能产生不同的问题。购买正规渠道的手机，一旦出现问题，只要将问题反映给厂商客户服务中心并静候佳音就 可以了。大多数走私手机的贩卖点规模较小，根本没有资金和技术能力建立起自己的维修网点，因此他们往往制定非常苛刻的保修条件，将国家明令的一年保修期缩 短为三个月，并加入完全对走私手机经销商有利的诸如&ldquo;认为摔打&rdquo;等概念难以界定的排除条件(众所周知，手机很有可能发生摔撞事件)，是确确实实的霸王条 款。规定时间内手机出了故障，走私手机经销商会通过曲解条款尽可能地开脱保修责任。即使他们愿意承担保修服务，也需将手机发往广州、深圳等地，委托他人维 修。一来路途漫长，二来经手人繁多，小问题&ldquo;修&rdquo;成了大问题。最终走私手机经销商会以无法维修为由劝客户自行去当地正规客服维修。至于维修费用，他们自然 也不愿意出了。<br />\n<br />\n2、产品本身质量不过关<br />\n&nbsp;&nbsp;&nbsp; 现在很多奸商为了谋取暴利，经常使用C类的翻修或者组装手机冒充A类水货手机进行销售。作为消费者来说面对和正规行货之间巨大的价格差异，他们无法分辨想要购买的手机是否象销售商说的那样质量过硬，在销售商的巧舌如簧下只能眼看自己的钱包&ldquo;减肥&rdquo;。 </font></p>\n<p><font size=\"2\">但是这类翻修或者组装的水货手机往往为了降低成本，其采用的配件往往也是不合格产品，甚至也是伪劣产品，可以想象由这样产品组装起来的手机的质量究竟可以好到那里去。目前在经常看到手机电池爆炸伤人的事件的报道，究其原因也是消费者购买了这些组装的水货手机。</font></p>\n<p><font size=\"2\">而且不光这类手机硬件存在问题，包括手机使用的软件。由于组装的水货硬件规格根本无法保证和原场产品一致，手机使用的软件也会造成和手机硬件的冲突。频繁死机就是家常便饭，更有甚者会造成经常性的电话本丢失，无法联系到好友。</font></p>\n<p><br />\n<font size=\"2\"><strong>4、如何分辨行、水货手机？</strong><br />\n1、看手机上是否贴有信息产业部&ldquo;进网许可&rdquo;标志。水货与正品的入网标志稍微有一点不同：真的入网标志一般都是针式打印机打印的，数字清晰，颜色较浅，仔细看有针打的凹痕；假的入网标志一般是普通喷墨打印机打印的，数字不很清晰，颜色较深，没有凹痕。 </font></p>\n<p><font size=\"2\">2、检查手机的配置，包括中文说明书、电池、充电器等，如果是厂家原配，一般均贴有厂家的激光防伪标志。原厂配置的 中文说明书通常印刷精美，并与其他语言的说明书及相关产品资料的印刷质量、格式、风格等保持一致。不是原厂家配置的中文说明书通常印刷质量低劣，常出现错 别字，甚至字迹模糊。正品手机的包装盒中均附带有原厂合格证、原厂条码卡、原厂保修卡，而水货则没有。 </font></p>\n<p><font size=\"2\">3、确认经销商的保修条例是否与厂家一致，在购买手机时应索要发票和保修卡。 </font></p>\n<p><font size=\"2\">4、电子串号是否一致也是验证是否水货手机的重要途径。首先在手机上按&ldquo;*#06#&rdquo;，一般会在手机上显示15个数 字，这就是本手机的IMEI码。然后打开手机的电池盖，在手机里有一张贴纸，上面也有一个IMEI码，这个码应该同手机上显示的IMEI码完全一致。然后 再检查手机的外包装盒上的贴纸，上面也应该有一个IMEI码，这个码也应该同手机上显示的IMEI码完全一致。如果此三个码有不一致的地方，这个手机就有 问题。</font></p>\n</div>\n<p>&nbsp;</p>\n</p>', '1', null, '50', '2', '2017-03-29 22:23:57', '2017-03-28 23:20:27');
+INSERT INTO `hx_article` VALUES ('14', '6', '如何享受全国联保', '', '1', null, '50', '2', '2017-03-29 22:23:57', '2017-03-28 23:20:27');
+INSERT INTO `hx_article` VALUES ('31', '12', '诺基亚6681手机广告欣赏', '<object>\n<param value=\"always\" name=\"allowScriptAccess\" />\n<param value=\"transparent\" name=\"wmode\" />\n<param value=\"http://6.cn/player.swf?flag=0&amp;vid=nZNyu3nGNWWYjmtPQDY9nQ\" name=\"movie\" /><embed width=\"480\" height=\"385\" src=\"http://6.cn/player.swf?flag=0&amp;vid=nZNyu3nGNWWYjmtPQDY9nQ\" allowscriptaccess=\"always\" wmode=\"transparent\" type=\"application/x-shockwave-flash\"></embed></object>', '1', null, '50', '2', '2017-03-29 22:23:57', '2017-03-28 23:20:27');
+INSERT INTO `hx_article` VALUES ('32', '12', '手机游戏下载', '<p>三星SGHU308说明书下载，点击相关链接下载</p>', '1', null, '50', '2', '2017-03-29 22:23:57', '2017-03-28 23:20:27');
+INSERT INTO `hx_article` VALUES ('33', '12', '三星SGHU308说明书下载', '<p>三星SGHU308说明书下载</p>', '1', null, '50', '2', '2017-03-29 22:23:57', '2017-03-28 23:20:27');
+INSERT INTO `hx_article` VALUES ('34', '12', '3G知识普及', '<p>\n<h2>3G知识普及</h2>\n<div class=\"t_msgfont\" id=\"postmessage_8792145\"><font color=\"black\">3G，全称为3rd Generation，中文含义就是指第三代数字通信。<br />\n</font><br />\n<font color=\"black\">　　1995年问世的第一代<span class=\"t_tag\" onclick=\"tagshow(event)\" href=\"http://mbbs.enet.com.cn/tag.php?name=%C4%A3%C4%E2\">模拟</span>制式<span class=\"t_tag\" onclick=\"tagshow(event)\" href=\"http://mbbs.enet.com.cn/tag.php?name=%CA%D6%BB%FA\">手机</span>（1G）只能进行<span class=\"t_tag\" onclick=\"tagshow(event)\" href=\"http://mbbs.enet.com.cn/tag.php?name=%D3%EF%D2%F4\">语音</span>通话；<br />\n</font><br />\n<font color=\"black\">　　1996到1997年出现的第二代GSM、TDMA等数字制式手机（2G）便增加了接收数据的功能，如接收电子邮件或网页；<br />\n</font><br />\n<font color=\"black\">　　3G不是2009年诞生的，它是上个世纪的产物，而早在2007年国外就已经产生4G了，而<span class=\"t_tag\" onclick=\"tagshow(event)\" href=\"http://mbbs.enet.com.cn/tag.php?name=%D6%D0%B9%FA\">中国</span>也于2008年成功开发出<span class=\"t_tag\" onclick=\"tagshow(event)\" href=\"http://mbbs.enet.com.cn/tag.php?name=%D6%D0%B9%FA\">中国</span>4G，其网络传输的速度可达到每秒钟2G，也就相当于下一部电影只要一秒钟。在上世纪90年末的日韩电影如《我的野蛮女友》中，女主角使用的可以让对方看见自己的视频<span class=\"t_tag\" onclick=\"tagshow(event)\" href=\"http://mbbs.enet.com.cn/tag.php?name=%B5%E7%BB%B0\">电话</span>，就是属于3G技术的重要运用之一。日韩等国3G的运用是上世纪末期的事。而目前国外有些地区已经试运行3.5G甚至4G网络。<br />\n</font><br />\n<font color=\"black\">　 </font><font color=\"black\">（以下为误导）2009年问世的第三代（3G）与 前两代的主要区别是在传输声音和数据的速度上的提升，它能够在全球范围内更好地实现无缝漫游，并处理图像、音乐、视频流等多种媒体形式，提供包括网页浏 览、电话会议、电子商务等多种信息服务，同时也要考虑与已有第二代系统的良好兼容性。为了提供这种服务，无线网络必须能够支持不同的数据传输速度，也就是 说在室内、室外和行车的环境中能够分别支持至少2Mbps（兆比特／每秒）、384kbps（千比特／每秒）以及144kbps的传输速度。（此数值根据 网络环境会发生变化)。<br />\n</font><br />\n<font color=\"black\">　　3G标准，国际电信联盟(ITU)目前一共确定了全球四大3G标准，它们分别是WCDMA、CDMA2000和TD-SCDMA和WiMAX。</font><br />\n<br />\n<font color=\"black\">3G标准　　国际电信联盟（ITU）在2000年5月确定W-CDMA、CDMA2000、TD-SCDMA以 及WiMAX四大主流无线接口标准，写入3G技术指导性文件《2000年国际移动通讯计划》（简称IMT&mdash;2000）。 CDMA是Code Division Multiple Access (码分多址)的缩写，是第三代移动通信系统的技术基础。第一代移动通信系统采用频分多址(FDMA)的模拟调制方式，这种系统的主要缺点是频谱利用率低， 信令干扰话音业务。第二代移动通信系统主要采用时分多址(TDMA)的数字调制方式，提高了系统容量，并采用独立信道传送信令，使系统性能大大改善，但 TDMA的系统容量仍然有限，越区切换性能仍不完善。CDMA系统以其频率规划简单、系统容量大、频率复用系数高、抗多径能力强、通信质量好、软容量、软 切换等特点显示出巨大的发展潜力。下面分别介绍一下3G的几种标准：<br />\n</font><br />\n<br />\n<font color=\"black\">　　 </font><br />\n<font color=\"black\">(1) W-CDMA</font><font color=\"black\"><br />\n</font><br />\n<br />\n<font color=\"black\">　　也称为WCDMA，全称为Wideband CDMA，也称为CDMA Direct Spread，意为宽频分码多重存取，这是基于GSM网发展出来的3G技术规范，是欧洲提出的宽带CDMA技术，它与日本提出的宽带CDMA技术基本相 同，目前正在进一步融合。W-CDMA的支持者主要是以GSM系统为主的欧洲厂商，日本公司也或多或少参与其中，包括欧美的爱立信、阿尔卡特、<span class=\"t_tag\" onclick=\"tagshow(event)\" href=\"http://mbbs.enet.com.cn/tag.php?name=%C5%B5%BB%F9%D1%C7\">诺基亚</span>、 朗讯、北电，以及日本的NTT、富士通、夏普等厂商。 该标准提出了GSM(2G)-GPRS-EDGE-WCDMA(3G)的演进策略。这套系统能够架设在现有的GSM网络上，对于系统提供商而言可以较轻易 地过渡，但是GSM系统相当普及的亚洲对这套新技术的接受度预料会相当高。因此W-CDMA具有先天的市场优势。<br />\n</font><br />\n<br />\n<font color=\"black\">　　 </font><br />\n<font color=\"black\">(2)CDMA2000</font><font color=\"black\"><br />\n</font><br />\n<br />\n<font color=\"black\">　　CDMA2000是由窄带CDMA(CDMA IS95)技术发展而来的宽带CDMA技术，也称为CDMA Multi-Carrier，它是由美国高通北美公司为主导提出，<span class=\"t_tag\" onclick=\"tagshow(event)\" href=\"http://mbbs.enet.com.cn/tag.php?name=%C4%A6%CD%D0%C2%DE%C0%AD\">摩托罗拉</span>、Lucent 和后来加入的韩国三星都有参与，韩国现在成为该标准的主导者。这套系统是从窄频CDMAOne数字标准衍生出来的，可以从原有的CDMAOne结构直接升 级到3G，建设成本低廉。但目前使用CDMA的地区只有日、韩和北美，所以CDMA2000的支持者不如W-CDMA多。不过CDMA2000的研发技术 却是目前各标准中进度最快的，许多3G手机已经率先面世。该标准提出了从CDMA IS95(2G)-CDMA20001x-CDMA20003x(3G)的演进策略。CDMA20001x被称为2.5代移动通信技术。 CDMA20003x与CDMA20001x的主要区别在于应用了多路载波技术，通过采用三载波使带宽提高。目前<span class=\"t_tag\" onclick=\"tagshow(event)\" href=\"http://mbbs.enet.com.cn/tag.php?name=%D6%D0%B9%FA%B5%E7%D0%C5\">中国电信</span>正在采用这一方案向3G过渡，并已建成了CDMA IS95网络。<br />\n</font><br />\n<br />\n<font color=\"black\">　　 </font><br />\n<font color=\"black\">(3)TD-SCDMA</font><font color=\"black\"><br />\n</font><br />\n<br />\n<font color=\"black\">　　全称为Time Division - Synchronous CDMA(时分<span class=\"t_tag\" onclick=\"tagshow(event)\" href=\"http://mbbs.enet.com.cn/tag.php?name=%CD%AC%B2%BD\">同步</span>CDMA)，该标准是由中国大陆独自制定的3G标准，1999年6月29日，中国原邮电部电信科学技术研究院（大唐电信）向ITU提出。该标准将智能无线、<span class=\"t_tag\" onclick=\"tagshow(event)\" href=\"http://mbbs.enet.com.cn/tag.php?name=%CD%AC%B2%BD\">同步</span>CDMA和<span class=\"t_tag\" onclick=\"tagshow(event)\" href=\"http://mbbs.enet.com.cn/tag.php?name=%C8%ED%BC%FE\">软件</span>无 线电等当今国际领先技术融于其中，在频谱利用率、对业务支持具有灵活性、频率灵活性及成本等方面的独特优势。另外，由于中国内的庞大的市场，该标准受到各 大主要电信设备厂商的重视，全球一半以上的设备厂商都宣布可以支持TD&mdash;SCDMA标准。 该标准提出不经过2.5代的中间环节，直接向3G过渡，非常适用于GSM系统向3G升级。<br />\n</font><br />\n<br />\n<font color=\"black\">　　 </font><br />\n<font color=\"black\">(4)WiMAX</font><font color=\"black\"><br />\n</font><br />\n<br />\n<font color=\"black\">　　WiMAX 的全名是微波存取全球互通(Worldwide Interoperability for Microwave Access)，又称为802&middot;16无线城域网，是又一种为企业和家庭用户提供&ldquo;最后一英里&rdquo;的宽带无线连接方案。将此技术与需要授权或免授权的微波设备 相结合之后，由于成本较低，将扩大宽带无线市场，改善企业与服务供应商的认知度。2007年10月19日，国际电信联盟在日内瓦举行的无线通信全体会议 上，经过多数国家投票通过，WiMAX正式被批准成为继WCDMA、CDMA2000和TD-SCDMA之后的第四个全球3G标准。</font></div>\n</p>', '1', null, '50', '2', '2017-03-29 22:23:57', '2017-03-28 23:20:27');
+INSERT INTO `hx_article` VALUES ('35', '4', '“沃”的世界我做主', '<p><strong>导语：<br />\n<br />\n</strong>&nbsp;&nbsp;&nbsp;&nbsp;今年5月17日，是每年一度的世界电信日。同时，也是值得中国人民高兴的日子。昨天，中国联通企业品牌下的全品牌业务&ldquo;沃&rdquo;开始试商用，这也就意味着继中国移动、中国电信之后，国内第三种3G网络将要走入我们的生活，为我们带来更加快速便捷的通信服务。<br />\n<br />\n&nbsp;&nbsp;&nbsp;&nbsp;沃，意味着此品牌将为用户提供一个丰盈的平台，为个人客户、家庭客户、集团客户和企业服务提供全面的支撑，它代表着中国联通全新的服务理念和创新的品牌精神，在3G时代，为客户提供精彩的信息化服务。<br />\n<br />\n&nbsp;&nbsp;&nbsp;&nbsp;下面小编为各位介绍几款各大手机品牌专为&ldquo;沃&rdquo;打造的定制机型，为您迎接&ldquo;沃&rdquo;的到来做好充分准备。</p>\n<p><strong>诺基亚6210si<br />\n<br />\n</strong>&nbsp;&nbsp;&nbsp;&nbsp;诺基亚6210s大家肯定不陌生，经典的滑盖导航手机。其实6210si 与6210s外观、参数、硬件配置几乎完全一样，只不过在6210s的基础上，增加了对WCDMA网络的支持，成为中国联通定制手机。6210si采用诺 基亚经典的滑盖机身设计，机身面板为钢琴烤漆材质，高贵优雅。机身背板则为磨砂外观工程塑料材质，美观的同时增加了手机与手掌间的摩擦系数，防止使用中手 机滑落。</p>\n<p><strong>摩托罗拉A3100<br />\n</strong><br />\n&nbsp;&nbsp;&nbsp;&nbsp;作为摩托罗拉旗下为中国联通定制的A3100，它有着经典的鹅卵石造型， 大气稳重。从最初的U6，到U9再到A3100，鹅卵石的辉煌依旧。A3100有着高贵的血统，钢琴烤漆黑色面板，金属拉丝机身以及 Windows&nbsp;Mobile&nbsp;6.1&nbsp;Professional操作系统，都告诉我们它绝对是一部不可多得的好手机。</p>\n<p><br />\n<strong>三星S7520U<br />\n</strong><br />\n&nbsp;&nbsp;&nbsp;&nbsp;三星S7520U外观造型时尚，镜面设计以及超薄的 98.4&times;55&times;11.6mm金属机身，更适合女性朋友使用。通观机身，最显眼的就要数这3.0英寸的超大触摸屏幕了，400x240的WQGVA级别分 辨率，能够比QVGA级别屏幕显示更为细腻，细节表现力更强。500万像素摄像头说明了该机还是一名拍照能手，捕捉精彩瞬间不在话下。</p>', '1', null, '50', '1', '2017-03-29 22:23:57', '2017-03-28 23:28:28');
 
 -- ----------------------------
--- Table structure for hx_article_cat
+-- Table structure for hx_article_cate
 -- ----------------------------
-DROP TABLE IF EXISTS `hx_article_cat`;
-CREATE TABLE `hx_article_cat` (
-  `cat_id` smallint(5) NOT NULL AUTO_INCREMENT,
+DROP TABLE IF EXISTS `hx_article_cate`;
+CREATE TABLE `hx_article_cate` (
+  `id` smallint(5) NOT NULL AUTO_INCREMENT,
   `cat_name` varchar(255) NOT NULL DEFAULT '' COMMENT '分类名称',
   `cat_type` tinyint(1) unsigned NOT NULL DEFAULT '1' COMMENT '分类类型 1,普通分类2,系统分类 3,网店信息 4, 帮助分类 5,网店帮助',
   `sort_order` tinyint(3) unsigned NOT NULL DEFAULT '50',
   `show_in_nav` tinyint(1) unsigned NOT NULL DEFAULT '0' COMMENT '是否在导航栏显示 0 否 ;  1 是',
+  `status` tinyint(1) NOT NULL DEFAULT '1' COMMENT '状态 1：启用 0：禁用',
   `parent_id` smallint(5) unsigned NOT NULL DEFAULT '0',
   `create_time` datetime NOT NULL COMMENT '创建时间',
   `update_time` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00' ON UPDATE CURRENT_TIMESTAMP,
-  PRIMARY KEY (`cat_id`),
-  KEY `cat_type` (`cat_type`),
-  KEY `sort_order` (`sort_order`),
-  KEY `parent_id` (`parent_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
+  PRIMARY KEY (`id`),
+  KEY `cat_type` (`cat_type`) USING BTREE,
+  KEY `sort_order` (`sort_order`) USING BTREE,
+  KEY `parent_id` (`parent_id`) USING BTREE
+) ENGINE=MyISAM AUTO_INCREMENT=14 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
--- Records of hx_article_cat
+-- Records of hx_article_cate
 -- ----------------------------
-INSERT INTO `hx_article_cat` VALUES ('1', '系统分类', '2', '50', '0', '0', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_article_cat` VALUES ('2', '网店信息', '3', '50', '0', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_article_cat` VALUES ('3', '网店帮助分类', '4', '50', '0', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_article_cat` VALUES ('4', '3G资讯', '1', '50', '0', '0', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_article_cat` VALUES ('5', '新手上路 ', '5', '50', '0', '3', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_article_cat` VALUES ('6', '手机常识 ', '5', '50', '0', '3', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_article_cat` VALUES ('7', '配送与支付 ', '5', '50', '0', '3', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_article_cat` VALUES ('8', '服务保证 ', '5', '50', '0', '3', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_article_cat` VALUES ('9', '联系我们 ', '5', '50', '0', '3', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_article_cat` VALUES ('10', '会员中心', '5', '50', '0', '3', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_article_cat` VALUES ('11', '手机促销', '1', '50', '0', '0', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_article_cat` VALUES ('12', '站内快讯', '1', '50', '0', '0', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
+INSERT INTO `hx_article_cate` VALUES ('1', '系统分类', '2', '50', '0', '1', '0', '2017-03-29 22:23:57', '2017-03-28 22:24:09');
+INSERT INTO `hx_article_cate` VALUES ('2', '网店信息', '3', '50', '0', '1', '1', '2017-03-29 22:23:57', '2017-03-28 22:24:09');
+INSERT INTO `hx_article_cate` VALUES ('3', '网店帮助分类', '4', '50', '0', '1', '1', '2017-03-29 22:23:57', '2017-03-28 22:24:09');
+INSERT INTO `hx_article_cate` VALUES ('4', '3G资讯', '1', '50', '0', '1', '0', '2017-03-29 22:23:57', '2017-03-28 22:24:09');
+INSERT INTO `hx_article_cate` VALUES ('5', '新手上路 ', '5', '50', '0', '1', '3', '2017-03-29 22:23:57', '2017-03-28 22:24:09');
+INSERT INTO `hx_article_cate` VALUES ('6', '手机常识 ', '5', '50', '0', '1', '3', '2017-03-29 22:23:57', '2017-03-28 22:24:09');
+INSERT INTO `hx_article_cate` VALUES ('7', '配送与支付 ', '5', '50', '0', '1', '3', '2017-03-29 22:23:57', '2017-03-28 22:24:09');
+INSERT INTO `hx_article_cate` VALUES ('8', '服务保证 ', '5', '50', '0', '1', '3', '2017-03-29 22:23:57', '2017-03-28 22:24:09');
+INSERT INTO `hx_article_cate` VALUES ('9', '联系我们 ', '5', '50', '0', '1', '3', '2017-03-29 22:23:57', '2017-03-28 22:24:09');
+INSERT INTO `hx_article_cate` VALUES ('10', '会员中心', '5', '50', '0', '1', '3', '2017-03-29 22:23:57', '2017-03-28 22:24:09');
+INSERT INTO `hx_article_cate` VALUES ('11', '手机促销', '1', '50', '0', '1', '0', '2017-03-29 22:23:57', '2017-03-28 22:24:09');
+INSERT INTO `hx_article_cate` VALUES ('12', '站内快讯', '1', '50', '0', '1', '0', '2017-03-29 22:23:57', '2017-03-28 22:24:09');
+INSERT INTO `hx_article_cate` VALUES ('13', '这是测试的', '2', '10', '0', '1', '12', '2017-03-29 22:23:57', '2017-03-28 22:24:09');
 
 -- ----------------------------
 -- Table structure for hx_auth_group
@@ -245,14 +246,14 @@ CREATE TABLE `hx_auth_rule` (
   `type` tinyint(1) NOT NULL DEFAULT '1',
   `status` tinyint(1) NOT NULL DEFAULT '1',
   `condition` char(100) NOT NULL DEFAULT '',
-  `pid` int(11) DEFAULT '0',
+  `parent_id` int(11) DEFAULT '0',
   `url` varchar(200) DEFAULT NULL,
   `sort` int(10) DEFAULT NULL COMMENT '排序',
   `menu` int(1) DEFAULT '0' COMMENT '是否是菜单,1是菜单 2：不是',
   `icon` varchar(150) DEFAULT NULL COMMENT '图标',
   PRIMARY KEY (`id`),
   UNIQUE KEY `name` (`name`) USING BTREE
-) ENGINE=MyISAM AUTO_INCREMENT=70 DEFAULT CHARSET=utf8 COMMENT='节点表';
+) ENGINE=MyISAM AUTO_INCREMENT=74 DEFAULT CHARSET=utf8 COMMENT='节点表';
 
 -- ----------------------------
 -- Records of hx_auth_rule
@@ -326,6 +327,10 @@ INSERT INTO `hx_auth_rule` VALUES ('66', 'Manager/Cate/index', '列表', '1', '1
 INSERT INTO `hx_auth_rule` VALUES ('67', 'Manager/Cate/add', '增加分类', '1', '1', '', '65', 'Cate/add', '2', '2', '');
 INSERT INTO `hx_auth_rule` VALUES ('68', 'Manager/Cate/edit', '修改分类', '1', '1', '', '65', 'Cate/edit', '3', '2', '');
 INSERT INTO `hx_auth_rule` VALUES ('69', 'Manager/Cate/del', '删除分类', '1', '1', '', '65', 'Cate/del', '4', '2', '');
+INSERT INTO `hx_auth_rule` VALUES ('70', 'Manager/BackOrder/list', '退货管理', '1', '1', '', '53', 'BackOrder/index', '3', '1', '');
+INSERT INTO `hx_auth_rule` VALUES ('71', 'Manager/BackOrder/index', '列表', '1', '1', '', '70', 'BackOrder/index', '1', '2', '');
+INSERT INTO `hx_auth_rule` VALUES ('72', 'Manager/Change/list', '换货管理', '1', '1', '', '53', 'Change/index', '2', '1', '');
+INSERT INTO `hx_auth_rule` VALUES ('73', 'Manager/Change/index', '列表', '1', '1', '', '72', 'Change/index', '1', '2', '');
 
 -- ----------------------------
 -- Table structure for hx_back_goods
@@ -457,32 +462,6 @@ INSERT INTO `hx_brand` VALUES ('8', 'LG', '1240803526904622792.gif', '官方咨�
 INSERT INTO `hx_brand` VALUES ('9', '联想', '1240803578417877983.gif', '官方咨询电话：4008188818\n售后网点：http://www.lenovomobile.com/service/kf-wanglou.asp', 'http://www.lenovomobile.com/', '50', '1');
 INSERT INTO `hx_brand` VALUES ('10', '金立', '', '官方咨询电话：4007796666\n售后网点：http://www.gionee.net/service.asp ', 'http://www.gionee.net', '50', '1');
 INSERT INTO `hx_brand` VALUES ('11', '  恒基伟业', '1240803736391383580.gif', '官方咨询电话：4008899126\n售后网点：http://www.htwchina.com/htwt/wexiu.shtml ', 'http://www.htwchina.com', '50', '1');
-
--- ----------------------------
--- Table structure for hx_cate
--- ----------------------------
-DROP TABLE IF EXISTS `hx_cate`;
-CREATE TABLE `hx_cate` (
-  `id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'id',
-  `pid` int(11) NOT NULL,
-  `name` varchar(100) NOT NULL COMMENT '分类名称',
-  `sort` int(11) NOT NULL DEFAULT '50',
-  `status` tinyint(1) NOT NULL DEFAULT '1' COMMENT '状态：1：开启 0：关闭',
-  `create_time` datetime NOT NULL COMMENT '创建时间',
-  `update_time` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00' ON UPDATE CURRENT_TIMESTAMP,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
-
--- ----------------------------
--- Records of hx_cate
--- ----------------------------
-INSERT INTO `hx_cate` VALUES ('3', '0', 'PHP', '50', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_cate` VALUES ('4', '0', 'js', '50', '1', '0000-00-00 00:00:00', '2017-03-26 14:40:54');
-INSERT INTO `hx_cate` VALUES ('5', '0', 'Mysql', '50', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_cate` VALUES ('6', '3', 'js', '50', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_cate` VALUES ('7', '3', 'mysql', '50', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_cate` VALUES ('8', '5', 'mysql', '1', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_cate` VALUES ('9', '5', '测试', '1', '1', '0000-00-00 00:00:00', '2017-03-26 15:25:06');
 
 -- ----------------------------
 -- Table structure for hx_category
@@ -1184,38 +1163,38 @@ CREATE TABLE `hx_order_goods` (
 -- ----------------------------
 -- Records of hx_order_goods
 -- ----------------------------
-INSERT INTO `hx_order_goods` VALUES ('1', '1', '8', '飞利浦9@9v', 'ECS000008', '1', '478.79', '385.00', '0', '0', '231', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_order_goods` VALUES ('2', '2', '12', '摩托罗拉A810', 'ECS000012', '1', '1179.60', '960.00', '0', '0', '', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_order_goods` VALUES ('3', '3', '17', '夏新N7', 'ECS000017', '1', '2760.00', '2300.00', '0', '0', '', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_order_goods` VALUES ('4', '4', '22', '多普达Touch HD', 'ECS000022', '1', '7198.80', '5999.00', '0', '0', '', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_order_goods` VALUES ('5', '5', '9', '诺基亚E66', 'ECS000009', '3', '2757.60', '2200.00', '0', '0', '', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_order_goods` VALUES ('6', '5', '24', 'P806', 'ECS000024', '1', '2400.00', '2000.00', '0', '0', '', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_order_goods` VALUES ('7', '6', '5', '索爱原装M2卡读卡器', 'ECS000005', '1', '24.00', '20.00', '0', '0', '', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_order_goods` VALUES ('8', '7', '9', '诺基亚E66', 'ECS000009', '1', '2757.60', '2298.00', '0', '0', '', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_order_goods` VALUES ('9', '8', '20', '三星BC01', 'ECS000020', '1', '336.00', '238.00', '0', '0', '', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_order_goods` VALUES ('10', '8', '8', '飞利浦9@9v', 'ECS000008', '1', '478.79', '385.00', '0', '0', '231', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_order_goods` VALUES ('11', '9', '24', 'P806', 'ECS000024', '1', '2400.00', '2000.00', '0', '0', '', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_order_goods` VALUES ('12', '10', '24', 'P806', 'ECS000024', '1', '2400.00', '0.00', '0', '0', '', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_order_goods` VALUES ('13', '11', '23', '诺基亚N96', 'ECS000023', '1', '4440.00', '3800.00', '0', '0', '', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_order_goods` VALUES ('14', '12', '20', '三星BC01', 'ECS000020', '1', '336.00', '238.00', '0', '0', '', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_order_goods` VALUES ('15', '13', '12', '摩托罗拉A810', 'ECS000012', '1', '1179.60', '960.00', '0', '0', '', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_order_goods` VALUES ('16', '14', '15', '摩托罗拉A810', 'ECS000015', '5', '705.60', '588.00', '0', '0', '', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_order_goods` VALUES ('17', '14', '20', '三星BC01', 'ECS000020', '1', '336.00', '238.00', '0', '0', '', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_order_goods` VALUES ('18', '14', '22', '多普达Touch HD', 'ECS000022', '1', '7198.80', '5999.00', '0', '0', '', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_order_goods` VALUES ('19', '14', '3', '诺基亚原装5800耳机', 'ECS000002', '4', '81.60', '68.00', '0', '0', '', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_order_goods` VALUES ('20', '14', '9', '诺基亚E66', 'ECS000009', '2', '2757.60', '2298.00', '0', '0', '', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_order_goods` VALUES ('21', '15', '13', '诺基亚5320 XpressMusic', 'ECS000013', '3', '1583.20', '1210.00', '0', '0', '', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_order_goods` VALUES ('22', '15', '14', '诺基亚5800XM', 'ECS000014', '1', '3150.00', '2493.75', '0', '0', '', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_order_goods` VALUES ('23', '15', '24', 'P806', 'ECS000024', '4', '2400.00', '1900.00', '0', '0', '', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_order_goods` VALUES ('24', '15', '9', '诺基亚E66', 'ECS000009', '1', '2757.60', '2183.10', '0', '0', '', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_order_goods` VALUES ('25', '15', '8', '飞利浦9@9v', 'ECS000008', '3', '478.79', '379.05', '0', '0', '231', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_order_goods` VALUES ('26', '16', '12', '摩托罗拉A810', 'ECS000012', '2', '1179.60', '933.85', '2', '0', '', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_order_goods` VALUES ('27', '16', '1', 'KD876', 'ECS000000', '1', '1665.60', '1318.60', '0', '0', '', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_order_goods` VALUES ('28', '17', '24', 'P806', 'ECS000024', '1', '2400.00', '1900.00', '0', '0', '', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_order_goods` VALUES ('29', '18', '24', 'P806', 'ECS000024', '5', '2400.00', '100.00', '0', '0', '', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_order_goods` VALUES ('30', '19', '12', '摩托罗拉A810', 'ECS000012', '2', '1179.60', '933.85', '2', '0', '', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_order_goods` VALUES ('31', '19', '24', 'P806', 'ECS000024', '2', '2400.00', '1850.00', '2', '0', '167', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_order_goods` VALUES ('32', '20', '9', '诺基亚E66', 'ECS000009', '1', '2757.60', '2298.00', '1', '0', '227', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
+INSERT INTO `hx_order_goods` VALUES ('1', '1', '8', '飞利浦9@9v', 'ECS000008', '1', '478.79', '385.00', '0', '0', '231', '2017-03-29 22:23:57', '2017-03-28 22:26:18');
+INSERT INTO `hx_order_goods` VALUES ('2', '2', '12', '摩托罗拉A810', 'ECS000012', '1', '1179.60', '960.00', '0', '0', '', '2017-03-29 22:23:57', '2017-03-28 22:26:18');
+INSERT INTO `hx_order_goods` VALUES ('3', '3', '17', '夏新N7', 'ECS000017', '1', '2760.00', '2300.00', '0', '0', '', '2017-03-29 22:23:57', '2017-03-28 22:26:18');
+INSERT INTO `hx_order_goods` VALUES ('4', '4', '22', '多普达Touch HD', 'ECS000022', '1', '7198.80', '5999.00', '0', '0', '', '2017-03-29 22:23:57', '2017-03-28 22:26:18');
+INSERT INTO `hx_order_goods` VALUES ('5', '5', '9', '诺基亚E66', 'ECS000009', '3', '2757.60', '2200.00', '0', '0', '', '2017-03-29 22:23:57', '2017-03-28 22:26:18');
+INSERT INTO `hx_order_goods` VALUES ('6', '5', '24', 'P806', 'ECS000024', '1', '2400.00', '2000.00', '0', '0', '', '2017-03-29 22:23:57', '2017-03-28 22:26:18');
+INSERT INTO `hx_order_goods` VALUES ('7', '6', '5', '索爱原装M2卡读卡器', 'ECS000005', '1', '24.00', '20.00', '0', '0', '', '2017-03-29 22:23:57', '2017-03-28 22:26:18');
+INSERT INTO `hx_order_goods` VALUES ('8', '7', '9', '诺基亚E66', 'ECS000009', '1', '2757.60', '2298.00', '0', '0', '', '2017-03-29 22:23:57', '2017-03-28 22:26:18');
+INSERT INTO `hx_order_goods` VALUES ('9', '8', '20', '三星BC01', 'ECS000020', '1', '336.00', '238.00', '0', '0', '', '2017-03-29 22:23:57', '2017-03-28 22:26:18');
+INSERT INTO `hx_order_goods` VALUES ('10', '8', '8', '飞利浦9@9v', 'ECS000008', '1', '478.79', '385.00', '0', '0', '231', '2017-03-29 22:23:57', '2017-03-28 22:26:18');
+INSERT INTO `hx_order_goods` VALUES ('11', '9', '24', 'P806', 'ECS000024', '1', '2400.00', '2000.00', '0', '0', '', '2017-03-29 22:23:57', '2017-03-28 22:26:18');
+INSERT INTO `hx_order_goods` VALUES ('12', '10', '24', 'P806', 'ECS000024', '1', '2400.00', '0.00', '0', '0', '', '2017-03-29 22:23:57', '2017-03-28 22:26:18');
+INSERT INTO `hx_order_goods` VALUES ('13', '11', '23', '诺基亚N96', 'ECS000023', '1', '4440.00', '3800.00', '0', '0', '', '2017-03-29 22:23:57', '2017-03-28 22:26:18');
+INSERT INTO `hx_order_goods` VALUES ('14', '12', '20', '三星BC01', 'ECS000020', '1', '336.00', '238.00', '0', '0', '', '2017-03-29 22:23:57', '2017-03-28 22:26:18');
+INSERT INTO `hx_order_goods` VALUES ('15', '13', '12', '摩托罗拉A810', 'ECS000012', '1', '1179.60', '960.00', '0', '0', '', '2017-03-29 22:23:57', '2017-03-28 22:26:18');
+INSERT INTO `hx_order_goods` VALUES ('16', '14', '15', '摩托罗拉A810', 'ECS000015', '5', '705.60', '588.00', '0', '0', '', '2017-03-29 22:23:57', '2017-03-28 22:26:18');
+INSERT INTO `hx_order_goods` VALUES ('17', '14', '20', '三星BC01', 'ECS000020', '1', '336.00', '238.00', '0', '0', '', '2017-03-29 22:23:57', '2017-03-28 22:26:18');
+INSERT INTO `hx_order_goods` VALUES ('18', '14', '22', '多普达Touch HD', 'ECS000022', '1', '7198.80', '5999.00', '0', '0', '', '2017-03-29 22:23:57', '2017-03-28 22:26:18');
+INSERT INTO `hx_order_goods` VALUES ('19', '14', '3', '诺基亚原装5800耳机', 'ECS000002', '4', '81.60', '68.00', '0', '0', '', '2017-03-29 22:23:57', '2017-03-28 22:26:18');
+INSERT INTO `hx_order_goods` VALUES ('20', '14', '9', '诺基亚E66', 'ECS000009', '2', '2757.60', '2298.00', '0', '0', '', '2017-03-29 22:23:57', '2017-03-28 22:26:18');
+INSERT INTO `hx_order_goods` VALUES ('21', '15', '13', '诺基亚5320 XpressMusic', 'ECS000013', '3', '1583.20', '1210.00', '0', '0', '', '2017-03-29 22:23:57', '2017-03-28 22:26:18');
+INSERT INTO `hx_order_goods` VALUES ('22', '15', '14', '诺基亚5800XM', 'ECS000014', '1', '3150.00', '2493.75', '0', '0', '', '2017-03-29 22:23:57', '2017-03-28 22:26:18');
+INSERT INTO `hx_order_goods` VALUES ('23', '15', '24', 'P806', 'ECS000024', '4', '2400.00', '1900.00', '0', '0', '', '2017-03-29 22:23:57', '2017-03-28 22:26:18');
+INSERT INTO `hx_order_goods` VALUES ('24', '15', '9', '诺基亚E66', 'ECS000009', '1', '2757.60', '2183.10', '0', '0', '', '2017-03-29 22:23:57', '2017-03-28 22:26:18');
+INSERT INTO `hx_order_goods` VALUES ('25', '15', '8', '飞利浦9@9v', 'ECS000008', '3', '478.79', '379.05', '0', '0', '231', '2017-03-29 22:23:57', '2017-03-28 22:26:18');
+INSERT INTO `hx_order_goods` VALUES ('26', '16', '12', '摩托罗拉A810', 'ECS000012', '2', '1179.60', '933.85', '2', '0', '', '2017-03-29 22:23:57', '2017-03-28 22:26:18');
+INSERT INTO `hx_order_goods` VALUES ('27', '16', '1', 'KD876', 'ECS000000', '1', '1665.60', '1318.60', '0', '0', '', '2017-03-29 22:23:57', '2017-03-28 22:26:18');
+INSERT INTO `hx_order_goods` VALUES ('28', '17', '24', 'P806', 'ECS000024', '1', '2400.00', '1900.00', '0', '0', '', '2017-03-29 22:23:57', '2017-03-28 22:26:18');
+INSERT INTO `hx_order_goods` VALUES ('29', '18', '24', 'P806', 'ECS000024', '5', '2400.00', '100.00', '0', '0', '', '2017-03-29 22:23:57', '2017-03-28 22:26:18');
+INSERT INTO `hx_order_goods` VALUES ('30', '19', '12', '摩托罗拉A810', 'ECS000012', '2', '1179.60', '933.85', '2', '0', '', '2017-03-29 22:23:57', '2017-03-28 22:26:18');
+INSERT INTO `hx_order_goods` VALUES ('31', '19', '24', 'P806', 'ECS000024', '2', '2400.00', '1850.00', '2', '0', '167', '2017-03-29 22:23:57', '2017-03-28 22:26:18');
+INSERT INTO `hx_order_goods` VALUES ('32', '20', '9', '诺基亚E66', 'ECS000009', '1', '2757.60', '2298.00', '1', '0', '227', '2017-03-29 22:23:57', '2017-03-28 22:26:18');
 
 -- ----------------------------
 -- Table structure for hx_order_info
@@ -1271,26 +1250,26 @@ CREATE TABLE `hx_order_info` (
 -- ----------------------------
 -- Records of hx_order_info
 -- ----------------------------
-INSERT INTO `hx_order_info` VALUES ('1', '2009051298180', '1', '1', '刘先生', '1', '2', '52', '500', '[中国 北京 北京 海淀区] 中关村海兴大厦', '100085', '010-25851234', '13986765412', 'ecshop@ecshop.com', '', '5', '申通快递', '1', '余额支付', '', '', '385.00', '15.00', '0.00', '0.00', '0.00', '0.00', '0.00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0', '122', '', '', '0.00', '0', '0000-00-00 00:00:00');
-INSERT INTO `hx_order_info` VALUES ('2', '2009051255518', '1', '4', '刘先生', '1', '2', '52', '500', '[中国 北京 北京 海淀区] 中关村海兴大厦', '100085', '010-25851234', '13986765412', 'ecshop@ecshop.com', '', '3', '城际快递', '1', '余额支付', '', '', '960.00', '10.00', '0.00', '0.00', '0.00', '0.00', '0.00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0', '111', '', '', '0.00', '0', '0000-00-00 00:00:00');
-INSERT INTO `hx_order_info` VALUES ('3', '2009051267570', '1', '4', '刘先生', '1', '2', '52', '500', '[中国 北京 北京 海淀区] 中关村海兴大厦', '100085', '010-25851234', '13986765412', 'ecshop@ecshop.com', '', '3', '城际快递', '1', '余额支付', '', '', '2300.00', '10.00', '0.00', '0.00', '0.00', '0.00', '0.00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0', '', '', '', '0.00', '0', '0000-00-00 00:00:00');
-INSERT INTO `hx_order_info` VALUES ('4', '2009051230249', '1', '1', '刘先生', '1', '2', '52', '500', '[中国 北京 北京 海淀区] 中关村海兴大厦', '100085', '010-25851234', '13986765412', 'ecshop@ecshop.com', '', '3', '城际快递', '1', '余额支付', '', '', '5999.00', '10.00', '0.00', '0.00', '0.00', '20.00', '0.00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '1', '', '', '', '0.00', '0', '0000-00-00 00:00:00');
-INSERT INTO `hx_order_info` VALUES ('5', '2009051276258', '1', '1', '刘先生', '1', '2', '52', '500', '[中国 北京 北京 海淀区] 中关村海兴大厦', '100085', '010-25851234', '13986765412', 'ecshop@ecshop.com', '', '5', '申通快递', '1', '余额支付', '', '', '8600.00', '15.00', '0.00', '5.00', '0.00', '0.00', '0.00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0', '', '', '', '0.00', '0', '0000-00-00 00:00:00');
-INSERT INTO `hx_order_info` VALUES ('6', '2009051217221', '3', '3', '叶先生', '1', '2', '52', '510', '通州区旗舰凯旋小区', '', '13588104710', '', 'text@ecshop.com', '', '5', '申通快递', '2', '银行汇款/转帐', '', '', '20.00', '15.00', '0.00', '0.00', '0.00', '0.00', '35.00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0', '', '', '', '0.00', '0', '0000-00-00 00:00:00');
-INSERT INTO `hx_order_info` VALUES ('7', '2009051227085', '3', '1', '叶先生', '1', '2', '52', '510', '通州区旗舰凯旋小区', '', '13588104710', '', 'text@ecshop.com', '', '5', '申通快递', '2', '银行汇款/转帐', '', '', '2298.00', '15.00', '0.00', '0.00', '0.00', '0.00', '1198.10', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0', '', '', '', '0.00', '0', '0000-00-00 00:00:00');
-INSERT INTO `hx_order_info` VALUES ('8', '2009051299732', '3', '0', '叶先生', '1', '2', '52', '510', '通州区旗舰凯旋小区', '', '13588104710', '', 'text@ecshop.com', '', '5', '申通快递', '2', '银行汇款/转帐', '', '', '623.00', '15.00', '0.00', '0.00', '0.00', '0.00', '638.00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0', '', '', '', '0.00', '0', '0000-00-00 00:00:00');
-INSERT INTO `hx_order_info` VALUES ('9', '2009051210718', '3', '0', '叶先生', '1', '2', '52', '510', '通州区旗舰凯旋小区', '', '13588104710', '', 'text@ecshop.com', '', '5', '申通快递', '2', '银行汇款/转帐', '', '', '2000.00', '15.00', '0.00', '0.00', '0.00', '0.00', '2015.00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0', '', '', '', '0.00', '0', '0000-00-00 00:00:00');
-INSERT INTO `hx_order_info` VALUES ('10', '2009051268194', '1', '1', '刘先生', '1', '2', '52', '500', '海兴大厦', '', '010-25851234', '13986765412', 'ecshop@ecshop.com', '', '3', '城际快递', '1', '余额支付', '', '', '0.00', '10.00', '0.00', '0.00', '0.00', '0.00', '0.00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0', '', '', '', '0.00', '0', '0000-00-00 00:00:00');
-INSERT INTO `hx_order_info` VALUES ('11', '2009051264945', '0', '1', '林小姐', '1', '2', '52', '500', '中关村海兴大厦', '', '135474510', '', 'linzi@116.com', '', '3', '城际快递', '2', '银行汇款/转帐', '', '', '3800.00', '10.00', '0.00', '0.00', '0.00', '0.00', '3810.00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0', '', '', '', '0.00', '0', '0000-00-00 00:00:00');
-INSERT INTO `hx_order_info` VALUES ('12', '2009051712919', '1', '2', '刘先生', '1', '2', '52', '502', '海兴大厦', '', '010-25851234', '13986765412', 'ecshop@ecshop.com', '', '3', '城际快递', '3', '货到付款', '', '', '238.00', '10.00', '5.00', '0.00', '0.00', '0.00', '253.00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0', '', '', '', '0.00', '0', '0000-00-00 00:00:00');
-INSERT INTO `hx_order_info` VALUES ('13', '2009051719232', '1', '1', '刘先生', '1', '2', '52', '502', '海兴大厦', '', '010-25851234', '13986765412', 'ecshop@ecshop.com', '', '3', '城际快递', '3', '货到付款', '', '', '960.00', '10.00', '5.00', '0.00', '0.00', '0.00', '975.00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0', '', '', '', '0.00', '0', '0000-00-00 00:00:00');
-INSERT INTO `hx_order_info` VALUES ('14', '2009052224892', '1', '1', '刘先生', '1', '2', '52', '502', '海兴大厦', '', '010-25851234', '13986765412', 'ecshop@ecshop.com', '', '3', '城际快递', '1', '余额支付', '', '', '14045.00', '10.00', '0.00', '0.00', '0.00', '5.00', '0.00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '2', '1123344', '', '', '0.00', '0', '0000-00-00 00:00:00');
-INSERT INTO `hx_order_info` VALUES ('15', '2009061585887', '1', '4', '刘先生', '1', '2', '52', '502', '海兴大厦', '', '010-25851234', '13986765412', 'ecshop@ecshop.com', '', '3', '城际快递', '2', '银行汇款/转帐', '', '', '17044.00', '10.00', '0.00', '0.00', '0.00', '0.00', '17054.00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0', '', '', '', '0.00', '0', '0000-00-00 00:00:00');
-INSERT INTO `hx_order_info` VALUES ('16', '2009061525429', '1', '1', '刘先生', '1', '2', '52', '502', '海兴大厦', '', '010-25851234', '13986765412', 'ecshop@ecshop.com', '', '3', '城际快递', '1', '余额支付', '', '', '3186.30', '10.00', '0.00', '0.00', '0.00', '0.00', '0.00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0', '2009061525121', '', '', '0.00', '0', '0000-00-00 00:00:00');
-INSERT INTO `hx_order_info` VALUES ('17', '2009061503335', '1', '4', '刘先生', '1', '2', '52', '502', '海兴大厦', '', '010-25851234', '13986765412', 'ecshop@ecshop.com', '', '3', '城际快递', '1', '余额支付', '', '', '1900.00', '10.00', '0.00', '0.00', '0.00', '0.00', '0.00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0', '', '', '', '0.00', '0', '0000-00-00 00:00:00');
-INSERT INTO `hx_order_info` VALUES ('18', '2009061510313', '1', '1', '刘先生', '1', '2', '52', '502', '海兴大厦', '', '010-25851234', '13986765412', 'ecshop@ecshop.com', '', '3', '城际快递', '1', '余额支付', '', '', '500.00', '10.00', '0.00', '0.00', '0.00', '0.00', '0.00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0', '', '', '', '0.00', '0', '0000-00-00 00:00:00');
-INSERT INTO `hx_order_info` VALUES ('19', '2009061909851', '1', '5', '刘先生', '1', '2', '52', '502', '海兴大厦', '', '010-25851234', '13986765412', 'ecshop@ecshop.com', '', '3', '城际快递', '1', '余额支付', '', '', '5567.70', '10.00', '0.00', '5577.70', '0.00', '0.00', '0.00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0', '11111111', '', '', '0.00', '0', '0000-00-00 00:00:00');
-INSERT INTO `hx_order_info` VALUES ('20', '2016121299293', '6', '5', '张鑫', '1', '3', '36', '398', '1111', '000000', '1111', '18518011371', '907274532@qq.com', '', '5', '申通快递', '2', '银行汇款/转帐', '', '', '2298.00', '15.00', '0.00', '2313.00', '0.00', '0.00', '0.00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0', '', '', '', '0.00', '0', '0000-00-00 00:00:00');
+INSERT INTO `hx_order_info` VALUES ('1', '2009051298180', '1', '1', '刘先生', '1', '2', '52', '500', '[中国 北京 北京 海淀区] 中关村海兴大厦', '100085', '010-25851234', '13986765412', 'ecshop@ecshop.com', '', '5', '申通快递', '1', '余额支付', '', '', '385.00', '15.00', '0.00', '0.00', '0.00', '0.00', '0.00', '2017-03-29 22:23:57', '2017-03-29 22:23:57', '2017-03-29 22:23:57', '0', '122', '', '', '0.00', '0', '2017-03-28 22:26:09');
+INSERT INTO `hx_order_info` VALUES ('2', '2009051255518', '1', '4', '刘先生', '1', '2', '52', '500', '[中国 北京 北京 海淀区] 中关村海兴大厦', '100085', '010-25851234', '13986765412', 'ecshop@ecshop.com', '', '3', '城际快递', '1', '余额支付', '', '', '960.00', '10.00', '0.00', '0.00', '0.00', '0.00', '0.00', '2017-03-29 22:23:57', '2017-03-29 22:23:57', '2017-03-29 22:23:57', '0', '111', '', '', '0.00', '0', '2017-03-28 22:26:09');
+INSERT INTO `hx_order_info` VALUES ('3', '2009051267570', '1', '4', '刘先生', '1', '2', '52', '500', '[中国 北京 北京 海淀区] 中关村海兴大厦', '100085', '010-25851234', '13986765412', 'ecshop@ecshop.com', '', '3', '城际快递', '1', '余额支付', '', '', '2300.00', '10.00', '0.00', '0.00', '0.00', '0.00', '0.00', '2017-03-29 22:23:57', '2017-03-29 22:23:57', '2017-03-29 22:23:57', '0', '', '', '', '0.00', '0', '2017-03-28 22:26:09');
+INSERT INTO `hx_order_info` VALUES ('4', '2009051230249', '1', '1', '刘先生', '1', '2', '52', '500', '[中国 北京 北京 海淀区] 中关村海兴大厦', '100085', '010-25851234', '13986765412', 'ecshop@ecshop.com', '', '3', '城际快递', '1', '余额支付', '', '', '5999.00', '10.00', '0.00', '0.00', '0.00', '20.00', '0.00', '2017-03-29 22:23:57', '2017-03-29 22:23:57', '2017-03-29 22:23:57', '1', '', '', '', '0.00', '0', '2017-03-28 22:26:09');
+INSERT INTO `hx_order_info` VALUES ('5', '2009051276258', '1', '1', '刘先生', '1', '2', '52', '500', '[中国 北京 北京 海淀区] 中关村海兴大厦', '100085', '010-25851234', '13986765412', 'ecshop@ecshop.com', '', '5', '申通快递', '1', '余额支付', '', '', '8600.00', '15.00', '0.00', '5.00', '0.00', '0.00', '0.00', '2017-03-29 22:23:57', '2017-03-29 22:23:57', '2017-03-29 22:23:57', '0', '', '', '', '0.00', '0', '2017-03-28 22:26:09');
+INSERT INTO `hx_order_info` VALUES ('6', '2009051217221', '3', '3', '叶先生', '1', '2', '52', '510', '通州区旗舰凯旋小区', '', '13588104710', '', 'text@ecshop.com', '', '5', '申通快递', '2', '银行汇款/转帐', '', '', '20.00', '15.00', '0.00', '0.00', '0.00', '0.00', '35.00', '2017-03-29 22:23:57', '2017-03-29 22:23:57', '2017-03-29 22:23:57', '0', '', '', '', '0.00', '0', '2017-03-28 22:26:09');
+INSERT INTO `hx_order_info` VALUES ('7', '2009051227085', '3', '1', '叶先生', '1', '2', '52', '510', '通州区旗舰凯旋小区', '', '13588104710', '', 'text@ecshop.com', '', '5', '申通快递', '2', '银行汇款/转帐', '', '', '2298.00', '15.00', '0.00', '0.00', '0.00', '0.00', '1198.10', '2017-03-29 22:23:57', '2017-03-29 22:23:57', '2017-03-29 22:23:57', '0', '', '', '', '0.00', '0', '2017-03-28 22:26:09');
+INSERT INTO `hx_order_info` VALUES ('8', '2009051299732', '3', '0', '叶先生', '1', '2', '52', '510', '通州区旗舰凯旋小区', '', '13588104710', '', 'text@ecshop.com', '', '5', '申通快递', '2', '银行汇款/转帐', '', '', '623.00', '15.00', '0.00', '0.00', '0.00', '0.00', '638.00', '2017-03-29 22:23:57', '2017-03-29 22:23:57', '2017-03-29 22:23:57', '0', '', '', '', '0.00', '0', '2017-03-28 22:26:09');
+INSERT INTO `hx_order_info` VALUES ('9', '2009051210718', '3', '0', '叶先生', '1', '2', '52', '510', '通州区旗舰凯旋小区', '', '13588104710', '', 'text@ecshop.com', '', '5', '申通快递', '2', '银行汇款/转帐', '', '', '2000.00', '15.00', '0.00', '0.00', '0.00', '0.00', '2015.00', '2017-03-29 22:23:57', '2017-03-29 22:23:57', '2017-03-29 22:23:57', '0', '', '', '', '0.00', '0', '2017-03-28 22:26:09');
+INSERT INTO `hx_order_info` VALUES ('10', '2009051268194', '1', '1', '刘先生', '1', '2', '52', '500', '海兴大厦', '', '010-25851234', '13986765412', 'ecshop@ecshop.com', '', '3', '城际快递', '1', '余额支付', '', '', '0.00', '10.00', '0.00', '0.00', '0.00', '0.00', '0.00', '2017-03-29 22:23:57', '2017-03-29 22:23:57', '2017-03-29 22:23:57', '0', '', '', '', '0.00', '0', '2017-03-28 22:26:09');
+INSERT INTO `hx_order_info` VALUES ('11', '2009051264945', '0', '1', '林小姐', '1', '2', '52', '500', '中关村海兴大厦', '', '135474510', '', 'linzi@116.com', '', '3', '城际快递', '2', '银行汇款/转帐', '', '', '3800.00', '10.00', '0.00', '0.00', '0.00', '0.00', '3810.00', '2017-03-29 22:23:57', '2017-03-29 22:23:57', '2017-03-29 22:23:57', '0', '', '', '', '0.00', '0', '2017-03-28 22:26:09');
+INSERT INTO `hx_order_info` VALUES ('12', '2009051712919', '1', '2', '刘先生', '1', '2', '52', '502', '海兴大厦', '', '010-25851234', '13986765412', 'ecshop@ecshop.com', '', '3', '城际快递', '3', '货到付款', '', '', '238.00', '10.00', '5.00', '0.00', '0.00', '0.00', '253.00', '2017-03-29 22:23:57', '2017-03-29 22:23:57', '2017-03-29 22:23:57', '0', '', '', '', '0.00', '0', '2017-03-28 22:26:09');
+INSERT INTO `hx_order_info` VALUES ('13', '2009051719232', '1', '1', '刘先生', '1', '2', '52', '502', '海兴大厦', '', '010-25851234', '13986765412', 'ecshop@ecshop.com', '', '3', '城际快递', '3', '货到付款', '', '', '960.00', '10.00', '5.00', '0.00', '0.00', '0.00', '975.00', '2017-03-29 22:23:57', '2017-03-29 22:23:57', '2017-03-29 22:23:57', '0', '', '', '', '0.00', '0', '2017-03-28 22:26:09');
+INSERT INTO `hx_order_info` VALUES ('14', '2009052224892', '1', '1', '刘先生', '1', '2', '52', '502', '海兴大厦', '', '010-25851234', '13986765412', 'ecshop@ecshop.com', '', '3', '城际快递', '1', '余额支付', '', '', '14045.00', '10.00', '0.00', '0.00', '0.00', '5.00', '0.00', '2017-03-29 22:23:57', '2017-03-29 22:23:57', '2017-03-29 22:23:57', '2', '1123344', '', '', '0.00', '0', '2017-03-28 22:26:09');
+INSERT INTO `hx_order_info` VALUES ('15', '2009061585887', '1', '4', '刘先生', '1', '2', '52', '502', '海兴大厦', '', '010-25851234', '13986765412', 'ecshop@ecshop.com', '', '3', '城际快递', '2', '银行汇款/转帐', '', '', '17044.00', '10.00', '0.00', '0.00', '0.00', '0.00', '17054.00', '2017-03-29 22:23:57', '2017-03-29 22:23:57', '2017-03-29 22:23:57', '0', '', '', '', '0.00', '0', '2017-03-28 22:26:09');
+INSERT INTO `hx_order_info` VALUES ('16', '2009061525429', '1', '1', '刘先生', '1', '2', '52', '502', '海兴大厦', '', '010-25851234', '13986765412', 'ecshop@ecshop.com', '', '3', '城际快递', '1', '余额支付', '', '', '3186.30', '10.00', '0.00', '0.00', '0.00', '0.00', '0.00', '2017-03-29 22:23:57', '2017-03-29 22:23:57', '2017-03-29 22:23:57', '0', '2009061525121', '', '', '0.00', '0', '2017-03-28 22:26:09');
+INSERT INTO `hx_order_info` VALUES ('17', '2009061503335', '1', '4', '刘先生', '1', '2', '52', '502', '海兴大厦', '', '010-25851234', '13986765412', 'ecshop@ecshop.com', '', '3', '城际快递', '1', '余额支付', '', '', '1900.00', '10.00', '0.00', '0.00', '0.00', '0.00', '0.00', '2017-03-29 22:23:57', '2017-03-29 22:23:57', '2017-03-29 22:23:57', '0', '', '', '', '0.00', '0', '2017-03-28 22:26:09');
+INSERT INTO `hx_order_info` VALUES ('18', '2009061510313', '1', '1', '刘先生', '1', '2', '52', '502', '海兴大厦', '', '010-25851234', '13986765412', 'ecshop@ecshop.com', '', '3', '城际快递', '1', '余额支付', '', '', '500.00', '10.00', '0.00', '0.00', '0.00', '0.00', '0.00', '2017-03-29 22:23:57', '2017-03-29 22:23:57', '2017-03-29 22:23:57', '0', '', '', '', '0.00', '0', '2017-03-28 22:26:09');
+INSERT INTO `hx_order_info` VALUES ('19', '2009061909851', '1', '5', '刘先生', '1', '2', '52', '502', '海兴大厦', '', '010-25851234', '13986765412', 'ecshop@ecshop.com', '', '3', '城际快递', '1', '余额支付', '', '', '5567.70', '10.00', '0.00', '5577.70', '0.00', '0.00', '0.00', '2017-03-29 22:23:57', '2017-03-29 22:23:57', '2017-03-29 22:23:57', '0', '11111111', '', '', '0.00', '0', '2017-03-28 22:26:09');
+INSERT INTO `hx_order_info` VALUES ('20', '2016121299293', '6', '5', '张鑫', '1', '3', '36', '398', '1111', '000000', '1111', '18518011371', '907274532@qq.com', '', '5', '申通快递', '2', '银行汇款/转帐', '', '', '2298.00', '15.00', '0.00', '2313.00', '0.00', '0.00', '0.00', '2017-03-29 22:23:57', '2017-03-29 22:23:57', '2017-03-29 22:23:57', '0', '', '', '', '0.00', '0', '2017-03-28 22:26:09');
 
 -- ----------------------------
 -- Table structure for hx_payment
@@ -4816,11 +4795,11 @@ CREATE TABLE `hx_user` (
 -- ----------------------------
 -- Records of hx_user
 -- ----------------------------
-INSERT INTO `hx_user` VALUES ('1', 'ecshop@ecshop.com', 'ecshop', '554fcae493e564ee0dc75bdf2ebf94ca', '0', '1960-03-03', '6688.70', '0.00', '98388', '15390', '1', '0000-00-00 00:00:00', '0.0.0.0', '0', '0', '0', '0000-00-00 00:00:00', '2017-03-06 22:34:26', '1');
-INSERT INTO `hx_user` VALUES ('2', 'vip@ecshop.com', 'vip', '232059cb5361a9336ccf1b8c2ba7657a', '0', '1949-01-01', '0.00', '0.00', '0', '0', '0', '0000-00-00 00:00:00', '', '0', '0', '0', '0000-00-00 00:00:00', '2017-03-06 22:33:12', '1');
-INSERT INTO `hx_user` VALUES ('3', 'text@ecshop.com', 'text', '1cb251ec0d568de6a929b520c4aed8d1', '0', '1949-01-01', '0.00', '0.00', '0', '0', '2', '0000-00-00 00:00:00', '0.0.0.0', '0', '0', '0', '0000-00-00 00:00:00', '2017-03-06 22:33:12', '1');
-INSERT INTO `hx_user` VALUES ('5', 'zuanshi@ecshop.com', 'zuanshi', '815a71fb334412e7ba4595741c5a111d', '0', '1949-01-01', '0.00', '10000.00', '0', '0', '0', '0000-00-00 00:00:00', '', '3', '0', '0', '0000-00-00 00:00:00', '2017-03-06 22:33:12', '1');
-INSERT INTO `hx_user` VALUES ('6', '907274532@qq.com', '111111', '1bbd886460827015e5d605ed44252251', '0', '0000-00-00', '0.00', '0.00', '2298', '2298', '3', '0000-00-00 00:00:00', '127.0.0.1', '0', '0', '0', '0000-00-00 00:00:00', '2017-03-06 22:33:12', '1');
+INSERT INTO `hx_user` VALUES ('1', 'ecshop@ecshop.com', 'ecshop', '554fcae493e564ee0dc75bdf2ebf94ca', '0', '1960-03-03', '6688.70', '0.00', '98388', '15390', '1', '2017-03-29 22:23:57', '0.0.0.0', '0', '0', '0', '2017-03-29 22:23:57', '2017-03-28 22:25:44', '1');
+INSERT INTO `hx_user` VALUES ('2', 'vip@ecshop.com', 'vip', '232059cb5361a9336ccf1b8c2ba7657a', '0', '1949-01-01', '0.00', '0.00', '0', '0', '0', '2017-03-29 22:23:57', '', '0', '0', '0', '2017-03-29 22:23:57', '2017-03-28 22:25:44', '1');
+INSERT INTO `hx_user` VALUES ('3', 'text@ecshop.com', 'text', '1cb251ec0d568de6a929b520c4aed8d1', '0', '1949-01-01', '0.00', '0.00', '0', '0', '2', '2017-03-29 22:23:57', '0.0.0.0', '0', '0', '0', '2017-03-29 22:23:57', '2017-03-28 22:25:44', '1');
+INSERT INTO `hx_user` VALUES ('5', 'zuanshi@ecshop.com', 'zuanshi', '815a71fb334412e7ba4595741c5a111d', '0', '1949-01-01', '0.00', '10000.00', '0', '0', '0', '2017-03-29 22:23:57', '', '3', '0', '0', '2017-03-29 22:23:57', '2017-03-28 22:25:44', '1');
+INSERT INTO `hx_user` VALUES ('6', '907274532@qq.com', '111111', '1bbd886460827015e5d605ed44252251', '0', '0000-00-00', '0.00', '0.00', '2298', '2298', '3', '2017-03-29 22:23:57', '127.0.0.1', '0', '0', '0', '2017-03-29 22:23:57', '2017-03-28 22:25:44', '1');
 
 -- ----------------------------
 -- Table structure for hx_user_account
@@ -4837,7 +4816,7 @@ CREATE TABLE `hx_user_account` (
   `pay_id` int(90) NOT NULL DEFAULT '0' COMMENT '支付渠道的id',
   `is_paid` tinyint(1) NOT NULL DEFAULT '0' COMMENT '是否已经付款，０，未付；１，已付',
   `create_time` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
-  `update_time` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `update_time` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00' ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),
   KEY `user_id` (`user_id`),
   KEY `is_paid` (`is_paid`)
@@ -4846,8 +4825,8 @@ CREATE TABLE `hx_user_account` (
 -- ----------------------------
 -- Records of hx_user_account
 -- ----------------------------
-INSERT INTO `hx_user_account` VALUES ('1', '1', 'admin', '1111.00', '111111', '1111111', '0', '1', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_user_account` VALUES ('2', '1', 'admin', '-1111.00', '1111', '11111', '1', '1', '0', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
+INSERT INTO `hx_user_account` VALUES ('1', '1', 'admin', '1111.00', '111111', '1111111', '0', '1', '1', '2017-03-29 22:23:57', '2017-03-29 22:23:57');
+INSERT INTO `hx_user_account` VALUES ('2', '1', 'admin', '-1111.00', '1111', '11111', '1', '1', '0', '2017-03-29 22:23:57', '2017-03-29 22:23:57');
 
 -- ----------------------------
 -- Table structure for hx_user_address
@@ -4876,9 +4855,9 @@ CREATE TABLE `hx_user_address` (
 -- ----------------------------
 -- Records of hx_user_address
 -- ----------------------------
-INSERT INTO `hx_user_address` VALUES ('1', '', '1', '刘先生', 'ecshop@ecshop.com', '1', '2', '52', '502', '海兴大厦', '', '010-25851234', '13986765412', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_user_address` VALUES ('2', '', '3', '叶先生', 'text@ecshop.com', '1', '2', '52', '510', '通州区旗舰凯旋小区', '', '13588104710', '', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_user_address` VALUES ('3', '', '6', '张鑫', '907274532@qq.com', '1', '3', '36', '398', '1111', '000000', '1111', '18518011371', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
+INSERT INTO `hx_user_address` VALUES ('1', '', '1', '刘先生', 'ecshop@ecshop.com', '1', '2', '52', '502', '海兴大厦', '', '010-25851234', '13986765412', '2017-03-29 22:23:57', '2017-03-28 22:25:07');
+INSERT INTO `hx_user_address` VALUES ('2', '', '3', '叶先生', 'text@ecshop.com', '1', '2', '52', '510', '通州区旗舰凯旋小区', '', '13588104710', '', '2017-03-29 22:23:57', '2017-03-28 22:25:07');
+INSERT INTO `hx_user_address` VALUES ('3', '', '6', '张鑫', '907274532@qq.com', '1', '3', '36', '398', '1111', '000000', '1111', '18518011371', '2017-03-29 22:23:57', '2017-03-28 22:25:07');
 
 -- ----------------------------
 -- Table structure for hx_user_bonus
@@ -4901,25 +4880,25 @@ CREATE TABLE `hx_user_bonus` (
 -- ----------------------------
 -- Records of hx_user_bonus
 -- ----------------------------
-INSERT INTO `hx_user_bonus` VALUES ('1', '3', '0', '1', '4', '0', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_user_bonus` VALUES ('2', '4', '1000003379', '1', '14', '0', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_user_bonus` VALUES ('3', '4', '1000018450', '0', '0', '0', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_user_bonus` VALUES ('4', '4', '1000023774', '0', '0', '0', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_user_bonus` VALUES ('5', '4', '1000039394', '0', '0', '0', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_user_bonus` VALUES ('6', '4', '1000049305', '0', '0', '0', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_user_bonus` VALUES ('7', '4', '1000052248', '0', '0', '0', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_user_bonus` VALUES ('8', '4', '1000061542', '0', '0', '0', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_user_bonus` VALUES ('9', '4', '1000070278', '0', '0', '0', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_user_bonus` VALUES ('10', '4', '1000080588', '0', '0', '0', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_user_bonus` VALUES ('11', '4', '1000091405', '0', '0', '0', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_user_bonus` VALUES ('12', '3', '0', '1', '0', '0', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_user_bonus` VALUES ('13', '3', '0', '1', '0', '0', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_user_bonus` VALUES ('14', '3', '0', '1', '0', '0', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_user_bonus` VALUES ('15', '3', '0', '1', '0', '0', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_user_bonus` VALUES ('16', '3', '0', '1', '0', '0', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_user_bonus` VALUES ('17', '3', '0', '1', '0', '0', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_user_bonus` VALUES ('18', '3', '0', '1', '0', '0', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_user_bonus` VALUES ('19', '3', '0', '1', '0', '0', '0000-00-00 00:00:00', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
+INSERT INTO `hx_user_bonus` VALUES ('1', '3', '0', '1', '4', '0', '2017-03-29 22:23:57', '2017-03-29 22:23:57', '2017-03-28 22:25:00');
+INSERT INTO `hx_user_bonus` VALUES ('2', '4', '1000003379', '1', '14', '0', '2017-03-29 22:23:57', '2017-03-29 22:23:57', '2017-03-28 22:25:00');
+INSERT INTO `hx_user_bonus` VALUES ('3', '4', '1000018450', '0', '0', '0', '2017-03-29 22:23:57', '2017-03-29 22:23:57', '2017-03-28 22:25:00');
+INSERT INTO `hx_user_bonus` VALUES ('4', '4', '1000023774', '0', '0', '0', '2017-03-29 22:23:57', '2017-03-29 22:23:57', '2017-03-28 22:25:00');
+INSERT INTO `hx_user_bonus` VALUES ('5', '4', '1000039394', '0', '0', '0', '2017-03-29 22:23:57', '2017-03-29 22:23:57', '2017-03-28 22:25:00');
+INSERT INTO `hx_user_bonus` VALUES ('6', '4', '1000049305', '0', '0', '0', '2017-03-29 22:23:57', '2017-03-29 22:23:57', '2017-03-28 22:25:00');
+INSERT INTO `hx_user_bonus` VALUES ('7', '4', '1000052248', '0', '0', '0', '2017-03-29 22:23:57', '2017-03-29 22:23:57', '2017-03-28 22:25:00');
+INSERT INTO `hx_user_bonus` VALUES ('8', '4', '1000061542', '0', '0', '0', '2017-03-29 22:23:57', '2017-03-29 22:23:57', '2017-03-28 22:25:00');
+INSERT INTO `hx_user_bonus` VALUES ('9', '4', '1000070278', '0', '0', '0', '2017-03-29 22:23:57', '2017-03-29 22:23:57', '2017-03-28 22:25:00');
+INSERT INTO `hx_user_bonus` VALUES ('10', '4', '1000080588', '0', '0', '0', '2017-03-29 22:23:57', '2017-03-29 22:23:57', '2017-03-28 22:25:00');
+INSERT INTO `hx_user_bonus` VALUES ('11', '4', '1000091405', '0', '0', '0', '2017-03-29 22:23:57', '2017-03-29 22:23:57', '2017-03-28 22:25:00');
+INSERT INTO `hx_user_bonus` VALUES ('12', '3', '0', '1', '0', '0', '2017-03-29 22:23:57', '2017-03-29 22:23:57', '2017-03-28 22:25:00');
+INSERT INTO `hx_user_bonus` VALUES ('13', '3', '0', '1', '0', '0', '2017-03-29 22:23:57', '2017-03-29 22:23:57', '2017-03-28 22:25:00');
+INSERT INTO `hx_user_bonus` VALUES ('14', '3', '0', '1', '0', '0', '2017-03-29 22:23:57', '2017-03-29 22:23:57', '2017-03-28 22:25:00');
+INSERT INTO `hx_user_bonus` VALUES ('15', '3', '0', '1', '0', '0', '2017-03-29 22:23:57', '2017-03-29 22:23:57', '2017-03-28 22:25:00');
+INSERT INTO `hx_user_bonus` VALUES ('16', '3', '0', '1', '0', '0', '2017-03-29 22:23:57', '2017-03-29 22:23:57', '2017-03-28 22:25:00');
+INSERT INTO `hx_user_bonus` VALUES ('17', '3', '0', '1', '0', '0', '2017-03-29 22:23:57', '2017-03-29 22:23:57', '2017-03-28 22:25:00');
+INSERT INTO `hx_user_bonus` VALUES ('18', '3', '0', '1', '0', '0', '2017-03-29 22:23:57', '2017-03-29 22:23:57', '2017-03-28 22:25:00');
+INSERT INTO `hx_user_bonus` VALUES ('19', '3', '0', '1', '0', '0', '2017-03-29 22:23:57', '2017-03-29 22:23:57', '2017-03-28 22:25:00');
 
 -- ----------------------------
 -- Table structure for hx_user_feed
@@ -4959,6 +4938,6 @@ CREATE TABLE `hx_user_rank` (
 -- ----------------------------
 -- Records of hx_user_rank
 -- ----------------------------
-INSERT INTO `hx_user_rank` VALUES ('1', '注册用户', '0', '10000', '100', '1', '0', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
-INSERT INTO `hx_user_rank` VALUES ('2', 'vip', '10000', '10000000', '95', '1', '0', '0000-00-00 00:00:00', '2017-03-26 11:51:35');
-INSERT INTO `hx_user_rank` VALUES ('3', '代销用户', '0', '0', '90', '0', '1', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
+INSERT INTO `hx_user_rank` VALUES ('1', '注册用户', '0', '10000', '100', '1', '0', '2017-03-29 22:23:57', '2017-03-29 22:23:57');
+INSERT INTO `hx_user_rank` VALUES ('2', 'vip', '10000', '10000000', '95', '1', '0', '2017-03-29 22:23:57', '2017-03-29 22:23:57');
+INSERT INTO `hx_user_rank` VALUES ('3', '代销用户', '0', '0', '90', '0', '1', '2017-03-29 22:23:57', '2017-03-29 22:23:57');

@@ -63,7 +63,7 @@
                                         <label class="col-sm-3 control-label">请选择父级：</label>
 
                                         <div class="col-sm-4">
-                                            <select class="form-control" name="pid" id="role">
+                                            <select class="form-control" name="parent_id" id="parent_id">
                                                 <option value="0">请选择父级</option>
                                                 <volist name="list" id="v">
                                                     <option value="{$v.id}">{$v.title}</option>
@@ -164,7 +164,6 @@
                             throwExc("规则名称必须填写");
                             return false;
                         }
-                        URL
                         if($.trim(url)=='') {
                             throwExc("URL必须填写");
                             return false;
