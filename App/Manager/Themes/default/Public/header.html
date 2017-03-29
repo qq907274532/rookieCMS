@@ -28,6 +28,17 @@
     <link rel="stylesheet" type="text/css" href="__PUBLIC__/admin/js/uniform/css/uniform.default.min.css"/>
        <link href="__PUBLIC__/admin/js/datetimepicker/css/datetimepicker.css" rel="stylesheet" type="text/css">
     <link href="__PUBLIC__/admin/js/datetimepicker/css/dropdown.css" rel="stylesheet" type="text/css">
+    <script src="__PUBLIC__/kindeditor/kindeditor.js"></script>
+    <script>
+
+        KindEditor.ready(function(K) {
+            window.editor = K.create('#desc',{
+                    width : '700px',
+                    height : '350px'
+                }
+            );
+        });
+    </script>
    
 
     <!-- FONTS -->

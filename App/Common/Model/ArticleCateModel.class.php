@@ -6,15 +6,27 @@ use Think\Model;
  *		editor	wxy
  *		date		2015-5-6 13:34:57
  *****/
-class CateModel extends Model {
+class ArticleCateModel extends Model {
 	const STATUS_ENABLE="1";
 	const STATUS_DISABLE="0";
+	const CATE_TYPE_ORDINARY=1;//普通
+	const CATE_TYPE_SYSTEM=2;//系统
+	const CATE_TYPE_SHOP_INFORMATION=3;//网店信息
+	const CATE_TYPE_HELP_SORT=4;//帮助分类
+	const CATE_TYPE_ONLINE_HELP=5;//网店帮助
+    public static $TYPE_MAP=[
+        self::CATE_TYPE_ORDINARY=>'普通分类' ,
+        self::CATE_TYPE_SYSTEM=>'系统分类' ,
+        self::CATE_TYPE_SHOP_INFORMATION=>'网店信息' ,
+        self::CATE_TYPE_HELP_SORT=>'帮助分类' ,
+        self::CATE_TYPE_ONLINE_HELP=>'网店帮助' ,
+    ];
 	public static $STATUS_MAP=array(
 		self::STATUS_ENABLE=>'启用',
 		self::STATUS_DISABLE=>'禁用',
 		);
 	protected $_validate = array(
-      array('cate','require','分类名称必须填写'), 
+      array('cat_name','require','分类名称必须填写'),
     
    );
 

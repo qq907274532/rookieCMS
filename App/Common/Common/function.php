@@ -11,7 +11,7 @@
             if(is_array($node)){
                 $v['access']=in_array($v['id'], $access)?1:0;
             }
-            if($v['pid']==$pid){
+            if($v['parent_id']==$pid){
                 $v['child']=node_merges($node,$access,$v['id']);
                 if (empty($v['child'])) {
                     $v['show'] = 0;

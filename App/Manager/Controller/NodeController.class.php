@@ -94,7 +94,7 @@
             if (($id = I('id', 0, 'intval')) <= 0) {
                 $this->ajaxReturn(array('error' => self::ERROR_NUMBER, 'message' => "数据格式有误"));
             }
-            $result = $this->model->where(array('pid' => $id))->select();
+            $result = $this->model->where(array('parent_id' => $id))->select();
             if (!empty($result)) {
                 $this->ajaxReturn(array('error' => self::ERROR_NUMBER, 'message' => "该分类下面有子类。请先删除子类"));
             }
