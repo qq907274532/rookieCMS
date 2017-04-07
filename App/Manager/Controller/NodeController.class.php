@@ -34,6 +34,7 @@
                 if (intval($data['menu']) < 0) {
                     $this->ajaxReturn(array('error' => self::ERROR_NUMBER, 'msg' => '请选择是否是菜单'));
                 }
+                $data['create_time']=date('Y-m-d H:i:s');
                 if (!$this->model->create($data)) {
                     $this->ajaxReturn(array('error' => self::ERROR_NUMBER, 'msg' => $this->model->getError()));
                 } else {
