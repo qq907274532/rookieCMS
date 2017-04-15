@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 # Created by .ignore support plugin (hsz.mobi)
 .gitignore
 Runtime/Logs/Api/
 Runtime/Logs/User/
+=======
+Runtime/
+.idea/
+.tags/
+>>>>>>> e52efc27f32c41ab02f545969c69924aa4829660
