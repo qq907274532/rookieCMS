@@ -3,7 +3,8 @@
 
 
     use Common\Model\OrderInfoModel;
-    use Common\Model\UserModel;
+    use Common\Model\RegionModel;
+    use Common\Model\UserAddressModel;
 
     class OrderController extends AdminBaseController
     {
@@ -14,6 +15,7 @@
         {
             parent::__construct();
             $this->model = new OrderInfoModel();
+
         }
 
         public function index()
@@ -63,8 +65,10 @@
             if (($id = I('id', 0, 'intval')) <= 0) {
                 $this->error("不合法请求", U('Users/index'));
             }
-            $userAddress = D('UserAddress')->getUsersAddressListByUid($id);
-            $getRegionList = D('Region')->getRegionList();
+            $userAddressModel= new UserAddressModel();
+            $regionModel= new RegionModel();
+            $userAddress = $userAddressModel->getUsersAddressListByUid($id);
+            $getRegionList =$regionModel->getRegionList();
             $newRegionList = array_combine(array_column($getRegionList, 'region_id'), array_column($getRegionList, 'region_name'));
             foreach ($userAddress as $k => $v) {
                 $userAddress[$k]['country_name'] = $newRegionList[$v['country']];
