@@ -66,11 +66,10 @@
                                         <th>邮箱</th>
                                         <th>现有资金</th>
                                         <th>冻结资金</th>
+                                        <th>消费积分</th>
+                                        <th>等级积分</th>
                                         <th>状态</th>
-                                        <th>最后一次登录时间</th>
-                                        <th>最后一次登录IP</th>
-                                        <th class="hidden-480">创建时间</th>
-                                        <th class="hidden-480">更新时间</th>
+                                        <th class="hidden-480">注册时间</th>
                                         <th>操作</th>
                                     </tr>
                                     </thead>
@@ -81,6 +80,8 @@
                                             <td>{$v.email}</td>
                                             <td>{$v.user_money}</td>
                                             <td>{$v.frozen_money}</td>
+                                            <td>{$v.pay_points}</td>
+                                            <td>{$v.rank_points}</td>
                                             <td>
                                                 <if condition="$v.status eq Common\Model\UserModel::STATUS_ENABLE">
                                                     <span class="label label-primary arrow-in">{$v.statusName}</span>
@@ -88,14 +89,10 @@
                                                     <span class="label  label-danger arrow-out ">{$v.statusName}</span>
                                                 </if>
                                             </td>
-                                            <td>{$v.last_login}</td>
-                                            <td>{$v.last_ip}</td>
                                             <td class="hidden-480">{$v.create_time}</td>
-                                            <td class="hidden-480">{$v.update_time}</td>
                                             <td>
-                                             <input type="hidden" name="id" value="{$v.user_id}" id="user_id">
                                               <if condition="$v.status eq Common\Model\UserModel::STATUS_ENABLE">
-                                                <a href="javascript:;" class="fa fa-trash-o tip checkStatus" data-original-title="禁用"> </a>
+                                                <a href="javascript:;" class="fa fa-trash-o tip checkStatus" data-id="{$v.user_id}" data-original-title="禁用"> </a>
                                                <else/>
                                                 <a href="javascript:;" class="fa fa-trash-o tip checkStatus" data-original-title="启用"> </a>
                                                 </if>
@@ -123,7 +120,7 @@
             <include file="Public/footer"/>
             <script type="text/javascript">
                 $(".checkStatus").click(function(){
-                    var id=$(this).prev().val();
+                    var id=$(this).attr("data-id");
                     var msg=$(this).attr("data-original-title");
                     var status;
                     if(msg=='禁用') {

@@ -5,7 +5,7 @@
         $db = [];
     }
     $config = [
-        'URL_MODEL' => '2',
+        'URL_MODEL' => '1',
         'COMM_TITLE' => 'rookieCMS',
         'PAGE_NUMBER' => '15',
         /* 系统变量名称设置 */

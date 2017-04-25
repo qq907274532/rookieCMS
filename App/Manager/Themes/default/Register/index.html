@@ -27,10 +27,10 @@
                                     <a href="{:U('Index/index')}">首页</a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0)">会员管理</a>
+                                    <a href="javascript:void(0)">基本设置</a>
                                 </li>
-                                <li class="active">会员等级</li>
-                                <a href="{:U('UserRank/add')}" class="btn btn-primary pull-right ">增加等级 <i class="fa fa-arrow-right"></i></a>
+                                <li class="active">注册项设置</li>
+                                <a href="{:U('Register/add')}" class="btn btn-primary pull-right ">增加注册项 <i class="fa fa-arrow-right"></i></a>
                             </ul>
                             <div class="clearfix">
 
@@ -48,7 +48,7 @@
                         <!-- BOX -->
                         <div class="box border primary">
                             <div class="box-title">
-                                <h4><i class="fa fa-table"></i>会员等级列表</h4>
+                                <h4><i class="fa fa-table"></i>注册项设置</h4>
                                 <div class="tools">
 
                                     <a href="javascript:;" class="collapse">
@@ -61,15 +61,10 @@
                                 <table class="table table-striped">
                                     <thead>
                                     <tr>
-                                        <th>ID</th>
-                                        <th>会员等级名称</th>
-                                        <th>积分下限</th>
-                                        <th>积分上限</th>
-                                        <th>初始折扣率(%)</th>
-                                        <th>特殊会员组</th>
-                                        <th>显示价格</th>
-                                        <th class="hidden-480">创建时间</th>
-                                        <th class="hidden-480">更新时间</th>
+                                        <th>注册项名称</th>
+                                        <th>排序</th>
+                                        <th>是否显示</th>
+                                        <th>是否必填</th>
                                         <th>状态</th>
                                         <th>操作</th>
                                     </tr>
@@ -77,31 +72,24 @@
                                     <tbody>
                                     <volist name="data.list" id="v">
                                         <tr>
-                                            <td>{$v.rank_id}</td>
-                                            <td>{$v.rank_name}</td>
-                                            <td>{$v.min_points}</td>
-                                            <td>{$v.max_points}</td>
-                                            <td>{$v.discount}</td>
+                                            <td>{$v.name}</td>
+                                            <td>{$v.sort}</td>
                                             <td class="hidden-480">
-                                                <if condition="$v.special_rank eq Common\Model\UserRankModel::IS_SPECIAL_RANK">
-                                                    <span class="label label-primary arrow-out specialRank" style="cursor:pointer">{$v.specialRankName}</span>
+                                                <if condition="$v.is_show eq Common\Model\RegisterSettingModel::IS_SHOW">
+                                                    <span class="label label-primary arrow-out shows" data-show="{$v.id}" style="cursor:pointer">{$v.isShowName}</span>
                                                     <else/>
-                                                    <span class="label  label-danger arrow-in specialRank" style="cursor:pointer">{$v.specialRankName}</span>
+                                                    <span class="label  label-danger arrow-in shows" data-show="{$v.id}"  style="cursor:pointer">{$v.isShowName}</span>
                                                 </if>
                                             </td>
                                             <td>
-                                                <if condition="$v.show_price eq Common\Model\UserRankModel::IS_SHOW_PRICE">
-                                                    <span class="label label-primary arrow-in showPrice" style="cursor:pointer">{$v.showPriceName}</span>
+                                                <if condition="$v.is_must eq Common\Model\RegisterSettingModel::IS_MUST">
+                                                    <span class="label label-primary arrow-in must" data-must="{$v.id}" style="cursor:pointer">{$v.isMustName}</span>
                                                 <else/>
-                                                    <span class="label  label-danger arrow-out showPrice" style="cursor:pointer">{$v.showPriceName}</span>
+                                                    <span class="label  label-danger arrow-out must" data-must="{$v.id}"  style="cursor:pointer">{$v.isMustName}</span>
                                                 </if>
                                             </td>
-
-
-                                            <td class="hidden-480">{$v.create_time}</td>
-                                            <td class="hidden-480">{$v.update_time}</td>
                                             <td>
-                                                <if condition="$v.status eq Common\Model\UserRankModel::STATUS_ENABLE">
+                                                <if condition="$v.status eq Common\Model\RegisterSettingModel::STATUS_ENABLE">
                                                     <span class="label label-primary arrow-in">{$v.statusName}</span>
                                                     <else/>
                                                     <span class="label  label-danger arrow-out ">{$v.statusName}</span>
@@ -109,12 +97,12 @@
                                             </td>
                                             <td>
 
-                                              <a href="{:U('UserRank/edit',array('id'=>$v['rank_id']))}" class="fa fa-pencil tip" data-original-title="修改"></a>
+                                              <a href="{:U('Register/edit',array('id'=>$v['id']))}" class="fa fa-pencil tip" data-original-title="修改"></a>
 
-                                              <if condition="$v.status eq Common\Model\UserRankModel::STATUS_ENABLE">
-                                                <a href="javascript:;" class="fa fa-trash-o tip checkStatus" data-original-title="禁用"> </a>
+                                              <if condition="$v.status eq Common\Model\RegisterSettingModel::STATUS_ENABLE">
+                                                <a href="javascript:;" class="fa fa-trash-o tip checkStatus" data-status="{$v.id}" data-original-title="禁用"> </a>
                                                <else/>
-                                                <a href="javascript:;" class="fa fa-trash-o tip checkStatus" data-original-title="启用"> </a>
+                                                <a href="javascript:;" class="fa fa-trash-o tip checkStatus" data-status="{$v.id}" data-original-title="启用"> </a>
                                                 </if>
                                             </td>
                                         </tr>
@@ -140,19 +128,19 @@
             <include file="Public/footer"/>
             <script type="text/javascript">
                 $(".checkStatus").click(function(){
-                    var id=$(this).parent().parent().find("td:eq(0)").html();
+                    var id=$(this).attr("data-status");
                     var msg=$(this).attr("data-original-title");
                     var status;
                     if(msg=='禁用') {
-                        status="<?=Common\Model\UserRankModel::STATUS_ENABLE?>";
+                        status="<?=Common\Model\RegisterSettingModel::STATUS_ENABLE?>";
                     }else {
-                        status="<?=Common\Model\UserRankModel::STATUS_DISABLE?>";
+                        status="<?=Common\Model\RegisterSettingModel::STATUS_DISABLE?>";
                     }
                     layer.confirm('你确定要'+msg+"吗？", {
                         btn: ['确定','取消'] //按钮
                     }, function(){
                         $.ajax({
-                            url: "{:U('UserRank/del')}",
+                            url: "{:U('Register/del')}",
                             type: "POST",
                             data :{ "id":id,"status":status },
                             dataType: "json",
@@ -177,22 +165,22 @@
                     });
 
                 });
-                $(".specialRank").click(function(){
-                    var id=$(this).parent().parent().find("td:eq(0)").html();
+                $(".shows").click(function(){
+                    var id=$(this).attr("data-show");
                     var msg=$(this).html();
                     var status;
                     if(msg=='否') {
-                        msg="设置成特殊会员组"
-                        status="<?=Common\Model\UserRankModel::IS_SPECIAL_RANK?>";
+                        msg="显示"
+                        status="<?=Common\Model\RegisterSettingModel::IS_SHOW?>";
                     }else {
-                        msg="取消特殊会员组"
-                        status="<?=Common\Model\UserRankModel::IS_NOT_SPECIAL_RANK?>";
+                        msg="取消显示"
+                        status="<?=Common\Model\RegisterSettingModel::IS_NOT_SHOW?>";
                     }
                     layer.confirm('你确定要'+msg+"吗？", {
                         btn: ['确定','取消'] //按钮
                     }, function(){
                         $.ajax({
-                            url: "{:U('Common/specialRank')}",
+                            url: "{:U('Common/showSetting')}",
                             type: "POST",
                             data :{ "id":id,"status":status },
                             dataType: "json",
@@ -217,23 +205,23 @@
                     });
 
                 });
-                $(".showPrice").click(function(){
-                    var id=$(this).parent().parent().find("td:eq(0)").html();
+                $(".must").click(function(){
+                    var id=$(this).attr("data-must");
                     var msg=$(this).html();
 
                     var status;
-                    if(msg=="不显示") {
-                        msg='显示'
-                        status="<?=Common\Model\UserRankModel::IS_SHOW_PRICE?>";
+                    if(msg=="否") {
+                        msg='设置'
+                        status="<?=Common\Model\RegisterSettingModel::IS_MUST?>";
                     }else {
-                        msg='不显示'
-                        status="<?=Common\Model\UserRankModel::IS_NOT_SHOW_PRICE?>";
+                        msg='取消'
+                        status="<?=Common\Model\RegisterSettingModel::IS_NOT_MUST?>";
                     }
-                    layer.confirm('你确定要 '+msg+" 会员价吗？", {
+                    layer.confirm('你确定要 '+msg+" 为必填项吗？", {
                         btn: ['确定','取消'] //按钮
                     }, function(){
                         $.ajax({
-                            url: "{:U('Common/showPrice')}",
+                            url: "{:U('Common/must')}",
                             type: "POST",
                             data :{ "id":id,"status":status },
                             dataType: "json",

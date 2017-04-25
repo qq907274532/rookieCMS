@@ -24,7 +24,7 @@
          */
         public function getUserInfoByUserName($username)
         {
-            $info = $this->where(['username' => $username])->find();
+            $info = $this->where(['user_name' => $username])->find();
             return $info;
         }
 
@@ -34,7 +34,7 @@
          */
         public function getUserInfoByUserId($uid)
         {
-            $info = $this->where(['user_id' => $uid])->getField('username');
+            $info = $this->where(['user_id' => $uid])->getField('user_name');
             return $info;
         }
 

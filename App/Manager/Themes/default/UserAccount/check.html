@@ -30,7 +30,7 @@
                                     <a href="javascript:void(0)">会员管理</a>
                                 </li>
                                 <li>到款审核</li>
-                                <a href="{:U('RechargeCash/inedx')}" class="btn btn-primary pull-right "><i class="fa fa-arrow-left"></i> 返回 </a>
+                                <a href="{:U('UserAccount/inedx')}" class="btn btn-primary pull-right "><i class="fa fa-arrow-left"></i> 返回 </a>
                             </ul>
                             <div class="clearfix">
 
@@ -148,7 +148,7 @@
                         btn: ['确定','取消'] //按钮
                     }, function(){
                         $.ajax({
-                            url: "{:U('RechargeCash/check')}",
+                            url: "{:U('UserAccount/check')}",
                             type: "POST",
                             data :{ "id":id,"is_paid":is_paid,"admin_note":admin_note,"process_type":process_type },
                             dataType: "json",

@@ -6,7 +6,7 @@
     use Common\Model\UserAccountModel;
     use Common\Model\UserModel;
 
-    class RechargeCashController extends AdminBaseController
+    class UserAccountController extends AdminBaseController
     {
         private $model;
         private $order;
@@ -25,7 +25,7 @@
             //查询出支付方式
             $payMent = $payMentModel->getPaymentListByStatus();
             //组合成新的数组
-            $newPayMent = array_combine(array_column($payMent, 'pay_id'), array_column($payMent, 'pay_name'));
+            $newPayMent =array_column($payMent, 'pay_name','pay_id');
             $where = ['status' => UserAccountModel::STATUS_ENABLE];
             $username = empty(I('username')) ? '' : I('username');
             $process_type = empty(I('process_type')) ? '' : I('process_type');
@@ -42,13 +42,13 @@
                 $where['is_paid'] = array('eq', $is_paid);
             }
             if (!empty($payMentType)) {
-                $where['payment_id'] = array('eq', $payMentType);
+                $where['pay_id'] = array('eq', $payMentType);
             }
             $data = $this->page_com($this->model, $this->order, $where);
             foreach ($data['list'] as $k => $v) {
                 
                 $data['list'][$k]['amount'] = "¥" . sprintf('%0.2f', abs($v['amount'])) . "元";
-                $data['list'][$k]['payment'] = $newPayMent[$v['payment_id']];
+                $data['list'][$k]['payment'] = $newPayMent[$v['pay_id']];
                 $data['list'][$k]['process_type_name'] = UserAccountModel::$PAY_TYPE_MAP[$v['process_type']];
                 $data['list'][$k]['is_paid_name'] = UserAccountModel::$PAY_STATUS[$v['is_paid']];
 
@@ -124,7 +124,7 @@
                 }
             } else {
                 if ($id <= 0) {
-                    $this->error("不合法请求", U('RechargeCash/index'));
+                    $this->error("不合法请求", U('UserAccount/index'));
                 }
                 $payMentModel = new PaymentModel();
                 $userModel = new UserModel();
@@ -172,7 +172,7 @@
                 }
             } else {
                 if ($id <= 0) {
-                    $this->error("不合法请求", U('RechargeCash/index'));
+                    $this->error("不合法请求", U('UserAccount/index'));
                 }
                 $userModel = new UserModel();
                 $info = $this->model->getUserAccountInfoById($id);
