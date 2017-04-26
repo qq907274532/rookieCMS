@@ -1,110 +1,216 @@
 <include file="Public/header"/><!--/HEADER -->
-<!-- Left side column. contains the logo and sidebar -->
-<include file="Public/menu"/>
-<!-- Content Wrapper. Contains page content -->
-<div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <section class="content-header">
+<!--/HEADER -->
 
-        <ol class="breadcrumb pull-left">
-            <li ><i class="fa fa-dashboard"></i><span class="color:black">首页</span></li>
-            <li class="active">
-                <a href="#">基本管理</a>
-            </li>
-            <li class="active">友情链接</li>
-        </ol>
-        <div class="clearfix pull-right">
-            <a href="{:U('Link/add')}" class="btn btn-primary ">增加链接 <i class="fa fa-arrow-right"></i></a>
-        </div>
-    </section>
+<!-- PAGE -->
 
-    <!-- Main content -->
-    <section class="content">
+<!-- SIDEBAR -->
+<include file="Public/menu"/><!--/HEADER -->
+<!-- /SIDEBAR -->
+<div id="main-content">
+    <!-- SAMPLE BOX CONFIGURATION MODAL FORM-->
+
+    <!-- /SAMPLE BOX CONFIGURATION MODAL FORM-->
+    <div class="container">
         <div class="row">
-            <div class="col-xs-12">
-                <div class="box">
-                    <div class="box-header">
-                        <h3 class="box-title">友情链接</h3>
+            <div id="content" class="col-lg-12">
+                <!-- PAGE HEADER-->
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="page-header">
+                            <!-- STYLER -->
 
-                        <div class="box-tools">
-                            <div class="input-group input-group-sm" style="width: 150px;">
+                            <!-- /STYLER -->
+                            <!-- BREADCRUMBS -->
+                            <ul class="breadcrumb">
+                                <li>
+                                    <i class="fa fa-home"></i>
+                                    <a href="{:U('Index/index')}">首页</a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">商品管理</a>
+                                </li>
+                                <li>品牌管理</li>
+                                <a href="{:U('Brand/add')}" class="btn btn-primary pull-right ">增加品牌 <i class="fa fa-arrow-right"></i></a>
+                            </ul>
+                            <div class="clearfix">
 
                             </div>
+                            <!-- /BREADCRUMBS -->
+
                         </div>
                     </div>
-                    <!-- /.box-header -->
-                    <div class="box-body table-responsive no-padding">
-                        <table class="table table-hover">
-                            <thead>
-                            <tr>
-                                <th class="text-center">ID</th>
-                                <th class="text-center">名称</th>
-                                <th class="text-center">图片</th>
-                                <th class="text-center">排序</th>
-                                <th class="text-center">创建时间</th>
-                                <th class="text-center">修改时间</th>
-                                <th class="text-center">操作</th>
-                            </tr>
-                            </thead>
-                            <volist name="data.list" id="v">
-                                <tr class="text-center">
-                                    <td>{$v.id}</td>
-                                    <td>{$v.name}</td>
-                                    <td ><img width="200" height ="90" src="{$v.image}"></td>
-                                    <td >{$v.sort}</td>
-                                    <td>{$v.create_time}</td>
-                                    <td >{$v.update_time}</td>
-                                    <td>
-                                        <div class="visible-md visible-lg hidden-sm hidden-xs btn-group">
-                                            <a href="{:U('Role/edit',array('id'=>$v['id']))}" class="fa fa-pencil tip" data-toggle="tooltip" title="编辑"></a>
-                                            <a href="javascript:;" class="fa fa-trash-o tip checkStatus" data-toggle="tooltip" title="删除"> </a>
-                                        </div>
-
-
-                                    </td>
-                                </tr>
-                            </volist>
-
-                        </table>
-                    </div>
-                    <!-- /.box-body -->
                 </div>
-                <!-- /.box -->
+                <!-- /PAGE HEADER -->
+                <!-- SIMPLE STRIPED -->
+                <div class="row">
+
+                    <div class="col-md-12">
+                        <!-- BOX -->
+                        <div class="box border primary">
+                            <div class="box-title">
+                                <h4><i class="fa fa-table"></i>品牌列表</h4>
+                                <div class="tools">
+
+                                    <a href="javascript:;" class="collapse">
+                                        <i class="fa fa-chevron-up"></i>
+                                    </a>
+
+                                </div>
+                            </div>
+                            <div class="box-body">
+                                <table class="table table-striped">
+                                    <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>品牌名称</th>
+                                        <th>品牌LOGO</th>
+                                        <th>品牌网址</th>
+                                        <th>品牌描述</th>
+                                        <th>排序</th>
+                                        <th>是否显示</th>
+                                        <th>状态</th>
+                                        <th>操作</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <volist name="data.list" id="v">
+                                        <tr>
+                                            <td>{$v.brand_id}</td>
+                                            <td>{$v.brand_name}</td>
+                                            <td>{$v.remark}</td>
+                                            <td>{$v.site_url}</td>
+                                            <td>{$v.brand_desc}</td>
+                                            <td>{$v.sort_order}</td>
+                                            <td>
+                                                <if condition="$v.is_show eq Common\Model\BrandModel::IS_SHOW">
+                                                    <a href="javascript:;" class="label label-primary  is_show" data-original-id="{$v.brand_id}" data-original-title="{$v.isShow}">{$v.isShow} </a>
+                                                    <else/>
+                                                    <a href="javascript:;" class="label  label-danger  is_show" data-original-id="{$v.brand_id}" data-original-title="{$v.isShow}" >{$v.isShow} </a>
+                                                </if>
+                                            </td>
+
+                                            <td>
+                                                <if condition="$v.status eq Common\Model\BrandModel::STATUS_ENABLE">
+                                                    <span class="label label-primary arrow-in">{$v.statusName}</span>
+                                                    <else/>
+                                                    <span class="label  label-danger arrow-out ">{$v.statusName}</span>
+                                                </if>
+                                            </td>
+
+                                           
+                                            <td>
+
+                                              <a href="{:U('Brand/edit',array('id'=>$v['brand_id']))}" class="fa fa-pencil tip" data-original-title="修改"></a>
+
+                                              <if condition="$v.status eq Common\Model\BrandModel::STATUS_ENABLE">
+                                                <a href="javascript:;" class="fa fa-trash-o tip checkStatus" data-original-id="{$v.brand_id}" data-original-title="禁用"> </a>
+                                               <else/>
+                                                <a href="javascript:;" class="fa fa-trash-o tip checkStatus" data-original-id="{$v.brand_id}" data-original-title="启用"> </a>
+                                                </if>
+                                            </td>
+                                        </tr>
+                                        </volist>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="col-sm-6 pull-right">
+                                <div class="dataTables_paginate paging_bootstrap ">
+                                    <ul class="pagination ">
+                                        {$data.page}
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /BOX -->
+                    </div>
+                </div>
+
+                <!-- /BORDERED HOVER -->
             </div>
-        </div>
-        <!-- /.row -->
+            <!--/HEADER -->
+            <include file="Public/footer"/>
+            <script type="text/javascript">
+                $(".is_show").click(function(){
+                    var id=$(this).attr("data-original-id");
+                    var msg=$(this).attr("data-original-title");
+                    var status;
+                    if(msg=='否') {
+                        msg="显示";
+                        status="<?=Common\Model\BrandModel::IS_SHOW?>";
+                    }else {
+                        msg="取消显示";
+                        status="<?=Common\Model\BrandModel::IS_NOT_SHOW?>";
+                    }
+                    layer.confirm('你确定要'+msg+"吗？", {
+                        btn: ['确定','取消'] //按钮
+                    }, function(){
+                        $.ajax({
+                            url: "{:U('Common/showBrand')}",
+                            type: "POST",
+                            data :{ "id":id,"status":status },
+                            dataType: "json",
+                            success:function(response){
+                                if(response.error==100) {
+                                    throwExc(response.message);
+                                    return false;
+                                }else if(response.error==200){
+                                    showSucc(response.message);
+                                    setTimeout("load()",1000);
+                                }
+                            },
+                            error:function(response){
+                                throwExc(response.responseText);
+                                return false;
+                            }
+                        })
+                    }, function(){
+                        layer.msg('取消操作', {
+                            time: 800, //20s后自动关闭
+                        });
+                    });
 
-    </section>
-    <!-- /.content -->
-</div>
+                });
 
+                $(".checkStatus").click(function(){
+                    var id=$(this).attr("data-original-id");
+                    var msg=$(this).attr("data-original-title");
+                    var status;
+                    if(msg=='禁用') {
+                        status="<?=Common\Model\BrandModel::STATUS_ENABLE?>";
+                    }else {
+                        status="<?=Common\Model\BrandModel::STATUS_DISABLE?>";
+                    }
+                    layer.confirm('你确定要'+msg+"吗？", {
+                        btn: ['确定','取消'] //按钮
+                    }, function(){
+                        $.ajax({
+                            url: "{:U('Brand/del')}",
+                            type: "POST",
+                            data :{ "id":id,"status":status },
+                            dataType: "json",
+                            success:function(response){
+                                if(response.error==100) {
+                                    throwExc(response.message);
+                                    return false;
+                                }else if(response.error==200){
+                                    showSucc(response.message);
+                                    setTimeout("load()",1000);
+                                }
+                            },
+                            error:function(response){
+                                throwExc(response.responseText);
+                                return false;
+                            }
+                        })
+                    }, function(){
+                        layer.msg('取消操作', {
+                            time: 800, //20s后自动关闭
+                        });
+                    });
 
-<!-- Control Sidebar -->
+                });
 
-<include file="Public/footer"/>
-
-<script type="text/javascript">
-    $(".checkStatus").click(function(){
-        var id=$(this).parent().parent().parent().find("td:eq(0)").html();
-        if(confirm("你确定要删除吗？")) {
-            $.post("{:U('Link/del')}",{ "id":id},function( response ){
-                if(response.error==100) {
-                    throwExc(response.message);
-                    return false;
-                }else if(response.error==200) {
-                    showSucc(response.message);
-                    setTimeout("load()",1000);
-                }else{
-                    throwExc(response.info);
-                    return false;
+                function load(){
+                    location.reload() ;
                 }
-            },"json");
-        }else {
-            return false;
-        }
-    });
-
-    function load(){
-        window.location.href="{:U('Link/index')}";
-    }
-</script>
+            </script>

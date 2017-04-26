@@ -9,7 +9,9 @@
     namespace Manager\Controller;
 
 
-    class GoodsController
+    class GoodsController  extends AdminBaseController
     {
-
+        public function __construct() {
+            parent::__construct();
+        }
     }

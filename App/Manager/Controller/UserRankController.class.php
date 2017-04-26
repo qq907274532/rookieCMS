@@ -23,6 +23,7 @@
                 $data['list'][$k]['showPriceName'] = UserRankModel::$SHOW_PRICE[$v['show_price']];
                 $data['list'][$k]['specialRankName'] = UserRankModel::$SPECIAL_RANK[$v['special_rank']];
             }
+            $this->assign('title','会员等级列表');
             $this->data = $data;
             $this->display();
         }
@@ -44,6 +45,7 @@
 
 
             } else {
+                $this->assign('title','增加会员等级');
                 $this->special_rank = UserRankModel::$SPECIAL_RANK;
                 $this->show_price = UserRankModel::$SHOW_PRICE;
                 $this->display();
@@ -71,6 +73,7 @@
                 if ($id <= 0) {
                     $this->error("不合法请求", U('UserRank/index'));
                 }
+                $this->assign('title','修改会员等级');
                 $this->info = $this->model->getUserRankInfoById($id);
                 $this->special_rank = UserRankModel::$SPECIAL_RANK;
                 $this->show_price = UserRankModel::$SHOW_PRICE;

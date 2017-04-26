@@ -21,6 +21,7 @@
                 $list[$k]['statusName'] = ArticleCateModel::$STATUS_MAP[$v['status']];
                 $list[$k]['typeName'] = ArticleCateModel::$TYPE_MAP[$v['cat_type']];
             }
+            $this->assign('title','分类列表');
             $this->assign('list', node_merges($list));
             $this->display();
         }
@@ -42,6 +43,7 @@
             } else {
                 $list = $this->model->getCateList(['sort_order', 'id' => 'desc'], ['status' => ArticleCateModel::STATUS_ENABLE]);
                 $this->assign('list', node_merges($list));
+                $this->assign('title','增加分类');
                 $this->assign('cateType', ArticleCateModel::$TYPE_MAP);
                 $this->display();
             }
@@ -66,6 +68,7 @@
                 $info=$this->model->getCateInfoById($id);
                 $list = $this->model->getCateList(['sort_order', 'id' => 'desc'], ['status' => ArticleCateModel::STATUS_ENABLE]);
                 $this->assign('list', node_merges($list));
+                $this->assign('title','修改分类');
                 $this->assign('cateType', ArticleCateModel::$TYPE_MAP);
                 $this->assign('info', $info);
                 $this->display();

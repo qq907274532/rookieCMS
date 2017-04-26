@@ -23,7 +23,7 @@
             foreach ($data['list'] as $k => $v) {
                 $data['list'][$k]['statusName'] = UserModel::$STATUS_MAP[$v['status']];
             }
-          
+            $this->assign('title','会员列表');
             $this->assign('data',$data);
             $this->display();
         }

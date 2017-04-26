@@ -25,6 +25,7 @@
                 $data['list'][$k]['isMustName']=RegisterSettingModel::$MUST_MAP[$v['is_must']];
                 $data['list'][$k]['statusName']=RegisterSettingModel::$STATUS_MAP[$v['status']];
             }
+            
             $this->assign('data',$data);
             $this->assign('title','注册项列表');
             $this->display();
@@ -51,6 +52,9 @@
         public function edit(){
             $id=I('id');
             if(IS_POST){
+                if($id<=0){
+                    $this->ajaxReturn(array('error' => self::ERROR_NUMBER, 'message' =>'参数不正确'));
+                }
                 $data=I('post.');
                 unset($data['id']);
                 if(!$this->model->create($data)){

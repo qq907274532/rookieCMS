@@ -122,7 +122,7 @@
                 'onUploadSuccess':function(file,data,response){
                     var obj=$.parseJSON(data);
                      if (obj.error == 200) {
-                            var url="{:C('BASE_URL')}"
+                            var url="{:C('BASE_URL')}";
                              $("#file_upload").after("<div data-item='" + obj.image + "' class='" + obj.image + "_img' style='position: relative; margin-right:9px;max-width: 160px;display: inline-block; border: 1px solid #dddddd;'><span class='imgdel' onclick='imgdel(this)'></span><img src='"+url+obj.image+"' class='img-thumbnail imgHeigh'></div>");
                              $('#' + file.id).find('.data').html(' 上传完毕');
                             var imgsrc = $("#img_url").val();

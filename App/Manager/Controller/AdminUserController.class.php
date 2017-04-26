@@ -35,6 +35,7 @@
                 }
                 $data['list'][$k]['statusName'] = AdminUserModel::$STATUS_MAP[$v['status']];
             }
+            $this->assign('title','账户列表');
             $this->assign('data', $data);
             $this->display();
         }
@@ -65,6 +66,7 @@
                 }
 
             } else {
+                $this->assign('title','增加账户');
                 $authGroupModel = new AuthRuleModel();
                 $this->assign('roleList', $authGroupModel->getAuthRuleList(['id' => 'desc'], ['status' => AuthGroupModel::STATUS_ENABLE]));
                 $this->display();
@@ -102,6 +104,7 @@
                 $info = $this->model->getAdminUserInfoById($id);
                 $authGroupInfo = $authGroupAccessModel->getInfoByUid($id);
                 $info['role_id'] = $authGroupInfo['group_id'];
+                $this->assign('title','修改账户');
                 $this->assign('roleList', $authGroupModel->getAuthGroupList(['id' => 'desc'], ['status' => AuthGroupModel::STATUS_ENABLE]));
                 $this->assign('info', $info);
                 $this->display();
@@ -130,6 +133,7 @@
                 }
                 $this->ajaxReturn(array('error' => self::SUCCESS_NUMBER, 'message' => '操作成功'));
             } else {
+                $this->assign('title','修改密码');
                 $this->assign('id', $id);
                 $this->display();
             }

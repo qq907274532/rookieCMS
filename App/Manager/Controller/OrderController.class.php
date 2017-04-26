@@ -43,6 +43,7 @@
             foreach ($data['list'] as $k => $v) {
                 $data['list'][$k]['orderStatusName'] = OrderInfoModel::$ORDER_STATUS_MAP[$v['order_status']];
             }
+            $this->assign('title','订单列表');
             $this->data = $data;
             $this->list = OrderInfoModel::$ORDER_STATUS_MAP;
             $this->display();
@@ -54,6 +55,7 @@
                 $this->error("不合法请求", U('Users/index'));
             }
             $this->data = $this->page_com(D('AccountLog'), ['log_id' => 'desc'], array('user_id' => $id));
+            $this->assign('title','订单详情');
             $this->display();
         }
 
@@ -76,6 +78,7 @@
                 $userAddress[$k]['city_name'] = $newRegionList[$v['city']];
                 $userAddress[$k]['district_name'] = $newRegionList[$v['district']];
             }
+            $this->assign('title','收货地址');
             $this->assign('userAddress', $userAddress);
             $this->display();
         }

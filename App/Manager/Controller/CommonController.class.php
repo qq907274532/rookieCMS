@@ -1,6 +1,7 @@
 <?php
 
     namespace Manager\Controller;
+    use Common\Model\BrandModel;
     use Common\Model\RegisterSettingModel;
     use Common\Model\UserRankModel;
 
@@ -66,6 +67,21 @@
             }
             $status = intval(I('status', 0, 'intval')) == RegisterSettingModel::IS_MUST ? RegisterSettingModel::IS_MUST : RegisterSettingModel::IS_NOT_MUST;
             if (!$registerSettingModel->where(array('id' => $id))->save(array('is_must' => $status))) {
+                $this->ajaxReturn(array('error' => self::ERROR_NUMBER, 'message' => '操作失败'));
+            }
+            $this->ajaxReturn(array('error' => self::SUCCESS_NUMBER, 'message' => '操作成功'));
+        }
+        /**
+         * 是否显示
+         */
+        public function showBrand()
+        {
+            $brandModel= new BrandModel();
+            if (($id = I('id', 0, 'intval')) <= 0) {
+                $this->ajaxReturn(array('error' => self::ERROR_NUMBER, 'message' => "数据格式有误"));
+            }
+            $status = intval(I('status', 0, 'intval')) == $brandModel::IS_SHOW ? $brandModel::IS_SHOW : $brandModel::IS_NOT_SHOW;
+            if (!$brandModel->update($id,['is_show'=>$status])) {
                 $this->ajaxReturn(array('error' => self::ERROR_NUMBER, 'message' => '操作失败'));
             }
             $this->ajaxReturn(array('error' => self::SUCCESS_NUMBER, 'message' => '操作成功'));

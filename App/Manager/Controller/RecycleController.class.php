@@ -53,6 +53,7 @@
                     $data['list'][$k]['userName'] = $newUidList[$v['user_id']];
                 }
             }
+            $this->assign('title','回收站列表');
             $this->assign('cate', $this->articleCateModel->where(array('status' => ArticleCateModel::STATUS_ENABLE))->select());
             $this->assign('list', $adminModel->where(array('status' => AdminUserModel::STATUS_ENABLE))->select());
             $this->assign('data', $data);

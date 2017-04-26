@@ -53,6 +53,7 @@
                 $data['list'][$k]['is_paid_name'] = UserAccountModel::$PAY_STATUS[$v['is_paid']];
 
             }
+            $this->assign('title','会员提现列表');
             $this->payMent = $payMent;
             $this->pay_status = UserAccountModel::$PAY_STATUS;
             $this->pay_type = UserAccountModel::$PAY_TYPE_MAP;
@@ -92,6 +93,7 @@
                 }
 
             } else {
+                $this->assign('title','增加申请');
                 $payMentModel = new PaymentModel();
                 $this->pay_status = UserAccountModel::$PAY_STATUS;
                 $this->pay_type = UserAccountModel::$PAY_TYPE_MAP;
@@ -133,6 +135,7 @@
                     'username' => $userModel->getUserInfoByUserId($info['user_id']),
                     'amount' => abs($info['amount']),
                 ];
+                $this->assign('title','修改会员申请');
                 $this->pay_status = UserAccountModel::$PAY_STATUS;
                 $this->pay_type = UserAccountModel::$PAY_TYPE_MAP;
                 $this->payMent = $payMentModel->getPaymentListByStatus();
@@ -180,6 +183,7 @@
                     'username' => $userModel->getUserInfoByUserId($info['user_id']),
                     'process_type_name' => UserAccountModel::$PAY_TYPE_MAP[$info['process_type']],
                 ];
+                $this->assign('title','审核会员申请');
                 $this->pay_status = UserAccountModel::$PAY_STATUS;
                 $this->assign('info', $info);
                 $this->display();

@@ -54,6 +54,7 @@
                     $data['list'][$k]['userName'] = $newUidList[$v['user_id']];
                 }
             }
+            $this->assign('title','文章列表');
             $this->assign('cate', $this->articleCateModel->where(array('status' => ArticleCateModel::STATUS_ENABLE))->select());
             $this->assign('list', $adminModel->where(array('status' => AdminUserModel::STATUS_ENABLE))->select());
             $this->assign('data', $data);
@@ -83,6 +84,7 @@
                 }
                 $this->ajaxReturn(array('error' => self::SUCCESS_NUMBER, 'message' => '添加成功'));
             } else {
+                $this->assign('title','增加文章');
                 $this->assign('list', node_merges($this->articleCateModel->where(array('status' => ArticleCateModel::STATUS_ENABLE))->select()));
                 $this->display();
             }
@@ -110,6 +112,7 @@
                 }
                 $this->ajaxReturn(array('error' => self::SUCCESS_NUMBER, 'message' => '修改成功'));
             } else {
+                $this->assign('title','修改文章');
                 $this->assign('list', node_merges($this->articleCateModel->where(array('status' => ArticleCateModel::STATUS_ENABLE))->select()));
                 $this->assign('info', $this->model->getArticleInfoById($id));
                 $this->display();

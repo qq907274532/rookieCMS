@@ -21,6 +21,7 @@
                 $list[$key]['nodeStatus'] = AuthRuleModel::$STATUS_MAP[$value['status']];
             }
             $this->list = node_merges($list);
+            $this->assign('title','节点列表');
             $this->display();
         }
 
@@ -48,6 +49,7 @@
                 $list = $this->model->where(array('status' => AuthRuleModel::STATUS_ENABLE))->order(array('sort', 'id' => 'desc'))->select();
                 $this->assign('list', node_merges($list));
                 $this->assign('menu', AuthRuleModel::$MENU_MAP);
+                $this->assign('title','增加节点');
                 $this->display();
             }
         }
@@ -81,7 +83,7 @@
                 if ($id <= 0) {
                     $this->error("不合法请求", U('Node/index'));
                 }
-
+                $this->assign('title','修改节点');
                 $this->assign('menu',AuthRuleModel::$MENU_MAP);
                 $this->assign('info',$this->model->where(array('id' => $id))->find());
                 $list = $this->model->where(array('status' => AuthRuleModel::STATUS_ENABLE))->order(array('sort', 'id' => 'desc'))->select();

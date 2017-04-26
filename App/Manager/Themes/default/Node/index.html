@@ -84,6 +84,7 @@
                                         <th >Name</th>
                                         <th >Title</th>
                                         <th >状态</th>
+                                        <th >排序</th>
                                         <th >操作</th>
                                     </tr>
                                     </thead>
@@ -100,6 +101,7 @@
                                                     <span class="label label-danger arrow-in arrow-in-right adminstatus">{$val.nodeStatus}</span>
                                                 </if >
                                             </td>
+                                            <td >{$val.sort}</td>
                                             <td >
                                                 <a href="{:U('Node/edit',array('id'=>$val['id']))}" class="fa fa-pencil tip" data-original-title="修改" id="tr{$val.id}"></a>&nbsp;
                                                 <if condition="$val.status eq Manager\Model\AuthRuleModel::STATUS_ENABLE">
@@ -123,6 +125,7 @@
                                                         <span class="label label-danger arrow-in arrow-in-right adminstatus">{$vo.nodeStatus}</span>
                                                     </if >
                                                 </td>
+                                                <td >&nbsp;&nbsp;├─{$vo.sort}</td>
                                                 <td >
                                                     <a href="{:U('Node/edit',array('id'=>$vo['id']))}" class="fa fa-pencil tip" data-original-title="修改" id="tr{$vo.id}"></a>&nbsp;
                                                     <if condition="$vo.status eq Manager\Model\AuthRuleModel::STATUS_ENABLE">
@@ -145,6 +148,7 @@
                                                             <span class="label label-danger arrow-in arrow-in-right adminstatus">{$v.nodeStatus}</span>
                                                         </if >
                                                     </td>
+                                                    <td >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  └─ {$v.sort}</td>
                                                     <td ><a href="{:U('Node/edit',array('id'=>$v['id']))}"
                                                             class="fa fa-pencil tip" data-original-title="修改" id="tr{$v.id}"></a>&nbsp;
                                                         <if condition="$v.status eq Manager\Model\AuthRuleModel::STATUS_ENABLE">

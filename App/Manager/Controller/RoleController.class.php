@@ -22,6 +22,7 @@
             foreach ($data['list'] as $k => $v) {
                 $data['list'][$k]['statusName'] = AuthGroupModel::$STATUS_MAP[$v['status']];
             }
+            $this->assign('title','角色列表');
             $this->assign('data',$data);
             $this->display();
         }
@@ -41,6 +42,7 @@
                     $this->ajaxReturn(array('error' => 200, 'message' => "添加成功"));
                 }
             } else {
+                $this->assign('title','增加角色');
                 $this->display();
             }
         }
@@ -61,6 +63,7 @@
                 if ($id <= 0) {
                     $this->error("不合法请求", U('Role/index'));
                 }
+                $this->assign('title','修改角色');
                 $this->assign('info',$this->model->getAuthGroupInfoById($id));
                 $this->display();
             }
@@ -86,6 +89,7 @@
                 $infoRule = $this->model->getAuthGroupInfoById($id);
                 $node = $authRuleModel->getAuthRuleList(['sort', 'id' => 'desc']);
                 $this->assign('list',node_merges($node, explode(',', $infoRule['rules'])));
+                $this->assign('title','角色授权');
                 $this->assign('id',$id);
                 $this->display();
             }
