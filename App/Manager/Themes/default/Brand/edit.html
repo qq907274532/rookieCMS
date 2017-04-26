@@ -1,0 +1,198 @@
+<include file="Public/header"/><!--/HEADER -->
+<!--/HEADER -->
+
+<!-- PAGE -->
+
+<!-- SIDEBAR -->
+<include file="Public/menu"/><!--/HEADER -->
+<!-- /SIDEBAR -->
+<div id="main-content">
+    <!-- SAMPLE BOX CONFIGURATION MODAL FORM-->
+
+    <!-- /SAMPLE BOX CONFIGURATION MODAL FORM-->
+    <div class="container">
+        <div class="row">
+            <div id="content" class="col-lg-12">
+                <!-- PAGE HEADER-->
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="page-header">
+                            <!-- STYLER -->
+
+                            <!-- /STYLER -->
+                            <!-- BREADCRUMBS -->
+                            <ul class="breadcrumb">
+                                <li>
+                                    <i class="fa fa-home"></i>
+                                    <a href="{:U('Index/index')}">首页</a>
+                                </li>
+                                <li>
+                                    <a href="{:U('Brand/index')}">品牌管理</a>
+                                </li>
+                                <li>添加品牌</li>
+                                <a href="{:U('Brand/index')}" class="btn btn-primary pull-right "><i class="fa fa-arrow-left"></i>返回 </a>
+                            </ul>
+                            <div class="clearfix">
+
+                            </div>
+                            <!-- /BREADCRUMBS -->
+
+                        </div>
+                    </div>
+                </div>
+                <!-- /PAGE HEADER -->
+                <!-- SIMPLE STRIPED -->
+                <div class="row">
+
+                    <div class="col-md-12">
+                        <!-- BOX -->
+                        <div class="box border primary">
+                            <div class="box-title">
+                                <h4><i class="fa fa-table"></i>添加品牌</h4>
+                                <div class="tools">
+
+                                    <a href="javascript:;" class="collapse">
+                                        <i class="fa fa-chevron-up"></i>
+                                    </a>
+
+                                </div>
+                            </div>
+                            <div class="box-body big">
+                                <form class="form-horizontal" role="form" id="myForm">
+                                    <div class="form-group">
+                                        <label class="col-sm-3 control-label">品牌名称：</label>
+
+                                        <div class="col-sm-4">
+                                            <input type="text" class="form-control" name="brand_name" id="brand_name" value=""
+                                                    placeholder="品牌名称">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-3 control-label">品牌地址：</label>
+
+                                        <div class="col-sm-4">
+                                            <input type="text" class="form-control" name="site_url" id="site_url" value=""
+                                                    placeholder="品牌名称">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-3 control-label">品牌logo：</label>
+
+                                        <div class="col-sm-4">
+                                            <input id="file_upload" name="imgPath" type="file" multiple="false">
+                                            <input type="hidden" name="brand_logo" value="" id="img_url">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="col-sm-3 control-label">品牌描述：</label>
+
+                                        <div class="col-sm-4">
+                                            <textarea class="form-control" rows="5" name="brand_desc" id="brand_desc" placeholder="品牌描述"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-sm-3 control-label">排序：</label>
+
+                                        <div class="col-sm-4">
+                                            <input type="text" class="form-control" name="sort_order" id="sort_order" value="100"
+                                                    placeholder="品牌名称">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="col-md-3 control-label">是否显示 </label>
+                                        <div class="col-md-8">
+                                            <volist name="show" id="v">
+                                             <label class="radio-inline"><input type="radio" class="is_show" name="is_show" value="{$key}">{$v} </label>
+                                            </volist>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-group">
+                                        <div class="col-sm-offset-4 col-sm-6">
+
+                                            <div type="text" class="btn btn-primary" id="submit">提交</div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+                        <!-- /BOX -->
+                    </div>
+                </div>
+
+                <!-- /BORDERED HOVER -->
+            </div>
+            <!--/HEADER -->
+            <include file="Public/footer"/>
+            <script src="__PUBLIC__/uploadify/jquery.uploadify.min.js"></script>
+            <link  src="__PUBLIC__/uploadify/uploadify.css">
+            <script type="text/javascript">
+                $(function() {
+                    $('#file_upload').uploadify({
+                        'buttonText': '上传图片',
+                        'swf'      : '__PUBLIC__/uploadify/uploadify.swf',
+                        'uploader' : "{:U('Upload/index')}",
+                        'fileObjName':"imgPath",
+
+                        'onUploadSuccess':function(file,data,response){
+                            var obj=$.parseJSON(data);
+                            if (obj.error == 200) {
+                                var url="{:C('BASE_URL')}"
+                                $("#file_upload").after("<div data-item='" + obj.image + "' class='" + obj.image + "_img' style='position: relative; margin-right:9px;max-width: 160px;display: inline-block; border: 1px solid #dddddd;'><span class='imgdel' onclick='imgdel(this)'></span><img src='"+url+obj.image+"' class='img-thumbnail imgHeigh'></div>");
+                                $('#' + file.id).find('.data').html(' 上传完毕');
+                                var imgsrc = $("#img_url").val();
+                                var imgsrcData;
+                                if (imgsrc != '') {
+                                    imgsrcData = imgsrc + ',' + obj.image;
+                                }else{
+                                    imgsrcData = obj.image;
+                                }
+                                $("#img_url").val(imgsrcData);
+                            } else {
+                                throwExc(obj.message);
+                            }
+
+                        },
+                    });
+                });
+            </script>
+            <script type="text/javascript">
+                $(function(){
+                    $("#submit").click(function(){
+                        var brand_name=$("input[name='brand_name']").val();
+                        var site_url=$("input[name='site_url']").val();
+                        var brand_logo=$("input[name='brand_logo']").val();
+                        var sort_order=$("input[name='sort_order']").val();
+                        var brand_desc=$("#brand_desc").val();
+                        var is_show=$("input[type='radio']:checked").val();
+                        if($.trim(brand_name)=='') {
+                            throwExc("品牌名称必须填写");
+                            return false;
+                        }
+
+
+                        $.post("{:U('Brand/add')}",{
+                            'brand_name':brand_name,
+                            'site_url':site_url,
+                            'brand_logo':brand_logo,
+                            'sort_order':sort_order,
+                            'brand_desc':brand_desc,
+                            'is_show':is_show
+                        },function( response ){
+                            if(response.error==100) {
+                                throwExc(response.message);
+                                return false;
+                            }else if(response.error==200) {
+                                showSucc(response.message);
+                                setTimeout("load()",1000);
+                            }
+                        },"json");
+                    });
+                });
+                function load(){
+                    window.location.href="{:U('Brand/index')}";
+                }
+            </script>
