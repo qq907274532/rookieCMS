@@ -2,12 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d8950571-2d36-405e-98c4-238a3a25de47" name="Default" comment="">
+<<<<<<< HEAD
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/Common/Model/BrandModel.class.php" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/Manager/Controller/BrandController.class.php" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/Manager/Controller/GoodsController.class.php" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/Manager/Themes/default/Brand/add.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/Manager/Themes/default/Brand/edit.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/App/Manager/Themes/default/Brand/index.html" />
+=======
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+>>>>>>> master
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Api/Controller/UserBaseController.class.php" afterPath="$PROJECT_DIR$/App/Api/Controller/UserBaseController.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/App/Manager/Controller/AdminUserController.class.php" afterPath="$PROJECT_DIR$/App/Manager/Controller/AdminUserController.class.php" />
@@ -48,27 +52,45 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
+<<<<<<< HEAD
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="BrandController.class.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/App/Manager/Controller/BrandController.class.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="637">
               <caret line="60" column="50" lean-forward="false" selection-start-line="60" selection-start-column="50" selection-end-line="60" selection-end-column="50" />
+=======
+    <leaf>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="4" column="27" lean-forward="true" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+>>>>>>> master
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="RegisterController.class.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/App/Manager/Controller/RegisterController.class.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="286">
               <caret line="58" column="40" lean-forward="true" selection-start-line="57" selection-start-column="16" selection-end-line="58" selection-end-column="35" />
+=======
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="15" column="76" lean-forward="true" selection-start-line="15" selection-start-column="76" selection-end-line="15" selection-end-column="76" />
+>>>>>>> master
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="BrandModel.class.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/App/Common/Model/BrandModel.class.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -168,6 +190,8 @@
           </provider>
         </entry>
       </file>
+=======
+>>>>>>> master
     </leaf>
   </component>
   <component name="Git.Settings">
@@ -176,6 +200,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/App/Api/Controller/UserBaseController.class.php" />
         <option value="$PROJECT_DIR$/App/Manager/Controller/IndexController.class.php" />
         <option value="$PROJECT_DIR$/App/Manager/Controller/AdminUserController.class.php" />
@@ -199,6 +224,9 @@
         <option value="$PROJECT_DIR$/App/Common/Model/BrandModel.class.php" />
         <option value="$PROJECT_DIR$/App/Manager/Controller/CommonController.class.php" />
         <option value="$PROJECT_DIR$/App/Manager/Themes/default/Brand/index.html" />
+=======
+        <option value="$PROJECT_DIR$/.gitignore" />
+>>>>>>> master
       </list>
     </option>
   </component>
@@ -230,7 +258,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< HEAD
       <pane id="Scope" />
+=======
+>>>>>>> master
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -479,11 +510,16 @@
           </PATH>
         </subPane>
       </pane>
+<<<<<<< HEAD
+=======
+      <pane id="Scope" />
+>>>>>>> master
       <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+<<<<<<< HEAD
     <property name="ToolWindowDatabase.ShowToolbar" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/Runtime/Cache/Manager/a15ee31106b87131637d8633fffddf9a.php" />
@@ -493,6 +529,9 @@
       <recent name="E:\phpStudy\WWW\rookieCMS\App\Manager\Themes\default\Brand" />
       <recent name="E:\phpStudy\WWW\rookieCMS\App\Common\Model" />
     </key>
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../rookie" />
+>>>>>>> master
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -557,12 +596,15 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+<<<<<<< HEAD
       <node-interpreter>project</node-interpreter>
       <node-options />
       <gulpfile />
       <tasks />
       <arguments />
       <envs />
+=======
+>>>>>>> master
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -597,23 +639,38 @@
       <option name="presentableId" value="Default" />
       <updated>1492267627782</updated>
       <workItem from="1492267629763" duration="13000" />
+<<<<<<< HEAD
       <workItem from="1492434693922" duration="92000" />
       <workItem from="1493135058110" duration="26000" />
       <workItem from="1493209407297" duration="7997000" />
+=======
+      <workItem from="1493297194543" duration="58000" />
+>>>>>>> master
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="8128000" />
+=======
+    <option name="totallyTimeSpent" value="71000" />
+>>>>>>> master
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
+<<<<<<< HEAD
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15671642" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25266525" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+>>>>>>> master
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -649,6 +706,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/1.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -765,12 +823,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" column="27" lean-forward="true" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+>>>>>>> master
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
@@ -1065,6 +1130,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-200">
           <caret line="85" column="177" lean-forward="false" selection-start-line="85" selection-start-column="177" selection-end-line="85" selection-end-column="177" />
+=======
+        <state relative-caret-position="162">
+          <caret line="15" column="76" lean-forward="true" selection-start-line="15" selection-start-column="76" selection-end-line="15" selection-end-column="76" />
+>>>>>>> master
           <folding />
         </state>
       </provider>
